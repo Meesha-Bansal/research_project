@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 // GLB path (served from Vite/public at site root)
-const MODEL_URL = '/bloodflow6.glb';
+const MODEL_URL = 'bloodflow6.glb';
 
 let scene, camera, renderer, controls;
 let mixer;
@@ -272,3 +272,4 @@ function onWindowResize() {
   renderer.setSize(window.innerWidth, window.innerHeight);
 
 }
+
