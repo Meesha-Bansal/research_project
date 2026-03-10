@@ -1,0 +1,11 @@
+body{
+margin:0;
+overflow:hidden;
+font-family:Arial;
+}
+
+.videoSpeedBtn-active {
+  background-color: #ffffff;
+  color: #d32f2f;
+  border-radius: 4px;
+}
