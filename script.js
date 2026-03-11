@@ -7,7 +7,7 @@ import { GLTFLoader } from 'https://unpkg.com/three@0.160.0/examples/jsm/loaders
 import { DRACOLoader } from 'https://unpkg.com/three@0.160.0/examples/jsm/loaders/DRACOLoader.js';
 
 // GLB path (served from Vite/public at site root)
-const MODEL_URL = 'sample5.glb';
+const MODEL_URL = './sample5.glb';
 
 let scene, camera, renderer, controls;
 let mixer;
@@ -280,5 +280,6 @@ function onWindowResize() {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 }
+
 
 
