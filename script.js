@@ -5,7 +5,7 @@ import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.160.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://unpkg.com/three@0.160.0/examples/jsm/loaders/GLTFLoader.js';
 // GLB path (served from Vite/public at site root)
-const MODEL_URL = 'bloodflow6.glb';
+const MODEL_URL = 'bloodflow4.glb';
 
 let scene, camera, renderer, controls;
 let mixer;
@@ -274,5 +274,6 @@ function onWindowResize() {
   renderer.setSize(window.innerWidth, window.innerHeight);
 
 }
+
 
 
