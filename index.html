@@ -19,6 +19,12 @@
 </head>
 
 <body>
+<!-- Language switcher (top-right) -->
+<div class="lang-switcher" id="languageSwitcher" aria-label="Language switcher">
+  <button class="lang-btn lang-btn-active" type="button" data-lang="en">English</button>
+  <button class="lang-btn" type="button" data-lang="hi">हिन्दी</button>
+  <button class="lang-btn" type="button" data-lang="pa">ਪੰਜਾਬੀ</button>
+</div>
 <div id="overlay" style="
   position: fixed;
   inset: 0;
@@ -29,7 +35,7 @@
   background: #f0f0f0;
 ">
   <div id="overlayText" style="max-width: 720px; padding: 24px; text-align: center;">
-    Loading 3D model…
+    Loading 3D model...
   </div>
 </div>
 
@@ -62,7 +68,7 @@
     ">Close</button>
     <video
       id="heartVideo"
-      src="english.mkv"
+      src="/english.mkv"
       controls
       style="width: 100%; max-height: 70vh;"
       controlsList="nodownload noplaybackrate noremoteplayback"
@@ -104,9 +110,7 @@
   Open Video
 </button>
 
-<script type="module" src="script.js"></script>
+<script type="module" src="/script.js"></script>
 
 </body>
-
 </html>
-
