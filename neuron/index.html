@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Structure of a neuron</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div id="pageTitle" class="title">Structure of a neuron</div>
+      <div id="pageHint" class="hint">Click a model part or a label to toggle highlight. Drag to orbit. Scroll to zoom.</div>
+      <div class="actions">
+        <div class="langSwitch" aria-label="Language switcher">
+          <button class="langBtn active" type="button" data-language="en">English</button>
+          <button class="langBtn" type="button" data-language="hi">हिंदी</button>
+          <button class="langBtn" type="button" data-language="pa">ਪੰਜਾਬੀ</button>
+        </div>
+        <button id="resetBtn" type="button">Reset All</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="viewer" aria-label="3D viewer">
+        <div id="viewerTitle" class="viewerTitle">3D Model</div>
+        <canvas id="c"></canvas>
+      </section>
+
+      <aside class="panel">
+        <div id="labelsTitle" class="panelTitle">Labels</div>
+        <div id="labels" class="labels"></div>
+        <div id="lastClickTitle" class="panelTitle">Last Click</div>
+        <div id="lastClick" class="mono muted">—</div>
+      </aside>
+    </main>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

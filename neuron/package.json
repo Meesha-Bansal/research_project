@@ -1,0 +1,10 @@
+{
+  "name": "bloodflow-neuron",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node ../node_modules/vite/bin/vite.js --host 127.0.0.1 --port 5173 --strictPort --clearScreen false",
+    "serve": "node ./server.mjs"
+  }
+}
+
