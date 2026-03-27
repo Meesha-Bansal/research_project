@@ -1,116 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-<meta charset="UTF-8">
-<title>Blood Flow 3D</title>
-
-<link rel="stylesheet" href="style.css">
-
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://unpkg.com/three@0.183.2/build/three.module.js",
-    "three/addons/": "https://unpkg.com/three@0.183.2/examples/jsm/"
-  }
-}
-</script>
-
-</head>
-
-<body>
-<!-- Language switcher (top-right) -->
-<div class="lang-switcher" id="languageSwitcher" aria-label="Language switcher">
-  <button class="lang-btn lang-btn-active" type="button" data-lang="en">English</button>
-  <button class="lang-btn" type="button" data-lang="hi">हिन्दी</button>
-  <button class="lang-btn" type="button" data-lang="pa">ਪੰਜਾਬੀ</button>
-</div>
-<div id="overlay" style="
-  position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: #111;
-  background: #f0f0f0;
-">
-  <div id="overlayText" style="max-width: 720px; padding: 24px; text-align: center;">
-    Loading 3D model...
-  </div>
-</div>
-
-<!-- Fullscreen video overlay for english.mkv -->
-<div id="videoOverlay" style="
-  position: fixed;
-  inset: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0,0,0,0.8);
-  z-index: 20;
-">
-  <div style="
-    position: relative;
-    max-width: 80vw;
-    max-height: 80vh;
-    display: flex;
-    flex-direction: column;
-  ">
-    <button id="videoCloseButton" style="
-      position: absolute;
-      top: -40px;
-      right: 0;
-      padding: 6px 12px;
-      border: none;
-      border-radius: 4px;
-      background: #ffffff;
-      cursor: pointer;
-    ">Close</button>
-    <video
-      id="heartVideo"
-      src="/english.mkv"
-      controls
-      style="width: 100%; max-height: 70vh;"
-      controlsList="nodownload noplaybackrate noremoteplayback"
-      disablePictureInPicture
-      playsInline
-    ></video>
-    <div style="margin-top: 8px; text-align: center; color: #fff; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;">
-      <div style="margin-bottom: 4px;">
-        <span style="margin-right: 8px;">Playback:</span>
-        <button id="videoPlayPauseBtn">Play / Pause</button>
-        <button id="videoRewindBtn">-10s</button>
-        <button id="videoForwardBtn">+10s</button>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Structure of a neuron</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div id="pageTitle" class="title">Structure of a neuron</div>
+      <div id="pageHint" class="hint">Click a model part or a label to toggle highlight. Drag to orbit. Scroll to zoom.</div>
+      <div class="actions">
+        <div class="langSwitch" aria-label="Language switcher">
+          <button class="langBtn active" type="button" data-language="en">English</button>
+          <button class="langBtn" type="button" data-language="hi">हिंदी</button>
+          <button class="langBtn" type="button" data-language="pa">ਪੰਜਾਬੀ</button>
+        </div>
+        <button id="resetBtn" type="button">Reset All</button>
       </div>
-      <div style="margin-top: 4px;">
-        <span style="margin-right: 8px;">Speed:</span>
-        <button class="videoSpeedBtn" data-rate="0.5">0.5x</button>
-        <button class="videoSpeedBtn videoSpeedBtn-active" data-rate="1">1x</button>
-        <button class="videoSpeedBtn" data-rate="1.5">1.5x</button>
-        <button class="videoSpeedBtn" data-rate="2">2x</button>
-      </div>
-    </div>
-  </div>
-</div>
+    </header>
 
-<!-- Simple button to open the video -->
-<button id="videoOpenButton" style="
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  padding: 8px 14px;
-  border-radius: 4px;
-  border: none;
-  background: #d32f2f;
-  color: #fff;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  cursor: pointer;
-  z-index: 10;
-">
-  Open Video
-</button>
+    <main>
+      <section class="viewer" aria-label="3D viewer">
+        <div id="viewerTitle" class="viewerTitle">3D Model</div>
+        <canvas id="c"></canvas>
+      </section>
 
-<script type="module" src="/script.js"></script>
+      <aside class="panel">
+        <div id="labelsTitle" class="panelTitle">Labels</div>
+        <div id="labels" class="labels"></div>
+        <div id="lastClickTitle" class="panelTitle">Last Click</div>
+        <div id="lastClick" class="mono muted">—</div>
+      </aside>
+    </main>
 
-</body>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>

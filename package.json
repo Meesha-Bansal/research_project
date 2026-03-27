@@ -1,19 +1,10 @@
 {
-  "name": "bloodflow",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "bloodflow-neuron",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "three": "^0.183.2",
-    "vite": "^7.3.1"
+    "dev": "node ../node_modules/vite/bin/vite.js --host 127.0.0.1 --port 5173 --strictPort --clearScreen false",
+    "serve": "node ./server.mjs"
   }
-  
 }
+
