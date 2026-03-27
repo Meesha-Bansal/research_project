@@ -1,0 +1,1 @@
+this folder contains the content of brain module, a 3d labelled structure of Human Brain. It is multilingual and interactive.
