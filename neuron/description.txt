@@ -1,0 +1,1 @@
+this folder contains the content of neuron module, a 3d labelled structure of neuron. It is multilingual and interactive.
