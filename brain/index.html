@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sagittal section of the human brain</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div id="pageTitle" class="title">Sagital section of the human brain</div>
+      <div id="pageHint" class="hint">
+        Click a labeled component (or a label row) to toggle highlight + offset.
+      </div>
+      <div class="actions">
+        <div class="langSwitch" aria-label="Language switcher">
+          <button class="langBtn active" type="button" data-language="en">English</button>
+          <button class="langBtn" type="button" data-language="hi">हिंदी</button>
+          <button class="langBtn" type="button" data-language="pa">ਪੰਜਾਬੀ</button>
+        </div>
+        <button id="resetBtn" type="button">Reset All</button>
+        <label class="slider">
+          <span id="explodeLabel">Explode</span>
+          <input id="explodeFactor" type="range" min="0" max="0.6" step="0.01" value="0.12" />
+          <span id="explodeFactorVal">0.12</span>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="c"></canvas>
+      <aside class="panel">
+        <div class="panelTitle">Labels</div>
+        <div id="labels" class="labels"></div>
+        <div class="panelTitle">Last Click</div>
+        <div id="lastClick" class="mono muted">—</div>
+      </aside>
+    </main>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
