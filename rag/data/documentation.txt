@@ -1,0 +1,1 @@
+this folder contains the NCERT data converted into jsons and wikipedia text files which were later converted into jsons in data.ipynb file
