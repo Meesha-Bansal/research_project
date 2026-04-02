@@ -1,0 +1,506 @@
+[
+    {
+      "id": "circulation_intro_1",
+      "organ": "circulation",
+      "topic": "transport necessity",
+      "text": "All living cells require nutrients, oxygen, and removal of waste substances for proper functioning.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "circulation_intro_2",
+      "organ": "circulation",
+      "topic": "transport mechanism",
+      "text": "Efficient transport systems are required to move substances to and from cells in multicellular organisms.",
+      "tags": ["function"]
+    },
+    {
+      "id": "circulation_intro_3",
+      "organ": "circulation",
+      "topic": "simple organisms",
+      "text": "Simple organisms like sponges and coelenterates circulate water through body cavities for exchange of substances.",
+      "tags": ["process"]
+    },
+    {
+      "id": "circulation_intro_4",
+      "organ": "circulation",
+      "topic": "complex organisms",
+      "text": "Complex organisms use specialized fluids like blood to transport substances within the body.",
+      "tags": ["function"]
+    },
+    {
+      "id": "blood_definition_1",
+      "organ": "blood",
+      "topic": "blood",
+      "text": "Blood is a connective tissue consisting of plasma and formed elements.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "plasma_1",
+      "organ": "blood",
+      "topic": "plasma",
+      "text": "Plasma is a straw-coloured viscous fluid that constitutes about 55 percent of blood.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "plasma_2",
+      "organ": "blood",
+      "topic": "plasma composition",
+      "text": "Plasma contains 90–92 percent water and 6–8 percent proteins.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "plasma_3",
+      "organ": "blood",
+      "topic": "plasma proteins",
+      "text": "Major plasma proteins include fibrinogen, globulins, and albumins.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "plasma_4",
+      "organ": "blood",
+      "topic": "fibrinogen",
+      "text": "Fibrinogen is responsible for blood clotting.",
+      "tags": ["function"]
+    },
+    {
+      "id": "plasma_5",
+      "organ": "blood",
+      "topic": "globulins",
+      "text": "Globulins are involved in immune defense mechanisms.",
+      "tags": ["function"]
+    },
+    {
+      "id": "plasma_6",
+      "organ": "blood",
+      "topic": "albumin",
+      "text": "Albumins help maintain osmotic balance in blood.",
+      "tags": ["function"]
+    },
+    {
+      "id": "plasma_7",
+      "organ": "blood",
+      "topic": "plasma components",
+      "text": "Plasma contains minerals, glucose, amino acids, and lipids in dissolved form.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "plasma_8",
+      "organ": "blood",
+      "topic": "serum",
+      "text": "Serum is plasma without clotting factors.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "formed_elements_1",
+      "organ": "blood",
+      "topic": "formed elements",
+      "text": "Formed elements include erythrocytes, leucocytes, and platelets.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "rbc_1",
+      "organ": "blood",
+      "topic": "rbc",
+      "text": "Red blood cells are the most abundant cells in blood.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "rbc_2",
+      "organ": "blood",
+      "topic": "rbc function",
+      "text": "Red blood cells transport respiratory gases using haemoglobin.",
+      "tags": ["function"]
+    },
+    {
+      "id": "rbc_3",
+      "organ": "blood",
+      "topic": "rbc structure",
+      "text": "Mammalian red blood cells are biconcave and lack a nucleus.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "rbc_4",
+      "organ": "blood",
+      "topic": "rbc lifespan",
+      "text": "Red blood cells have an average lifespan of 120 days.",
+      "tags": ["process"]
+    },
+    {
+      "id": "rbc_5",
+      "organ": "blood",
+      "topic": "rbc destruction",
+      "text": "Red blood cells are destroyed in the spleen.",
+      "tags": ["process"]
+    },
+    {
+      "id": "wbc_1",
+      "organ": "blood",
+      "topic": "wbc",
+      "text": "White blood cells are nucleated and lack haemoglobin.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "wbc_2",
+      "organ": "blood",
+      "topic": "wbc function",
+      "text": "White blood cells are involved in immune defense.",
+      "tags": ["function"]
+    },
+    {
+      "id": "wbc_3",
+      "organ": "blood",
+      "topic": "wbc types",
+      "text": "White blood cells are classified into granulocytes and agranulocytes.",
+      "tags": ["classification"]
+    },
+    {
+      "id": "platelets_1",
+      "organ": "blood",
+      "topic": "platelets",
+      "text": "Platelets are cell fragments involved in blood clotting.",
+      "tags": ["function"]
+    },
+    {
+      "id": "platelets_2",
+      "organ": "blood",
+      "topic": "platelets origin",
+      "text": "Platelets are produced from megakaryocytes in bone marrow.",
+      "tags": ["process"]
+    },
+    {
+      "id": "abo_1",
+      "organ": "blood",
+      "topic": "abo grouping",
+      "text": "ABO blood grouping is based on the presence of A and B antigens on red blood cells.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "abo_2",
+      "organ": "blood",
+      "topic": "blood transfusion",
+      "text": "Blood transfusion requires compatibility between donor and recipient to prevent clotting.",
+      "tags": ["reasoning"]
+    },
+    {
+      "id": "abo_3",
+      "organ": "blood",
+      "topic": "universal donor",
+      "text": "Blood group O is called universal donor because it lacks A and B antigens.",
+      "tags": ["reasoning"]
+    },
+    {
+      "id": "abo_4",
+      "organ": "blood",
+      "topic": "universal recipient",
+      "text": "Blood group AB is called universal recipient because it has no antibodies against A or B antigens.",
+      "tags": ["reasoning"]
+    },
+    {
+      "id": "rh_1",
+      "organ": "blood",
+      "topic": "rh factor",
+      "text": "Rh factor is an antigen present on red blood cells in most humans.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "rh_2",
+      "organ": "blood",
+      "topic": "rh compatibility",
+      "text": "Rh-negative individuals can develop antibodies if exposed to Rh-positive blood.",
+      "tags": ["process"]
+    },
+    {
+      "id": "rh_3",
+      "organ": "blood",
+      "topic": "erythroblastosis",
+      "text": "Erythroblastosis foetalis occurs when Rh antibodies from mother destroy fetal red blood cells.",
+      "tags": ["mechanism"]
+    },
+    {
+      "id": "coagulation_1",
+      "organ": "blood",
+      "topic": "coagulation",
+      "text": "Blood clotting prevents excessive blood loss after injury.",
+      "tags": ["function"]
+    },
+    {
+      "id": "coagulation_2",
+      "organ": "blood",
+      "topic": "fibrin",
+      "text": "Fibrin forms a network that traps blood cells to form a clot.",
+      "tags": ["mechanism"]
+    },
+    {
+      "id": "coagulation_3",
+      "organ": "blood",
+      "topic": "clotting cascade",
+      "text": "Blood clotting involves conversion of fibrinogen to fibrin through enzyme-mediated reactions.",
+      "tags": ["process"]
+    },
+    {
+      "id": "lymph_1",
+      "organ": "lymph",
+      "topic": "lymph",
+      "text": "Lymph is a colorless fluid derived from tissue fluid and circulates through lymphatic vessels.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "lymph_2",
+      "organ": "lymph",
+      "topic": "lymph function",
+      "text": "Lymph transports nutrients, hormones, and immune cells.",
+      "tags": ["function"]
+    },
+    {
+      "id": "lymph_3",
+      "organ": "lymph",
+      "topic": "fat absorption",
+      "text": "Fats are absorbed into lymph through lacteals in intestinal villi.",
+      "tags": ["process"]
+    },
+    {
+      "id": "circulation_1",
+      "organ": "circulation",
+      "topic": "open system",
+      "text": "Open circulatory system allows blood to flow into body cavities.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "circulation_2",
+      "organ": "circulation",
+      "topic": "closed system",
+      "text": "Closed circulatory system confines blood within vessels for regulated flow.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "heart_1",
+      "organ": "heart",
+      "topic": "heart",
+      "text": "The human heart is a muscular organ with four chambers.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "heart_2",
+      "organ": "heart",
+      "topic": "heart function",
+      "text": "The heart pumps blood throughout the body via circulatory pathways.",
+      "tags": ["function"]
+    },
+    {
+      "id": "heart_3",
+      "organ": "heart",
+      "topic": "valves",
+      "text": "Heart valves ensure one-way flow of blood and prevent backflow.",
+      "tags": ["function"]
+    },
+    {
+      "id": "san_1",
+      "organ": "heart",
+      "topic": "san",
+      "text": "Sinoatrial node acts as the pacemaker of the heart.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "san_2",
+      "organ": "heart",
+      "topic": "heart rhythm",
+      "text": "Sinoatrial node generates electrical impulses that regulate heart rhythm.",
+      "tags": ["mechanism"]
+    },
+    {
+      "id": "cardiac_cycle_1",
+      "organ": "heart",
+      "topic": "cardiac cycle",
+      "text": "Cardiac cycle consists of systole and diastole of heart chambers.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "cardiac_cycle_2",
+      "organ": "heart",
+      "topic": "stroke volume",
+      "text": "Stroke volume is the amount of blood pumped by a ventricle per beat.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "cardiac_cycle_3",
+      "organ": "heart",
+      "topic": "cardiac output",
+      "text": "Cardiac output is the volume of blood pumped by the heart per minute.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "ecg_1",
+      "organ": "heart",
+      "topic": "ecg",
+      "text": "ECG records the electrical activity of the heart.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "double_circulation_1",
+      "organ": "circulation",
+      "topic": "double circulation",
+      "text": "Double circulation involves separate pulmonary and systemic pathways.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "regulation_1",
+      "organ": "heart",
+      "topic": "regulation",
+      "text": "Heart activity is regulated by autonomic nervous system and hormones.",
+      "tags": ["mechanism"]
+    },
+    {
+      "id": "disease_1",
+      "organ": "circulation",
+      "topic": "hypertension",
+      "text": "Hypertension is a condition of persistently high blood pressure.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "disease_2",
+      "organ": "circulation",
+      "topic": "cad",
+      "text": "Coronary artery disease is caused by narrowing of arteries due to plaque deposition.",
+      "tags": ["mechanism"]
+    },
+    {
+      "id": "disease_3",
+      "organ": "circulation",
+      "topic": "heart failure",
+      "text": "Heart failure occurs when the heart cannot pump sufficient blood to meet body needs.",
+      "tags": ["definition"]
+    },
+    {
+        "id": "heart_reason_1",
+        "organ": "heart",
+        "topic": "left ventricle",
+        "text": "The left ventricle has a thicker wall because it pumps blood to the entire body under high pressure.",
+        "tags": ["reasoning"]
+      },
+      {
+        "id": "heart_reason_2",
+        "organ": "heart",
+        "topic": "valves",
+        "text": "Heart valves ensure unidirectional flow to prevent backflow of blood.",
+        "tags": ["reasoning"]
+      },
+      {
+        "id": "circulation_reason_1",
+        "organ": "circulation",
+        "topic": "double circulation",
+        "text": "Double circulation prevents mixing of oxygenated and deoxygenated blood, increasing efficiency.",
+        "tags": ["reasoning"]
+      },
+      {
+        "id": "blood_reason_1",
+        "organ": "blood",
+        "topic": "rbc shape",
+        "text": "Biconcave shape of RBCs increases surface area for efficient gas exchange.",
+        "tags": ["reasoning"]
+      },
+      {
+        "id": "circulation_compare_1",
+        "organ": "circulation",
+        "topic": "artery vs vein",
+        "text": "Arteries carry blood away from the heart under high pressure, while veins return blood to the heart under low pressure.",
+        "tags": ["comparison"]
+      },
+      {
+        "id": "circulation_compare_2",
+        "organ": "circulation",
+        "topic": "open vs closed system",
+        "text": "Open circulation allows blood to flow into body cavities, while closed circulation keeps blood within vessels.",
+        "tags": ["comparison"]
+      },
+      {
+        "id": "blood_compare_1",
+        "organ": "blood",
+        "topic": "rbc vs wbc",
+        "text": "RBCs transport gases using haemoglobin, while WBCs are involved in immune defense.",
+        "tags": ["comparison"]
+      },
+        {
+          "id": "heart_app_1",
+          "organ": "heart",
+          "topic": "valve failure",
+          "text": "If heart valves fail, blood may flow backward, reducing pumping efficiency.",
+          "tags": ["application"]
+        },
+        {
+          "id": "heart_app_2",
+          "organ": "heart",
+          "topic": "san failure",
+          "text": "If the sinoatrial node fails, heart rhythm becomes irregular and requires artificial pacemaker support.",
+          "tags": ["application"]
+        },
+        {
+          "id": "circulation_app_1",
+          "organ": "circulation",
+          "topic": "artery blockage",
+          "text": "Blockage in arteries reduces blood supply to tissues and may lead to tissue damage or heart attack.",
+          "tags": ["application"]
+        },
+        {
+          "id": "blood_app_1",
+          "organ": "blood",
+          "topic": "low platelets",
+          "text": "Low platelet count leads to excessive bleeding due to impaired clotting.",
+          "tags": ["application"]
+        },
+        {
+          "id": "blood_app_2",
+          "organ": "blood",
+          "topic": "low hemoglobin",
+          "text": "Low hemoglobin reduces oxygen transport capacity, leading to fatigue and weakness.",
+          "tags": ["application"]
+        },
+            {
+              "id": "heart_valve_1",
+              "organ": "heart",
+              "topic": "tricuspid valve",
+              "text": "Tricuspid valve is located between right atrium and right ventricle.",
+              "tags": ["structure"]
+            },
+            {
+              "id": "heart_valve_2",
+              "organ": "heart",
+              "topic": "mitral valve",
+              "text": "Mitral valve is located between left atrium and left ventricle.",
+              "tags": ["structure"]
+            },
+            {
+              "id": "cardiac_cycle_4",
+              "organ": "heart",
+              "topic": "atrial systole",
+              "text": "Atrial systole pushes blood from atria into ventricles.",
+              "tags": ["process"]
+            },
+            {
+              "id": "cardiac_cycle_5",
+              "organ": "heart",
+              "topic": "ventricular systole",
+              "text": "Ventricular systole pumps blood into pulmonary artery and aorta.",
+              "tags": ["process"]
+            },
+            {
+              "id": "ecg_wave_1",
+              "organ": "heart",
+              "topic": "p wave",
+              "text": "P wave represents atrial depolarization.",
+              "tags": ["definition"]
+            },
+            {
+              "id": "ecg_wave_2",
+              "organ": "heart",
+              "topic": "qrs complex",
+              "text": "QRS complex represents ventricular depolarization.",
+              "tags": ["definition"]
+            },
+            {
+              "id": "ecg_wave_3",
+              "organ": "heart",
+              "topic": "t wave",
+              "text": "T wave represents ventricular repolarization.",
+              "tags": ["definition"]
+            }
+]

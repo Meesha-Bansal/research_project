@@ -1,0 +1,763 @@
+[
+    {
+      "id": "neural_intro_1",
+      "organ": "neural_system",
+      "topic": "coordination",
+      "text": "Coordination is the process through which different organs work together to maintain homeostasis.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "neural_intro_2",
+      "organ": "neural_system",
+      "topic": "homeostasis",
+      "text": "Homeostasis requires coordinated functioning of multiple organ systems.",
+      "tags": ["function"]
+    },
+    {
+      "id": "neural_intro_3",
+      "organ": "neural_system",
+      "topic": "exercise coordination",
+      "text": "During exercise, increased oxygen demand leads to increased respiration rate, heart rate, and blood flow.",
+      "tags": ["process"]
+    },
+    {
+      "id": "neural_intro_4",
+      "organ": "neural_system",
+      "topic": "systems of coordination",
+      "text": "Neural and endocrine systems jointly coordinate body activities.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "neural_intro_5",
+      "organ": "neural_system",
+      "topic": "neural system function",
+      "text": "The neural system provides rapid coordination through point-to-point connections.",
+      "tags": ["function"]
+    },
+    {
+      "id": "neural_intro_6",
+      "organ": "neural_system",
+      "topic": "endocrine system",
+      "text": "The endocrine system provides coordination through hormones.",
+      "tags": ["function"]
+    },
+    {
+      "id": "neuron_1",
+      "organ": "neuron",
+      "topic": "neuron",
+      "text": "Neurons are specialized cells that detect, receive, and transmit stimuli.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "neuron_2",
+      "organ": "neuron",
+      "topic": "neural organization",
+      "text": "Neural systems range from simple networks in lower organisms to complex systems in vertebrates.",
+      "tags": ["comparison"]
+    },
+    {
+      "id": "human_neural_1",
+      "organ": "neural_system",
+      "topic": "human neural system",
+      "text": "The human neural system is divided into central nervous system and peripheral nervous system.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "cns_1",
+      "organ": "brain",
+      "topic": "cns",
+      "text": "Central nervous system consists of the brain and spinal cord.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "cns_2",
+      "organ": "brain",
+      "topic": "cns function",
+      "text": "The central nervous system is responsible for information processing and control.",
+      "tags": ["function"]
+    },
+    {
+      "id": "pns_1",
+      "organ": "neural_system",
+      "topic": "pns",
+      "text": "Peripheral nervous system includes all nerves connected to the central nervous system.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "pns_2",
+      "organ": "neural_system",
+      "topic": "afferent",
+      "text": "Afferent nerve fibers carry impulses from tissues to the central nervous system.",
+      "tags": ["function"]
+    },
+    {
+      "id": "pns_3",
+      "organ": "neural_system",
+      "topic": "efferent",
+      "text": "Efferent nerve fibers carry impulses from the central nervous system to organs.",
+      "tags": ["function"]
+    },
+    {
+      "id": "pns_4",
+      "organ": "neural_system",
+      "topic": "somatic system",
+      "text": "Somatic nervous system controls voluntary movements of skeletal muscles.",
+      "tags": ["function"]
+    },
+    {
+      "id": "pns_5",
+      "organ": "neural_system",
+      "topic": "autonomic system",
+      "text": "Autonomic nervous system controls involuntary activities of organs and smooth muscles.",
+      "tags": ["function"]
+    },
+    {
+      "id": "pns_6",
+      "organ": "neural_system",
+      "topic": "sympathetic system",
+      "text": "Sympathetic nervous system prepares the body for active responses.",
+      "tags": ["function"]
+    },
+    {
+      "id": "pns_7",
+      "organ": "neural_system",
+      "topic": "parasympathetic system",
+      "text": "Parasympathetic nervous system restores the body to normal resting state.",
+      "tags": ["function"]
+    },
+    {
+      "id": "neuron_structure_1",
+      "organ": "neuron",
+      "topic": "neuron structure",
+      "text": "A neuron consists of cell body, dendrites, and axon.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "neuron_structure_2",
+      "organ": "neuron",
+      "topic": "dendrites",
+      "text": "Dendrites receive nerve impulses and carry them toward the cell body.",
+      "tags": ["function"]
+    },
+    {
+      "id": "neuron_structure_3",
+      "organ": "neuron",
+      "topic": "axon",
+      "text": "Axon transmits nerve impulses away from the cell body.",
+      "tags": ["function"]
+    },
+    {
+      "id": "neuron_structure_4",
+      "organ": "neuron",
+      "topic": "synaptic knob",
+      "text": "Synaptic knobs release neurotransmitters at the end of axons.",
+      "tags": ["function"]
+    },
+    {
+      "id": "neuron_types_1",
+      "organ": "neuron",
+      "topic": "neuron types",
+      "text": "Neurons are classified into multipolar, bipolar, and unipolar types.",
+      "tags": ["classification"]
+    },
+    {
+      "id": "neuron_types_2",
+      "organ": "neuron",
+      "topic": "myelinated axon",
+      "text": "Myelinated axons are covered by a myelin sheath formed by Schwann cells.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "neuron_types_3",
+      "organ": "neuron",
+      "topic": "nodes of ranvier",
+      "text": "Nodes of Ranvier are gaps between myelin sheaths on axons.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "impulse_1",
+      "organ": "neuron",
+      "topic": "resting potential",
+      "text": "Resting potential is the electrical difference across the neuron membrane in resting state.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "impulse_2",
+      "organ": "neuron",
+      "topic": "polarization",
+      "text": "Neuron membrane is polarized due to unequal distribution of ions across it.",
+      "tags": ["mechanism"]
+    },
+    {
+      "id": "impulse_3",
+      "organ": "neuron",
+      "topic": "sodium potassium pump",
+      "text": "Sodium-potassium pump maintains ionic gradient by moving sodium out and potassium into the cell.",
+      "tags": ["mechanism"]
+    },
+    {
+      "id": "impulse_4",
+      "organ": "neuron",
+      "topic": "action potential",
+      "text": "Action potential is the reversal of membrane polarity during nerve impulse transmission.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "impulse_5",
+      "organ": "neuron",
+      "topic": "depolarization",
+      "text": "Depolarization occurs due to influx of sodium ions into the neuron.",
+      "tags": ["process"]
+    },
+    {
+      "id": "impulse_6",
+      "organ": "neuron",
+      "topic": "repolarization",
+      "text": "Repolarization restores resting potential by efflux of potassium ions.",
+      "tags": ["process"]
+    },
+    {
+      "id": "synapse_1",
+      "organ": "neuron",
+      "topic": "synapse",
+      "text": "Synapse is the junction between two neurons where impulses are transmitted.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "synapse_2",
+      "organ": "neuron",
+      "topic": "electrical synapse",
+      "text": "Electrical synapses transmit impulses directly and rapidly between neurons.",
+      "tags": ["comparison"]
+    },
+    {
+      "id": "synapse_3",
+      "organ": "neuron",
+      "topic": "chemical synapse",
+      "text": "Chemical synapses use neurotransmitters to transmit impulses across synaptic cleft.",
+      "tags": ["mechanism"]
+    },
+    {
+      "id": "synapse_4",
+      "organ": "neuron",
+      "topic": "neurotransmitter",
+      "text": "Neurotransmitters are chemicals that transmit signals across synapses.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "brain_1",
+      "organ": "brain",
+      "topic": "brain",
+      "text": "Brain is the central control organ that processes information and regulates body activities.",
+      "tags": ["definition"]
+    },
+    {
+      "id": "brain_2",
+      "organ": "brain",
+      "topic": "brain function",
+      "text": "Brain controls voluntary movements, involuntary functions, and behavior.",
+      "tags": ["function"]
+    },
+    {
+      "id": "brain_3",
+      "organ": "brain",
+      "topic": "brain protection",
+      "text": "Brain is protected by skull and three layers of meninges.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "forebrain_1",
+      "organ": "brain",
+      "topic": "forebrain",
+      "text": "Forebrain consists of cerebrum, thalamus, and hypothalamus.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "cerebrum_1",
+      "organ": "brain",
+      "topic": "cerebrum",
+      "text": "Cerebrum is the largest part of the brain responsible for higher functions.",
+      "tags": ["function"]
+    },
+    {
+      "id": "cerebrum_2",
+      "organ": "brain",
+      "topic": "cerebral cortex",
+      "text": "Cerebral cortex contains sensory, motor, and association areas.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "thalamus_1",
+      "organ": "brain",
+      "topic": "thalamus",
+      "text": "Thalamus acts as a relay center for sensory and motor signals.",
+      "tags": ["function"]
+    },
+    {
+      "id": "hypothalamus_1",
+      "organ": "brain",
+      "topic": "hypothalamus",
+      "text": "Hypothalamus regulates body temperature, hunger, and hormone secretion.",
+      "tags": ["function"]
+    },
+    {
+      "id": "midbrain_1",
+      "organ": "brain",
+      "topic": "midbrain",
+      "text": "Midbrain integrates visual and auditory information.",
+      "tags": ["function"]
+    },
+    {
+      "id": "hindbrain_1",
+      "organ": "brain",
+      "topic": "hindbrain",
+      "text": "Hindbrain consists of pons, cerebellum, and medulla.",
+      "tags": ["structure"]
+    },
+    {
+      "id": "cerebellum_1",
+      "organ": "brain",
+      "topic": "cerebellum",
+      "text": "Cerebellum coordinates balance and posture.",
+      "tags": ["function"]
+    },
+    {
+      "id": "medulla_1",
+      "organ": "brain",
+      "topic": "medulla",
+      "text": "Medulla controls respiration, heart rate, and reflexes.",
+      "tags": ["function"]
+    },
+    {
+        "id": "neuron_reason_1",
+        "organ": "neuron",
+        "topic": "myelin sheath",
+        "text": "Myelin sheath increases the speed of nerve impulse conduction by enabling saltatory conduction.",
+        "tags": ["reasoning"]
+      },
+      {
+        "id": "neuron_reason_2",
+        "organ": "neuron",
+        "topic": "nodes of ranvier",
+        "text": "Nodes of Ranvier allow impulses to jump between segments, increasing transmission speed.",
+        "tags": ["reasoning"]
+      },
+      {
+        "id": "neuron_reason_3",
+        "organ": "neuron",
+        "topic": "resting potential",
+        "text": "Resting potential exists due to unequal distribution of ions across the neuron membrane.",
+        "tags": ["reasoning"]
+      },
+      {
+        "id": "neuron_reason_4",
+        "organ": "neuron",
+        "topic": "synapse delay",
+        "text": "Chemical synapses are slower than electrical synapses due to neurotransmitter release and diffusion.",
+        "tags": ["reasoning"]
+      },
+      {
+        "id": "neuron_compare_1",
+        "organ": "neuron",
+        "topic": "synapse types",
+        "text": "Electrical synapses transmit impulses directly and rapidly, while chemical synapses use neurotransmitters and are slower.",
+        "tags": ["comparison"]
+      },
+      {
+        "id": "neuron_compare_2",
+        "organ": "neuron",
+        "topic": "myelinated vs unmyelinated",
+        "text": "Myelinated neurons conduct impulses faster via saltatory conduction, while unmyelinated neurons conduct impulses continuously and slower.",
+        "tags": ["comparison"]
+      },
+      {
+        "id": "neural_compare_3",
+        "organ": "neural_system",
+        "topic": "sympathetic vs parasympathetic",
+        "text": "Sympathetic system prepares the body for stress, while parasympathetic system restores normal resting conditions.",
+        "tags": ["comparison"]
+      },
+      {
+        "id": "neuron_app_1",
+        "organ": "neuron",
+        "topic": "sodium potassium pump failure",
+        "text": "If the sodium-potassium pump fails, ion gradients collapse and nerve impulse transmission stops.",
+        "tags": ["application"]
+      },
+      {
+        "id": "neuron_app_2",
+        "organ": "neuron",
+        "topic": "myelin damage",
+        "text": "Damage to myelin sheath slows down or disrupts nerve impulse conduction.",
+        "tags": ["application"]
+      },
+        {
+          "id": "neural_reason_1",
+          "organ": "neural_system",
+          "topic": "neural coordination",
+          "text": "Neural coordination is faster than hormonal coordination because it uses electrical signals for communication.",
+          "tags": ["reasoning"]
+        },
+        {
+          "id": "neuron_reason_5",
+          "organ": "neuron",
+          "topic": "axon length",
+          "text": "Axons are long to enable transmission of impulses over long distances in the body.",
+          "tags": ["reasoning"]
+        },
+        {
+          "id": "neuron_reason_6",
+          "organ": "neuron",
+          "topic": "dendrites branching",
+          "text": "Dendrites are highly branched to increase the surface area for receiving signals.",
+          "tags": ["reasoning"]
+        },
+        {
+          "id": "neuron_reason_7",
+          "organ": "neuron",
+          "topic": "myelin sheath importance",
+          "text": "Myelin sheath prevents ion leakage and increases speed of impulse conduction.",
+          "tags": ["reasoning"]
+        },
+        {
+          "id": "impulse_reason_1",
+          "organ": "neuron",
+          "topic": "polarization",
+          "text": "Neuron membrane remains polarized to maintain readiness for rapid signal transmission.",
+          "tags": ["reasoning"]
+        },
+        {
+          "id": "impulse_reason_2",
+          "organ": "neuron",
+          "topic": "sodium influx",
+          "text": "Sodium ions enter the neuron during stimulation because ion channels open selectively in response to stimuli.",
+          "tags": ["reasoning"]
+        },
+        {
+          "id": "synapse_reason_1",
+          "organ": "neuron",
+          "topic": "chemical synapse",
+          "text": "Chemical synapses allow signal modulation, making neural responses more flexible.",
+          "tags": ["reasoning"]
+        },
+        {
+          "id": "brain_reason_1",
+          "organ": "brain",
+          "topic": "cerebral cortex folding",
+          "text": "Folding of the cerebral cortex increases surface area for accommodating more neurons.",
+          "tags": ["reasoning"]
+        },
+        {
+          "id": "brain_reason_2",
+          "organ": "brain",
+          "topic": "hypothalamus function",
+          "text": "Hypothalamus regulates vital functions because it links the nervous system with the endocrine system.",
+          "tags": ["reasoning"]
+        },
+        {
+          "id": "brain_reason_3",
+          "organ": "brain",
+          "topic": "cerebellum structure",
+          "text": "Cerebellum has a highly folded structure to increase neuron density for better coordination.",
+          "tags": ["reasoning"]
+        },
+        {
+              "id": "neural_compare_2",
+              "organ": "neural_system",
+              "topic": "neural vs endocrine",
+              "text": "Neural system uses electrical signals for fast responses, while endocrine system uses hormones for slower, long-lasting effects.",
+              "tags": ["comparison"]
+            },
+            {
+              "id": "neuron_compare_3",
+              "organ": "neuron",
+              "topic": "dendrite vs axon",
+              "text": "Dendrites receive impulses toward the cell body, while axons transmit impulses away from the cell body.",
+              "tags": ["comparison"]
+            },
+            {
+              "id": "impulse_compare_1",
+              "organ": "neuron",
+              "topic": "resting vs action potential",
+              "text": "Resting potential is the stable polarized state, while action potential is the temporary reversal during impulse transmission.",
+              "tags": ["comparison"]
+            },
+            {
+              "id": "synapse_compare_2",
+              "organ": "neuron",
+              "topic": "electrical vs chemical synapse",
+              "text": "Electrical synapses allow direct current flow, while chemical synapses use neurotransmitters across a synaptic cleft.",
+              "tags": ["comparison"]
+            },
+            {
+              "id": "brain_compare_1",
+              "organ": "brain",
+              "topic": "grey vs white matter",
+              "text": "Grey matter contains neuron cell bodies, while white matter contains myelinated nerve fibers.",
+              "tags": ["comparison"]
+            },
+            {
+              "id": "brain_compare_2",
+              "organ": "brain",
+              "topic": "forebrain vs hindbrain",
+              "text": "Forebrain controls higher functions like thinking, while hindbrain controls basic functions like balance and respiration.",
+              "tags": ["comparison"]
+            },
+            {
+                  "id": "neuron_app_3",
+                  "organ": "neuron",
+                  "topic": "axon damage",
+                  "text": "Damage to axon disrupts transmission of nerve impulses leading to loss of function.",
+                  "tags": ["application"]
+                },
+                {
+                  "id": "neuron_app_4",
+                  "organ": "neuron",
+                  "topic": "dendrite damage",
+                  "text": "Damage to dendrites reduces the ability of neurons to receive signals.",
+                  "tags": ["application"]
+                },
+                {
+                  "id": "impulse_app_1",
+                  "organ": "neuron",
+                  "topic": "ion imbalance",
+                  "text": "Imbalance of sodium and potassium ions disrupts nerve impulse generation.",
+                  "tags": ["application"]
+                },
+                {
+                  "id": "synapse_app_1",
+                  "organ": "neuron",
+                  "topic": "neurotransmitter absence",
+                  "text": "Absence of neurotransmitters prevents transmission of impulses across synapses.",
+                  "tags": ["application"]
+                },
+                {
+                  "id": "brain_app_1",
+                  "organ": "brain",
+                  "topic": "cerebellum damage",
+                  "text": "Damage to cerebellum leads to loss of balance and coordination.",
+                  "tags": ["application"]
+                },
+                {
+                  "id": "brain_app_2",
+                  "organ": "brain",
+                  "topic": "medulla damage",
+                  "text": "Damage to medulla can affect vital functions like breathing and heart rate.",
+                  "tags": ["application"]
+                },
+                {
+                  "id": "brain_app_3",
+                  "organ": "brain",
+                  "topic": "hypothalamus damage",
+                  "text": "Damage to hypothalamus disrupts temperature regulation and hormonal balance.",
+                  "tags": ["application"]
+                },
+                {
+                  "id": "neural_app_1",
+                  "organ": "neural_system",
+                  "topic": "autonomic imbalance",
+                  "text": "Imbalance between sympathetic and parasympathetic systems can disrupt normal body functions.",
+                  "tags": ["application"]
+                },
+                {
+                      "id": "def_001",
+                      "type": "definition",
+                      "title": "Central Nervous System (CNS)",
+                      "topic": "Neural Coordination System",
+                      "organ": ["brain", "spinal cord"],
+                      "tags": ["CNS", "control center", "information processing", "integration"],
+                      "text": "The Central Nervous System (CNS) consists of the brain and spinal cord. It functions as the primary control and processing center of the body, where sensory information is received, integrated, and interpreted to generate appropriate motor responses. The brain handles higher cognitive functions such as thinking, memory, and decision-making, while the spinal cord primarily conducts impulses and controls reflex actions."
+                    },
+                
+                    {
+                      "id": "def_002",
+                      "type": "definition",
+                      "title": "Peripheral Nervous System (PNS)",
+                      "topic": "Neural Coordination System",
+                      "organ": ["nerves", "ganglia"],
+                      "tags": ["PNS", "communication", "cranial nerves", "spinal nerves"],
+                      "text": "The Peripheral Nervous System (PNS) includes all nerves and ganglia outside the CNS. It connects the CNS to the rest of the body and facilitates communication between sensory receptors, muscles, glands, and the central processing unit."
+                    },
+                
+                    {
+                      "id": "def_003",
+                      "type": "definition",
+                      "title": "Afferent Nerve Fibres",
+                      "topic": "Neural Coordination System",
+                      "organ": ["sensory receptors"],
+                      "tags": ["afferent", "sensory neurons", "input pathway"],
+                      "text": "Afferent nerve fibres, also known as sensory neurons, transmit impulses from sensory receptors located in tissues and organs toward the CNS. They convey information about stimuli such as temperature, pain, pressure, and internal conditions."
+                    },
+                
+                    {
+                      "id": "def_004",
+                      "type": "definition",
+                      "title": "Efferent Nerve Fibres",
+                      "topic": "Neural Coordination System",
+                      "organ": ["muscles", "glands"],
+                      "tags": ["efferent", "motor neurons", "output pathway"],
+                      "text": "Efferent nerve fibres, also known as motor neurons, carry impulses away from the CNS to effector organs such as muscles and glands. These impulses trigger actions such as muscle contraction or secretion."
+                    },
+                
+                    {
+                      "id": "def_005",
+                      "type": "definition",
+                      "title": "Somatic Nervous System",
+                      "topic": "Neural Coordination System",
+                      "organ": ["skeletal muscles"],
+                      "tags": ["somatic", "voluntary", "motor control"],
+                      "text": "The somatic nervous system is responsible for voluntary control of skeletal muscles. It transmits signals from the CNS to muscles, enabling conscious actions such as movement and coordination."
+                    },
+                
+                    {
+                      "id": "def_006",
+                      "type": "definition",
+                      "title": "Autonomic Nervous System (ANS)",
+                      "topic": "Neural Coordination System",
+                      "organ": ["smooth muscles", "cardiac muscles", "glands"],
+                      "tags": ["autonomic", "involuntary", "homeostasis"],
+                      "text": "The autonomic nervous system regulates involuntary physiological functions such as heart rate, digestion, and respiration. It operates unconsciously to maintain internal balance and stability."
+                    },
+                
+                    {
+                      "id": "def_007",
+                      "type": "definition",
+                      "title": "Sympathetic Nervous System",
+                      "topic": "Neural Coordination System",
+                      "organ": ["heart", "blood vessels", "eyes"],
+                      "tags": ["sympathetic", "fight or flight", "stress response"],
+                      "text": "The sympathetic nervous system prepares the body for stressful situations by increasing heart rate, dilating pupils, and redirecting blood flow to muscles. It supports rapid responses during emergencies."
+                    },
+                
+                    {
+                      "id": "def_008",
+                      "type": "definition",
+                      "title": "Parasympathetic Nervous System",
+                      "topic": "Neural Coordination System",
+                      "organ": ["digestive organs", "heart"],
+                      "tags": ["parasympathetic", "rest and digest", "energy conservation"],
+                      "text": "The parasympathetic nervous system promotes relaxation and recovery by slowing the heart rate, enhancing digestion, and conserving energy during non-stressful conditions."
+                    },
+                
+                    {
+                      "id": "def_009",
+                      "type": "definition",
+                      "title": "Visceral Nervous System",
+                      "topic": "Neural Coordination System",
+                      "organ": ["viscera", "internal organs"],
+                      "tags": ["visceral", "internal regulation", "ANS overlap"],
+                      "text": "The visceral nervous system includes nerve fibres, ganglia, and plexuses that connect the CNS to internal organs. It transmits signals between the CNS and viscera, playing a major role in involuntary regulation."
+                    },
+                
+                    {
+                      "id": "flow_001",
+                      "type": "process_flow",
+                      "title": "Neural Signal Transmission",
+                      "topic": "Neural Coordination System",
+                      "organ": ["receptors", "CNS", "effectors"],
+                      "tags": ["signal pathway", "stimulus response", "neural flow"],
+                      "text": "Neural communication begins when a stimulus is detected by receptors. The signal is transmitted through afferent neurons to the CNS, where it is processed. The CNS then sends a response through efferent neurons to effectors such as muscles or glands, resulting in an action."
+                    },
+                
+                    {
+                      "id": "flow_002",
+                      "type": "process_flow",
+                      "title": "Autonomic Signal Pathway",
+                      "topic": "Neural Coordination System",
+                      "organ": ["ganglia", "internal organs"],
+                      "tags": ["two neuron pathway", "preganglionic", "postganglionic"],
+                      "text": "The autonomic nervous system uses a two-neuron pathway. A preganglionic neuron originates in the CNS and connects to a ganglion. A postganglionic neuron then carries the signal from the ganglion to the target organ."
+                    },
+                
+                    {
+                      "id": "comp_001",
+                      "type": "comparison",
+                      "title": "Afferent vs Efferent Fibres",
+                      "topic": "Neural Coordination System",
+                      "organ": ["CNS", "receptors", "effectors"],
+                      "tags": ["comparison", "input vs output"],
+                      "text": "Afferent fibres carry sensory information from receptors to the CNS, acting as input pathways. Efferent fibres carry motor commands from the CNS to effectors, acting as output pathways."
+                    },
+                
+                    {
+                      "id": "comp_002",
+                      "type": "comparison",
+                      "title": "Somatic vs Autonomic System",
+                      "topic": "Neural Coordination System",
+                      "organ": ["skeletal muscles", "smooth muscles"],
+                      "tags": ["voluntary vs involuntary", "control systems"],
+                      "text": "The somatic nervous system controls voluntary actions and targets skeletal muscles, while the autonomic nervous system controls involuntary functions and targets smooth muscles, cardiac muscles, and glands."
+                    },
+                
+                    {
+                      "id": "comp_003",
+                      "type": "comparison",
+                      "title": "Sympathetic vs Parasympathetic",
+                      "topic": "Neural Coordination System",
+                      "organ": ["heart", "digestive system"],
+                      "tags": ["antagonistic systems", "balance", "homeostasis"],
+                      "text": "The sympathetic system prepares the body for stress by increasing heart rate and inhibiting digestion, whereas the parasympathetic system promotes relaxation by slowing heart rate and stimulating digestion."
+                    },
+                
+                    {
+                      "id": "why_001",
+                      "type": "reasoning",
+                      "title": "Importance of Afferent and Efferent Pathways",
+                      "topic": "Neural Coordination System",
+                      "organ": ["CNS"],
+                      "tags": ["importance", "communication", "coordination"],
+                      "text": "Afferent and efferent pathways enable two-way communication between the body and the CNS. Without afferent pathways, the CNS cannot receive sensory information, and without efferent pathways, it cannot generate responses."
+                    },
+                
+                    {
+                      "id": "why_002",
+                      "type": "reasoning",
+                      "title": "Need for Autonomic Nervous System",
+                      "topic": "Neural Coordination System",
+                      "organ": ["heart", "lungs", "digestive system"],
+                      "tags": ["homeostasis", "involuntary control"],
+                      "text": "The autonomic nervous system is essential for regulating vital functions such as heartbeat, breathing, and digestion automatically, ensuring survival without conscious effort."
+                    },
+                
+                    {
+                      "id": "why_003",
+                      "type": "reasoning",
+                      "title": "Balance Between Sympathetic and Parasympathetic",
+                      "topic": "Neural Coordination System",
+                      "organ": ["heart", "organs"],
+                      "tags": ["homeostasis", "antagonistic control"],
+                      "text": "The sympathetic and parasympathetic systems maintain balance by acting in opposition. One activates functions during stress, while the other restores normal conditions, ensuring stability."
+                    },
+                
+                    {
+                      "id": "app_001",
+                      "type": "application",
+                      "title": "Sympathetic Overactivation",
+                      "topic": "Neural Coordination System",
+                      "organ": ["heart", "blood vessels"],
+                      "tags": ["clinical", "stress", "hypertension"],
+                      "text": "Excessive activation of the sympathetic nervous system can lead to chronic stress, increased blood pressure, and cardiovascular problems due to prolonged 'fight or flight' response."
+                    },
+                
+                    {
+                      "id": "app_002",
+                      "type": "application",
+                      "title": "Damage to Afferent Pathways",
+                      "topic": "Neural Coordination System",
+                      "organ": ["sensory system"],
+                      "tags": ["clinical", "sensory loss"],
+                      "text": "Damage to afferent pathways results in loss of sensation, preventing the CNS from receiving information from certain body parts, which increases risk of injury."
+                    },
+                
+                    {
+                      "id": "app_003",
+                      "type": "application",
+                      "title": "Damage to Efferent Pathways",
+                      "topic": "Neural Coordination System",
+                      "organ": ["muscles"],
+                      "tags": ["clinical", "paralysis", "motor loss"],
+                      "text": "Damage to efferent pathways disrupts motor signals from the CNS, leading to muscle weakness or paralysis and impaired movement."
+                    }
+                
+
+]
