@@ -3,80 +3,79 @@
     "organ": "Animal",
     "topic": "Nervous System",
     "tags": [
-      "structure",
-      "function"
+      "definition",
+      "structure"
     ],
-    "id": "c64c4bdd-167e-4399-a994-50b725e61296",
+    "id": "0e9af196-d301-4188-8faa-b7b107aeefe4",
     "text": "In biology, the nervous system is the highly complex part of an animal that coordinates its actions and sensory information by transmitting signals to and from different parts of its body. The nervous system detects environmental changes that impact the body, then works in tandem with the endocrine system to respond to such events. Nervous tissue first arose in wormlike organisms about 550 to 600 million years ago. In vertebrates, it consists of two main parts, the central nervous system (CNS) and the peripheral nervous system (PNS). The CNS consists of the brain and spinal cord. The PNS consists mainly of nerves, which are enclosed bundles of long fibers, or axons, that connect the CNS to every other part of the body. Nerves that transmit signals from the brain are called motor nerves (efferent), while those nerves that transmit information from the body to the CNS are called sensory nerves (afferent). The PNS is divided into two separate subsystems, the somatic and autonomic nervous systems. The autonomic nervous system is further subdivided into the sympathetic, parasympathetic and enteric nervous systems. The sympathetic nervous system is activated in cases of emergencies to mobilize energy, while the parasympathetic nervous system is activated when organisms are in a relaxed state. The enteric nervous system functions to control the gastrointestinal system. Nerves that exit from the brain are called cranial nerves while those exiting from the spinal cord are called spinal nerves."
   },
   {
     "organ": "Animal",
-    "topic": "Environmental Response",
+    "topic": "Central Nervous System (CNS)",
     "tags": [
-      "nervous system",
-      "endocrine system"
+      "component",
+      "location"
     ],
-    "id": "4439f967-7c5d-477f-b0a5-2b0bce394ff3",
+    "id": "845266c5-ccab-469e-88a7-6459a6a036e5",
     "text": "The nervous system consists of nervous tissue which, at a cellular level, is defined by the presence of a special type of cell, called the neuron. Neurons have special structures that allow them to send signals rapidly and precisely to other cells. They send these signals in the form of electrochemical impulses traveling along thin fibers called axons, which can be directly transmitted to neighboring cells through electrical synapses or cause chemicals called neurotransmitters to be released at chemical synapses. A cell that receives a synaptic signal from a neuron may be excited, inhibited, or otherwise modulated. The connections between neurons can form neural pathways, neural circuits, and larger networks that generate an organism's perception of the world and determine its behavior. Along with neurons, the nervous system contains other specialized cells called glial cells (or simply glia), which provide structural and metabolic support. Many of the cells and vasculature channels within the nervous system make up the neurovascular unit, which regulates cerebral blood flow in order to rapidly satisfy the high energy demands of activated neurons."
   },
   {
-    "organ": "Multicellular animals",
-    "topic": "Presence and variations of nervous systems",
+    "organ": "Multicellular Animals",
+    "topic": "Nervous Systems",
     "tags": [
-      "biology",
-      "anatomy"
+      "structure",
+      "variety"
     ],
-    "id": "8ede9a99-b181-47a5-b3a2-7898e19b2777",
+    "id": "bc5e3e6d-85e9-4207-b980-67e9fa8efb04",
     "text": "Nervous systems are found in most multicellular animals, but vary greatly in complexity. The only multicellular animals that have no nervous system at all are sponges, placozoans, and mesozoans, which have very simple body plans. The nervous systems of the radially symmetric organisms ctenophores (comb jellies) and cnidarians (which include anemones, hydras, corals and jellyfish) consist of a diffuse nerve net. All other animal species, with the exception of a few types of worm, have a nervous system containing a brain, a central cord (or two cords running in parallel), and nerves radiating from the brain and central cord. The size of the nervous system ranges from a few hundred cells in the simplest worms, to around 300 billion cells in African elephants."
   },
   {
-    "organ": "Sponges, placozoans, mesozoans",
-    "topic": "Animals with no nervous system",
+    "organ": "Sponge, Placozoans, Mesozoans",
+    "topic": "Animals without Nervous System",
     "tags": [
-      "biology",
-      "anatomy"
+      "simple body plans"
     ],
-    "id": "de8435af-bcc5-4e36-9b83-8990668bab6c",
+    "id": "d57a4efb-06ff-4959-8af7-7b070745724d",
     "text": "The central nervous system functions to send signals from one cell to others, or from one part of the body to others and to receive feedback. Malfunction of the nervous system can occur as a result of genetic defects, physical damage due to trauma or toxicity, infection, or simply senescence. The medical specialty of neurology studies disorders of the nervous system and looks for interventions that can prevent or treat them. In the peripheral nervous system, the most common problem is the failure of nerve conduction, which can be due to different causes including diabetic neuropathy and demyelinating disorders such as multiple sclerosis and amyotrophic lateral sclerosis. Neuroscience is the field of science that focuses on the study of the nervous system."
   },
   {
-    "organ": "Nervous System",
-    "topic": "History and Development",
+    "organ": "nervous system",
+    "topic": "history of discovery",
     "tags": [
-      "history",
-      "evolution"
+      "neuroscience",
+      "discovery"
     ],
-    "id": "1d33acbb-a1c0-4db1-9d44-ea6a83beea5f",
+    "id": "34c9ff74-326e-468e-a9fa-c0186fc31e86",
     "text": "The nervous system derives its name from nerves, which are cylindrical bundles of fibers (the axons of neurons), that emanate from the brain and spinal cord, and branch repeatedly to innervate every part of the body. Nerves are large enough to have been recognized by the ancient Egyptians, Greeks, and Romans, but their internal structure was not understood until it became possible to examine them using a microscope. The author Michael Nikoletseas wrote:"
   },
   {
-    "organ": "Nervous System",
-    "topic": "Misconceptions Prior to 1900",
+    "author": "Michael Nikoletseas",
+    "topic": "quoted statement about history of neuroscience discoveries",
     "tags": [
-      "misconception",
-      "discovery"
+      "quote",
+      "neuroscience"
     ],
-    "id": "22dc06fa-fe40-4e77-8f05-3005ee540f2d",
+    "id": "af71350c-d7b3-4fa0-b330-94e577095693",
     "text": "\"It is difficult to believe that until approximately year 1900 it was not known that neurons are the basic units of the brain (Santiago Ramón y Cajal). Equally surprising is the fact that the concept of chemical transmission in the brain was not known until around 1930 (Henry Hallett Dale and Otto Loewi). We began to understand the basic electrical phenomenon that neurons use in order to communicate among themselves, the action potential, in the 1950s (Alan Lloyd Hodgkin, Andrew Huxley and John Eccles). It was in the 1960s that we became aware of how basic neuronal networks code stimuli and thus basic concepts are possible (David H. Hubel and Torsten Wiesel). The molecular revolution swept across US universities in the 1980s. It was in the 1990s that molecular mechanisms of behavioral phenomena became widely known (Eric Richard Kandel).\""
   },
   {
-    "organ": "nervous system",
-    "topic": "composition and location of nerves",
+    "organ": "Nervous System",
+    "topic": "Description and Occurrence",
     "tags": [
       "anatomy",
       "biology"
     ],
-    "id": "1ce5c033-466c-4138-b304-2a3ff4081ada",
+    "id": "e530abd7-885d-4cd8-90df-a69226b131ee",
     "text": "A microscopic examination shows that nerves consist primarily of axons, along with different membranes that wrap around them and segregate them into fascicles. The neurons that give rise to nerves do not lie entirely within the nerves themselves—their cell bodies reside within the brain, spinal cord, or peripheral ganglia."
   },
   {
-    "organ": "neuron",
-    "topic": "origin and location",
+    "organ": "Nerves",
+    "topic": "Structure",
     "tags": [
-      "neuroscience",
+      "anatomy",
       "biology"
     ],
-    "id": "d1dd800c-50f4-469e-9747-11a1d4ef321a",
+    "id": "dd9dba6a-d54f-47ab-bdb5-564495a5c617",
     "text": "All animals more advanced than sponges have nervous systems. However, even sponges, unicellular animals, and non-animals such as slime molds have cell-to-cell signalling mechanisms that are precursors to those of neurons. In radially symmetric animals such as the jellyfish and hydra, the nervous system consists of a nerve net, a diffuse network of isolated cells. In bilaterian animals, which make up the great majority of existing species, the nervous system has a common structure that originated early in the Ediacaran period, over 550 million years ago."
   },
   {
@@ -86,142 +85,149 @@
       "composition",
       "cells"
     ],
-    "id": "23a23efa-1a97-4efd-9514-d390d5f6701c",
+    "id": "f5b15d57-4890-4b57-beab-6a298a0c92c9",
     "text": "The nervous system contains two main categories or types of cells: neurons and glial cells."
   },
   {
     "organ": "Nervous System",
-    "topic": "Neuron Definition",
+    "topic": "Neurons",
     "tags": [
       "definition",
-      "neurons"
+      "function"
     ],
-    "id": "1ca1a993-3990-4520-a072-f2b1b1aabfc0",
+    "id": "e3b57658-9430-40dd-9eef-7b26bc881fbd",
     "text": "The nervous system is defined by the presence of a special type of cell—the neuron (sometimes called \"neurone\" or \"nerve cell\"). Neurons can be distinguished from other cells in a number of ways, but their most fundamental property is that they communicate with other cells via synapses, which are membrane-to-membrane junctions containing molecular machinery that allows rapid transmission of signals, either electrical or chemical. Many types of neuron possess an axon, a protoplasmic protrusion that can extend to distant parts of the body and make thousands of synaptic contacts; axons typically extend throughout the body in bundles called nerves."
   },
   {
     "organ": "Nervous System",
-    "topic": "Neurons and their functions",
+    "topic": "Types of Neurons",
     "tags": [
       "biology",
       "anatomy"
     ],
-    "id": "662c147d-c4bf-49ad-aadf-d77bcf85a9b4",
+    "id": "424c26c0-8384-4805-b758-4fbf7983de80",
     "text": "Even in the nervous system of a single species such as humans, hundreds of different types of neurons exist, with a wide variety of morphologies and functions. These include sensory neurons that transmute physical stimuli such as light and sound into neural signals, and motor neurons that transmute neural signals into activation of muscles or glands; however in many species the great majority of neurons participate in the formation of centralized structures (the brain and ganglia) and they receive all of their input from other neurons and send their output to other neurons."
   },
   {
     "organ": "Nervous System",
-    "topic": "Glial cells and their roles",
+    "topic": "Glial Cells",
     "tags": [
-      "neuroscience",
-      "support_cells"
+      "biology",
+      "neuroscience"
     ],
-    "id": "33c8445c-c17a-425c-9729-8e883c64d1a4",
+    "id": "a1ede150-c7f3-473f-82e7-4d6278855912",
     "text": "Glial cells (named from the Greek for \"glue\") are non-neuronal cells that provide support and nutrition, maintain homeostasis, form myelin, and participate in signal transmission in the nervous system. In the human brain, it is estimated that the total number of glia roughly equals the number of neurons, although the proportions vary in different brain areas. Among the most important functions of glial cells are to support neurons and hold them in place; to supply nutrients to neurons; to insulate neurons electrically; to destroy pathogens and remove dead neurons; and to provide guidance cues directing the axons of neurons to their targets. A very important type of glial cell (oligodendrocytes in the central nervous system, and Schwann cells in the peripheral nervous system) generates layers of a fatty substance called myelin that wraps around axons and provides electrical insulation which allows them to transmit action potentials much more rapidly and efficiently. Recent findings indicate that glial cells, such as microglia and astrocytes, serve as important resident immune cells within the central nervous system."
   },
   {
-    "organ": "Nervous System (Vertebrates)",
-    "topic": "Anatomy and Division",
+    "organ": "nervous system",
+    "topic": "division",
     "tags": [
-      "structure",
-      "division"
+      "anatomy",
+      "vertebrates"
     ],
-    "id": "1312e081-ce11-4357-ad0b-2a1c11da05b3",
+    "id": "e1377350-95dc-4781-92d5-e449a4fae534",
     "text": "See also: List of nerves of the human body and List of regions in the human brain"
   },
   {
-    "organ": "Central Nervous System (CNS)",
-    "topic": "Composition",
+    "organ": "central nervous system (CNS)",
+    "topic": "components",
     "tags": [
-      "composition",
-      "major division"
+      "anatomy",
+      "human"
     ],
-    "id": "33469a32-c990-41bd-b3b0-c484f073bd98",
+    "id": "12b731c2-6774-4125-88e2-183f314a1675",
     "text": "The nervous system of vertebrates (including humans) is divided into the central nervous system (CNS) and the peripheral nervous system (PNS). The CNS is the major division, and consists of the brain and the spinal cord. The spinal canal contains the spinal cord, while the cranial cavity contains the brain. The CNS is enclosed and protected by the meninges, a three-layered system of membranes, including a tough, leathery outer layer called the dura mater. The brain is also protected by the skull, and the spinal cord by the vertebrae."
   },
   {
     "organ": "Vertebrate",
-    "topic": "Nervous System",
+    "topic": "Nervous System Structure",
     "tags": [
       "anatomy",
-      "structure"
+      "nervous system"
     ],
-    "id": "5663f3ab-05c1-4f05-8fb5-f67c2442752e",
+    "id": "ece9b1a6-7bd7-4c1b-be4b-439dd778ba3c",
     "text": "The peripheral nervous system (PNS) is a collective term for the nervous system structures that do not lie within the CNS. The large majority of the axon bundles called nerves are considered to belong to the PNS, even when the cell bodies of the neurons to which they belong reside within the brain or spinal cord. The PNS is divided into somatic and visceral parts. The somatic part consists of the nerves that innervate the skin, joints, and muscles. The cell bodies of somatic sensory neurons lie in dorsal root ganglia of the spinal cord. The visceral part, also known as the autonomic nervous system, contains neurons that innervate the internal organs, blood vessels, and glands. The autonomic nervous system itself consists of two parts: the sympathetic nervous system and the parasympathetic nervous system. Some authors also include sensory neurons whose cell bodies lie in the periphery (for senses such as hearing) as part of the PNS; others, however, omit them."
   },
   {
     "organ": "Peripheral Nervous System (PNS)",
-    "topic": "Component of Vertebrate Nervous System",
+    "topic": "Definition and Composition",
     "tags": [
-      "nervous system",
+      "definition",
       "structure"
     ],
-    "id": "88074631-4876-4589-9748-aa5633dcf5e4",
+    "id": "fde470ac-4e67-424d-aed9-93adfa9114e4",
     "text": "The vertebrate nervous system can also be divided into areas called gray matter and white matter. Gray matter (which is only gray in preserved tissue, and is better described as pink or light brown in living tissue) contains a high proportion of cell bodies of neurons. White matter is composed mainly of myelinated axons, and takes its color from the myelin. White matter includes all of the nerves, and much of the interior of the brain and spinal cord. Gray matter is found in clusters of neurons in the brain and spinal cord, and in cortical layers that line their surfaces. There is an anatomical convention that a cluster of neurons in the brain or spinal cord is called a nucleus, whereas a cluster of neurons in the periphery is called a ganglion. There are, however, a few exceptions to this rule, notably including the part of the forebrain called the basal ganglia."
   },
   {
-    "organ": "nervous system",
-    "topic": "function",
+    "organ": "Nervous System",
+    "topic": "Function",
     "tags": [
-      "communication",
-      "signals"
+      "definition",
+      "function"
     ],
-    "id": "bcf98e4f-1b9a-411d-aedb-c1e095b04f07",
+    "id": "9be5706d-cfe3-4051-ba7e-b9dbc85a5ddf",
     "text": "At the most basic level, the function of the nervous system is to send signals from one cell to others, or from one part of the body to others. There are multiple ways that a cell can send signals to other cells. One is by releasing chemicals called hormones into the internal circulation, so that they can diffuse to distant sites. In contrast to this \"broadcast\" mode of signaling, the nervous system provides \"point-to-point\" signals—neurons project their axons to specific target areas and make synaptic connections with specific target cells. Thus, neural signaling is capable of a much higher level of specificity than hormonal signaling. It is also much faster: the fastest nerve signals travel at speeds that exceed 100 meters per second."
   },
   {
-    "organ": "nervous system",
-    "topic": "mode of signaling",
+    "organ": "Nervous System",
+    "topic": "Signaling Modes",
     "tags": [
-      "hormonal",
-      "neurons",
-      "specificity",
-      "speed"
+      "comparison",
+      "signals"
     ],
-    "id": "91c94623-99ac-42a5-8a89-6949ef8a8709",
+    "id": "727b8139-878a-46c4-ba98-557c3da6a30f",
     "text": "At a more integrative level, the primary function of the nervous system is to control the body. It does this by extracting information from the environment using sensory receptors, sending signals that encode this information into the central nervous system, processing the information to determine an appropriate response, and sending output signals to muscles or glands to activate the response. The evolution of a complex nervous system has made it possible for various animal species to have advanced perception abilities such as vision, complex social interactions, rapid coordination of organ systems, and integrated processing of concurrent signals. In humans, the sophistication of the nervous system makes it possible to have language, abstract representation of concepts, transmission of culture, and many other features of human society that would not exist without the human brain."
   },
   {
     "organ": "Brain",
-    "topic": "Neuron Communication",
+    "topic": "Neuron Signal Transmission",
     "tags": [
-      "signals",
+      "neuron",
       "axons",
-      "dendrite-to-dendrite"
+      "dendrites",
+      "electrochemical waves",
+      "action potentials",
+      "synapses",
+      "electrical synapses",
+      "chemical synapses"
     ],
-    "id": "c2923eda-a215-4d73-896d-fa2cd29afb2f",
+    "id": "3513f4c4-62ef-4503-94ca-444654c814ba",
     "text": "Most neurons send signals via their axons, although some types are capable of dendrite-to-dendrite communication. (In fact, the types of neurons called amacrine cells have no axons, and communicate only via their dendrites.) Neural signals propagate along an axon in the form of electrochemical waves called action potentials, which produce cell-to-cell signals at points where axon terminals make synaptic contact with other cells."
   },
   {
     "organ": "Brain",
-    "topic": "Neural Signal Propagation",
+    "topic": "Synaptic Transmission",
     "tags": [
-      "electrochemical waves",
-      "action potentials"
+      "synapse",
+      "presynaptic",
+      "postsynaptic",
+      "synaptic vesicles",
+      "neurotransmitter",
+      "receptors",
+      "excitatory",
+      "inhibitory"
     ],
-    "id": "db6eccac-9b30-4014-864d-19045c20126c",
+    "id": "30158adf-225e-4621-a7a5-5e30bf6935cf",
     "text": "Synapses may be electrical or chemical. Electrical synapses make direct electrical connections between neurons, but chemical synapses are much more common, and much more diverse in function. At a chemical synapse, the cell that sends signals is called presynaptic, and the cell that receives signals is called postsynaptic. Both the presynaptic and postsynaptic areas are full of molecular machinery that carries out the signalling process. The presynaptic area contains large numbers of tiny spherical vessels called synaptic vesicles, packed with neurotransmitter chemicals. When the presynaptic terminal is electrically stimulated, an array of molecules embedded in the membrane are activated, and cause the contents of the vesicles to be released into the narrow space between the presynaptic and postsynaptic membranes, called the synaptic cleft. The neurotransmitter then binds to receptors embedded in the postsynaptic membrane, causing them to enter an activated state. Depending on the type of receptor, the resulting effect on the postsynaptic cell may be excitatory, inhibitory, or modulatory in more complex ways. For example, release of the neurotransmitter acetylcholine at a synaptic contact between a motor neuron and a muscle cell induces rapid contraction of the muscle cell. The entire synaptic transmission process takes only a fraction of a millisecond, although the effects on the postsynaptic cell may last much longer (even indefinitely, in cases where the synaptic signal leads to the formation of a memory trace)."
   },
   {
-    "organ": "Nervous System",
-    "topic": "Neurotransmitters and Synapses",
+    "organ": "Neuron",
+    "topic": "Types of Synapses",
     "tags": [
       "neuroscience",
-      "synapse",
-      "neurotransmitter"
+      "synapse"
     ],
-    "id": "4743b28f-b6db-4be6-9c62-998b8508fec1",
+    "id": "e7dc264d-5ddf-4707-a2f8-1289f6aca824",
     "text": "There are literally hundreds of different types of synapses. In fact, there are over a hundred known neurotransmitters, and many of them have multiple types of receptors. Many synapses use more than one neurotransmitter—a common arrangement is for a synapse to use one fast-acting small-molecule neurotransmitter such as glutamate or GABA, along with one or more peptide neurotransmitters that play slower-acting modulatory roles. Molecular neuroscientists generally divide receptors into two broad groups: chemically gated ion channels and second messenger systems. When a chemically gated ion channel is activated, it forms a passage that allows specific types of ions to flow across the membrane. Depending on the type of ion, the effect on the target cell may be excitatory or inhibitory. When a second messenger system is activated, it starts a cascade of molecular interactions inside the target cell, which may ultimately produce a wide variety of complex effects, such as increasing or decreasing the sensitivity of the cell to stimuli, or even altering gene transcription."
   },
   {
-    "organ": "Nervous System",
-    "topic": "Types of Neurotransmitters",
+    "organ": "Neuron",
+    "topic": "Number of Neurotransmitters",
     "tags": [
       "neuroscience",
-      "chemicals",
-      "receptors"
+      "neuron"
     ],
-    "id": "7e549e20-e5a1-4f2f-b1d0-33c589ee51f4",
+    "id": "3e7c7bc4-d1f4-462c-9990-4dcf22a1c61c",
     "text": "According to a rule called Dale's principle, which has only a few known exceptions, a neuron releases the same neurotransmitters at all of its synapses. This does not mean, though, that a neuron exerts the same effect on all of its targets, because the effect of a synapse depends not on the neurotransmitter, but on the receptors that it activates. Because different targets can (and frequently do) use different types of receptors, it is possible for a neuron to have excitatory effects on one set of target cells, inhibitory effects on others, and complex modulatory effects on others still. Nevertheless, it happens that the two most widely used neurotransmitters, glutamate and GABA, each have largely consistent effects. Glutamate has several widely occurring types of receptors, but all of them are excitatory or modulatory. Similarly, GABA has several widely occurring receptor types, but all of them are inhibitory. Because of this consistency, glutamatergic cells are frequently referred to as \"excitatory neurons\", and GABAergic cells as \"inhibitory neurons\". Strictly speaking, this is an abuse of terminology—it is the receptors that are excitatory and inhibitory, not the neurons—but it is commonly seen even in scholarly publications."
   },
   {
@@ -229,31 +235,30 @@
     "topic": "Synapses and Memory Formation",
     "tags": [
       "neuroscience",
-      "memory",
       "synaptic plasticity"
     ],
-    "id": "6f4b3185-bf5f-4267-920b-570aa442c9ec",
+    "id": "273e46c3-b1b2-4d8d-9ff7-5a2e4b55de05",
     "text": "One very important subset of synapses are capable of forming memory traces by means of long-lasting activity-dependent changes in synaptic strength. The best-known form of neural memory is a process called long-term potentiation (abbreviated LTP), which operates at synapses that use the neurotransmitter glutamate acting on a special type of receptor known as the NMDA receptor. The NMDA receptor has an \"associative\" property: if the two cells involved in the synapse are both activated at approximately the same time, a channel opens that permits calcium to flow into the target cell. The calcium entry initiates a second messenger cascade that ultimately leads to an increase in the number of glutamate receptors in the target cell, thereby increasing the effective strength of the synapse. This change in strength can last for weeks or longer. Since the discovery of LTP in 1973, many other types of synaptic memory traces have been found, involving increases or decreases in synaptic strength that are induced by varying conditions, and last for variable periods of time. The reward system, that reinforces desired behaviour for example, depends on a variant form of LTP that is conditioned on an extra input coming from a reward-signalling pathway that uses dopamine as neurotransmitter. All these forms of synaptic modifiability, taken collectively, give rise to neural plasticity, that is, to a capability for the nervous system to adapt itself to variations in the environment."
   },
   {
     "organ": "Nervous System",
     "topic": "Long-Term Potentiation (LTP)",
     "tags": [
-      "neurotransmitter",
-      "NMDA receptor",
-      "calcium entry"
+      "memory",
+      "glutamate",
+      "NMDA receptor"
     ],
-    "id": "1185e198-1d3e-4a22-894a-8a8719cb45f8",
+    "id": "060266c7-c8c0-4d16-bc87-3a92255ed5ce",
     "text": "The basic neuronal function of sending signals to other cells includes a capability for neurons to exchange signals with each other. Networks formed by interconnected groups of neurons are capable of a wide variety of functions, including feature detection, pattern generation and timing, and there are seen to be countless types of information processing possible. Warren McCulloch and Walter Pitts showed in 1943 that even artificial neural networks formed from a greatly simplified mathematical abstraction of a neuron are capable of universal computation."
   },
   {
     "organ": "Nervous System",
-    "topic": "Historical Function Concept",
+    "topic": "Historical Function Conception",
     "tags": [
       "history",
       "concept"
     ],
-    "id": "14b79349-e56f-4470-abde-f05b7df87ef4",
+    "id": "07c604a4-df64-47a6-aa58-aacd3b527311",
     "text": "Historically, for many years the predominant view of the function of the nervous system was as a stimulus-response associator. In this conception, neural processing begins with stimuli that activate sensory neurons, producing signals that propagate through chains of connections in the spinal cord and brain, giving rise eventually to activation of motor neurons and thereby to muscle contraction, i.e., to overt responses. Descartes believed that all of the behaviors of animals, and most of the behaviors of humans, could be explained in terms of stimulus-response circuits, although he also believed that higher cognitive functions such as language were not capable of being explained mechanistically. Charles Sherrington, in his influential 1906 book The Integrative Action of the Nervous System, developed the concept of stimulus-response mechanisms in much more detail, and behaviorism, the school of thought that dominated psychology through the middle of the 20th century, attempted to explain every aspect of human behavior in stimulus-response terms."
   },
   {
@@ -261,29 +266,29 @@
     "topic": "Stimulus-Response Associator",
     "tags": [
       "function",
-      "historical_theory"
+      "mechanism"
     ],
-    "id": "e91fd40a-9d99-4d74-a016-ee47dad0c44e",
+    "id": "5d6519ab-8434-415c-889c-7f631df7d16f",
     "text": "However, experimental studies of electrophysiology, beginning in the early 20th century and reaching high productivity by the 1940s, showed that the nervous system contains many mechanisms for maintaining cell excitability and generating patterns of activity intrinsically, without requiring an external stimulus. Neurons were found to be capable of producing regular sequences of action potentials, or sequences of bursts, even in complete isolation. When intrinsically active neurons are connected to each other in complex circuits, the possibilities for generating intricate temporal patterns become far more extensive. A modern conception views the function of the nervous system partly in terms of stimulus-response chains, and partly in terms of intrinsically generated activity patterns—both types of activity interact with each other to generate the full repertoire of behavior."
   },
   {
-    "organ": "Nervous System",
-    "topic": "Reflex Arc",
+    "organ": "Nervous system",
+    "topic": "Neural circuit",
     "tags": [
       "neuroscience",
-      "circuit"
+      "reflex arc"
     ],
-    "id": "4ed6ab5c-7976-4e82-b65d-4fc491847fc2",
+    "id": "1bdc4975-a116-47fb-8ff8-04175aa47cf6",
     "text": "The simplest type of neural circuit is a reflex arc, which begins with a sensory input and ends with a motor output, passing through a sequence of neurons connected in series. This can be shown in the \"withdrawal reflex\" causing a hand to jerk back after a hot stove is touched. The circuit begins with sensory receptors in the skin that are activated by harmful levels of heat: a special type of molecular structure embedded in the membrane causes heat to change the electrical field across the membrane. If the change in electrical potential is large enough to pass the given threshold, it evokes an action potential, which is transmitted along the axon of the receptor cell, into the spinal cord. There the axon makes excitatory synaptic contacts with other cells, some of which project (send axonal output) to the same region of the spinal cord, others projecting into the brain. One target is a set of spinal interneurons that project to motor neurons controlling the arm muscles. The interneurons excite the motor neurons, and if the excitation is strong enough, some of the motor neurons generate action potentials, which travel down their axons to the point where they make excitatory synaptic contacts with muscle cells. The excitatory signals induce contraction of the muscle cells, which causes the joint angles in the arm to change, pulling the arm away."
   },
   {
     "organ": "Skin",
-    "topic": "Sensory Receptors",
+    "topic": "Sensory receptors",
     "tags": [
       "neurons",
-      "heat"
+      "heat sensitivity"
     ],
-    "id": "774c78b0-23ee-4799-ae96-8565eb338ab4",
+    "id": "0c412b6e-bfe0-4f21-beeb-8f26d798f2a9",
     "text": "In reality, this straightforward schema is subject to numerous complications. Although for the simplest reflexes there are short neural paths from sensory neuron to motor neuron, there are also other nearby neurons that participate in the circuit and modulate the response. Furthermore, there are projections from the brain to the spinal cord that are capable of enhancing or inhibiting the reflex."
   },
   {
@@ -291,165 +296,164 @@
     "topic": "Signal Processing",
     "tags": [
       "complex",
-      "multi-step"
+      "multiple stages"
     ],
-    "id": "08c8941c-dd25-43aa-a793-f1fc34fd5c55",
+    "id": "7181be64-e450-4c5b-b4c0-549af0076478",
     "text": "Although the simplest reflexes may be mediated by circuits lying entirely within the spinal cord, more complex responses rely on signal processing in the brain. For example, when an object in the periphery of the visual field moves, and a person looks toward it many stages of signal processing are initiated. The initial sensory response, in the retina of the eye, and the final motor response, in the oculomotor nuclei of the brainstem, are not all that different from those in a simple reflex, but the intermediate stages are completely different. Instead of a one or two step chain of processing, the visual signals pass through perhaps a dozen stages of integration, involving the thalamus, cerebral cortex, basal ganglia, superior colliculus, cerebellum, and several brainstem nuclei. These areas perform signal-processing functions that include feature detection, perceptual analysis, memory recall, decision-making, and motor planning."
   },
   {
-    "organ": "Thalamus",
-    "topic": "Signal Integration",
+    "organ": "Thalamus, Cerebral Cortex, Basal Ganglia, Superior Colliculus, Cerebellum, Brainstem Nuclei",
+    "topic": "Signal Processing Stages",
     "tags": [
-      "intermediate stage",
-      "multiple inputs"
+      "integration",
+      "feature detection",
+      "perceptual analysis",
+      "memory recall",
+      "decision-making",
+      "motor planning"
     ],
-    "id": "029de603-c556-4776-83b5-32d82d55fc4a",
+    "id": "6030c333-355f-4738-86b9-d2409440b7e3",
     "text": "Feature detection is the ability to extract biologically relevant information from combinations of sensory signals. In the visual system, for example, sensory receptors in the retina of the eye are only individually capable of detecting \"points of light\" in the outside world. Second-level visual neurons receive input from groups of primary receptors, higher-level neurons receive input from groups of second-level neurons, and so on, forming a hierarchy of processing stages. At each stage, important information is extracted from the signal ensemble and unimportant information is discarded. By the end of the process, input signals representing \"points of light\" have been transformed into a neural representation of objects in the surrounding world and their properties. The most sophisticated sensory processing occurs inside the brain, but complex feature extraction also takes place in the spinal cord and in peripheral sensory organs such as the retina."
   },
   {
-    "organ": "Nervous System",
-    "topic": "Stimulus-Response Mechanisms, Internal Generation, Rhythmic Activity, Neurons, Synapses, Central Pattern Generator",
+    "organ": "Nervous system",
+    "topic": "Internal pattern generation",
     "tags": [
-      "neuroscience",
-      "biology"
+      "neurophysiology",
+      "rhythmic activity"
     ],
-    "id": "6ded2a2f-614f-4ecd-83ae-fd16fae1ae1c",
+    "id": "b29de36e-136d-4a21-9774-67e9c1fd7f67",
     "text": "Although stimulus-response mechanisms are the easiest to understand, the nervous system is also capable of controlling the body in ways that do not require an external stimulus, by means of internally generated rhythms of activity. Because of the variety of voltage-sensitive ion channels that can be embedded in the membrane of a neuron, many types of neurons are capable, even in isolation, of generating rhythmic sequences of action potentials, or rhythmic alternations between high-rate bursting and quiescence. When neurons that are intrinsically rhythmic are connected to each other by excitatory or inhibitory synapses, the resulting networks are capable of a wide variety of dynamical behaviors, including attractor dynamics, periodicity, and even chaos. A network of neurons that uses its internal structure to generate temporally structured output, without requiring a corresponding temporally structured stimulus, is called a central pattern generator."
   },
   {
-    "organ": "Nervous System",
-    "topic": "Time Scales of Temporal Pattern",
+    "organ": "Nervous system",
+    "topic": "Intrinsically rhythmic neurons",
     "tags": [
-      "neuroscience",
-      "biology",
-      "timing"
+      "neuron behavior",
+      "action potentials"
     ],
-    "id": "90e69c64-5739-4634-a922-79c239725581",
+    "id": "d3e47a23-d543-4eaa-839d-e559a911b23b",
     "text": "Internal pattern generation operates on a wide range of time scales, from milliseconds to hours or longer. One of the most important types of temporal pattern is circadian rhythmicity—that is, rhythmicity with a period of approximately 24 hours. All animals that have been studied show circadian fluctuations in neural activity, which control circadian alternations in behavior such as the sleep-wake cycle. Experimental studies dating from the 1990s have shown that circadian rhythms are generated by a \"genetic clock\" consisting of a special set of genes whose expression level rises and falls over the course of the day. Animals as diverse as insects and vertebrates share a similar genetic clock system. The circadian clock is influenced by light but continues to operate even when light levels are held constant and no other external time-of-day cues are available. The clock genes are expressed in many parts of the nervous system as well as many peripheral organs, but in mammals, all of these \"tissue clocks\" are kept in synchrony by signals that emanate from a master timekeeper in a tiny part of the brain called the suprachiasmatic nucleus."
   },
   {
     "organ": "Central Nervous System (CNS)",
-    "topic": "Anatomy",
+    "topic": "Definition",
     "tags": [
-      "biology",
-      "structure"
+      "anatomy",
+      "biology"
     ],
-    "id": "bf036607-07cd-41fc-aa88-a8b7d7c21fe7",
+    "id": "fe40e408-1df8-48cb-bb14-bba557dfda29",
     "text": "The central nervous system (CNS) is the part of the nervous system consisting primarily of the brain, spinal cord and retina. The CNS is so named because the brain integrates the received information and coordinates and influences the activity of all parts of the bodies of bilaterally symmetric and triploblastic animals—that is, all multicellular animals except sponges and diploblasts. It is a structure composed of nervous tissue positioned along the rostral (nose end) to caudal (tail end) axis of the body and may have an enlarged section at the rostral end which is a brain. Only arthropods, cephalopods and vertebrates have a true brain, though precursor structures exist in onychophorans, gastropods and lancelets."
   },
   {
-    "organ": "Brain",
-    "topic": "Anatomy",
+    "organ": "Brain, Spinal Cord, Retina",
+    "topic": "Components of CNS",
     "tags": [
-      "biology",
-      "structure"
+      "anatomy",
+      "biology"
     ],
-    "id": "fdf55fed-f628-4a84-8e62-2dc07cce552e",
+    "id": "a1de99c9-765d-47c3-8d51-758d5830b9a2",
     "text": "The rest of this article exclusively discusses the vertebrate central nervous system, which is radically distinct from all other animals."
   },
   {
     "organ": "Meninges",
-    "topic": "Function and composition",
+    "topic": "Protection and fluid bathing in vertebrates",
     "tags": [
-      "barrier",
-      "neurotoxins",
-      "cerebral spinal fluid"
+      "anatomy",
+      "protection"
     ],
-    "id": "c69c72be-d45b-427e-bd22-5b7912961f07",
+    "id": "87f75b9a-743c-4f46-b0be-424ff06e95d0",
     "text": "In vertebrates, the brain and spinal cord are both enclosed in the meninges. The meninges provide a barrier to chemicals dissolved in the blood, protecting the brain from most neurotoxins commonly found in food. Within the meninges the brain and spinal cord are bathed in cerebral spinal fluid which replaces the body fluid found outside the cells of all bilateral animals."
   },
   {
-    "organ": "CNS (Central Nervous System)",
-    "topic": "Location",
+    "organ": "Cerebral spinal fluid",
+    "topic": "Fluid bathing the brain and spinal cord",
     "tags": [
-      "dorsal body cavity",
-      "cranial cavity",
-      "skull",
-      "spinal canal",
-      "vertebrae"
+      "fluid",
+      "cns"
     ],
-    "id": "8e672ab6-f951-4ab0-96e6-3c1c0b1bddae",
+    "id": "d6b337b6-9356-410e-ab2d-d88f70453b88",
     "text": "In vertebrates, the CNS is contained within the dorsal body cavity, while the brain is housed in the cranial cavity within the skull. The spinal cord is housed in the spinal canal within the vertebrae. Within the CNS, the interneuronal space is filled with a large amount of supporting non-nervous cells called neuroglia or glia from the Greek for \"glue\"."
   },
   {
-    "organ": "Vertebrates",
-    "topic": "Anatomy of CNS",
+    "organ": "Vertebrate",
+    "topic": "Central Nervous System (CNS) Components",
     "tags": [
-      "vertebrate",
-      "central nervous system"
+      "anatomy",
+      "structure"
     ],
-    "id": "66ad728d-1b6e-4d11-9354-75e1f5461254",
+    "id": "af15cfa3-4294-4e07-8543-ceb9935d0df3",
     "text": "In vertebrates, the CNS also includes the retina and the optic nerve (cranial nerve II), as well as the olfactory nerves and olfactory epithelium. As parts of the CNS, they connect directly to brain neurons without intermediate ganglia. The olfactory epithelium is the only central nervous tissue outside the meninges in direct contact with the environment, which opens up a pathway for therapeutic agents which cannot otherwise cross the meninges barrier."
   },
   {
-    "organ": "Retina",
-    "topic": "Part of CNS",
+    "organ": "Vertebrate",
+    "topic": "CNS Additional Structures",
     "tags": [
-      "eye",
-      "neural tissue"
+      "anatomy",
+      "central nervous system"
     ],
-    "id": "c0930aa8-d1c0-4386-841e-50c53cce6a7a",
+    "id": "458ead42-6e1a-42d8-9a37-476c9c3e6290",
     "text": "The CNS consists of two major structures: the brain and spinal cord. The brain is encased in the skull, and protected by the cranium. The spinal cord is continuous with the brain and lies caudally to the brain. It is protected by the vertebrae. The spinal cord reaches from the base of the skull, and continues through or starting below the foramen magnum, and terminates roughly level with the first or second lumbar vertebra, occupying the upper sections of the vertebral canal."
   },
   {
     "organ": "Central Nervous System (CNS)",
-    "topic": "Components and functions",
+    "topic": "Structure",
     "tags": [
       "anatomy",
-      "neurons",
-      "tissue"
+      "microscopic"
     ],
-    "id": "9d973347-3691-4b8f-8cd2-e95c5e35bfde",
+    "id": "d56b2932-58bf-42f0-a011-d2b9be89148a",
     "text": "Microscopically, there are differences between the neurons and tissue of the CNS and the peripheral nervous system (PNS). The CNS is composed of white and gray matter. This can also be seen macroscopically on brain tissue. The white matter consists of axons and oligodendrocytes, while the gray matter consists of neurons and unmyelinated fibers. Both tissues include a number of glial cells (although the white matter contains more), which are often referred to as supporting cells of the CNS. Different forms of glial cells have different functions, some acting almost as scaffolding for neuroblasts to climb during neurogenesis such as bergmann glia, while others such as microglia are a specialized form of macrophage, involved in the immune system of the brain as well as the clearance of various metabolites from the brain tissue. Astrocytes may be involved with both clearance of metabolites as well as transport of fuel and various beneficial substances to neurons from the capillaries of the brain. Upon CNS injury astrocytes will proliferate, causing gliosis, a form of neuronal scar tissue, lacking in functional neurons."
   },
   {
     "organ": "Central Nervous System (CNS)",
-    "topic": "White matter and gray matter",
+    "topic": "Components",
     "tags": [
-      "anatomy",
-      "composition"
+      "cells",
+      "tissue"
     ],
-    "id": "073e5b5b-9198-42bb-91fa-ea62779d501f",
+    "id": "81f4358c-7fca-4ecb-aa95-76d8c3f563ff",
     "text": "The brain (cerebrum as well as midbrain and hindbrain) consists of a cortex, composed of neuron-bodies constituting gray matter, while internally there is more white matter that form tracts and commissures. Apart from cortical gray matter there is also subcortical gray matter making up a large number of different nuclei."
   },
   {
     "organ": "Spinal Cord",
-    "topic": "Structure",
+    "topic": "Anatomy & Function",
     "tags": [
-      "anatomy"
+      "nervous system",
+      "structure"
     ],
-    "id": "109f6228-5b30-49f0-bb93-f556f87b0b31",
+    "id": "f3eda941-82d9-4a17-9e2a-cfaf5d50c28e",
     "text": "From and to the spinal cord are projections of the peripheral nervous system in the form of spinal nerves (sometimes segmental nerves). The nerves connect the spinal cord to skin, joints, muscles etc. and allow for the transmission of efferent motor as well as afferent sensory signals and stimuli. This allows for voluntary and involuntary motions of muscles, as well as the perception of senses. All in all 31 spinal nerves project from the brain stem, some forming plexa as they branch out, such as the brachial plexa, sacral plexa etc. Each spinal nerve will carry both sensory and motor signals, but the nerves synapse at different regions of the spinal cord, either from the periphery to sensory relay neurons that relay the information to the CNS or from the CNS to motor neurons, which relay the information out."
   },
   {
     "organ": "Spinal Cord",
     "topic": "Function",
     "tags": [
-      "nervous system",
-      "signal transmission"
+      "transmission",
+      "efferent motor",
+      "afferent sensory"
     ],
-    "id": "6a560f94-39a6-4fef-8e22-8d2dbe3e80df",
+    "id": "d7064bbe-2fe9-4568-842e-158d541e757c",
     "text": "The spinal cord relays information up to the brain through spinal tracts through the final common pathway to the thalamus and ultimately to the cortex."
   },
   {
-    "organ": "Nervous System",
-    "topic": "Anatomy of Peripheral Nervous System (PNS)",
+    "organ": "PNS (Peripheral Nervous System)",
+    "topic": "Description",
     "tags": [
-      "structure",
-      "peripheral nerves"
+      "anatomy",
+      "nervous system"
     ],
-    "id": "c73f7669-ec33-4868-8551-ddb88ba80c26",
+    "id": "46893c27-ca7d-47a7-a855-bd8087baf13e",
     "text": "Apart from the spinal cord, there are also peripheral nerves of the PNS that synapse through intermediaries or ganglia directly on the CNS. These 12 nerves exist in the head and neck region and are called cranial nerves. Cranial nerves bring information to the CNS to and from the face, as well as to certain muscles (such as the trapezius muscle, which is innervated by accessory nerves as well as certain cervical spinal nerves)."
   },
   {
-    "organ": "Nervous System",
-    "topic": "Description of Cranial Nerves",
+    "organ": "CNS (Central Nervous System)",
+    "topic": "Connection with PNS",
     "tags": [
-      "nerves",
-      "CNS",
-      "PNS"
+      "anatomy",
+      "nervous system"
     ],
-    "id": "8d0ef433-0088-4098-92de-ea615f6928b0",
+    "id": "42c48c77-be4a-4fa3-be4e-0c9979bd2bd2",
     "text": "Two pairs of cranial nerves; the olfactory nerves and the optic nerves are often considered structures of the CNS. This is because they do not synapse first on peripheral ganglia, but directly on CNS neurons. The olfactory epithelium is significant in that it consists of CNS tissue expressed in direct contact to the environment, allowing for administration of certain pharmaceuticals and drugs."
   },
   {
@@ -457,59 +461,63 @@
     "topic": "Neuron",
     "tags": [
       "anatomy",
-      "cell"
+      "neuroscience"
     ],
-    "id": "c6416963-859d-4574-83ee-0ce5e42788cc",
+    "id": "9a2eae78-0e7e-424c-a401-8a836fc9b151",
     "text": "A neuron of the CNS, myelinated by an oligodendrocyte"
   },
   {
     "organ": "CNS",
-    "topic": "Myelination",
+    "topic": "Myelination by Oligodendrocyte",
     "tags": [
-      "biology",
-      "process"
+      "neurobiology",
+      "cell"
     ],
-    "id": "bd4616d3-f241-4b52-9461-926ab6abe767",
+    "id": "1031ead3-2b85-4180-bce8-bdc5aaf39ba1",
     "text": "At the anterior end of the spinal cord lies the brain. The brain makes up the largest portion of the CNS. It is often the main structure referred to when speaking of the nervous system in general. The brain is the major functional unit of the CNS. While the spinal cord has certain processing ability such as that of spinal locomotion and can process reflexes, the brain is the major processing unit of the nervous system."
   },
   {
     "organ": "Brainstem",
-    "topic": "Components",
+    "topic": "Anatomy",
     "tags": [
-      "anatomy"
+      "description"
     ],
-    "id": "79d46a2e-67df-4507-a9d1-b1ecbbe92c81",
+    "id": "c833e3e6-8ad7-4190-803f-f4f9ca4700f8",
     "text": "The brainstem consists of the medulla, the pons and the midbrain. The medulla can be referred to as an extension of the spinal cord, which both have similar organization and functional properties. The tracts passing from the spinal cord to the brain pass through here."
   },
   {
     "organ": "Medulla",
-    "topic": "Description",
+    "topic": "Component",
     "tags": [
-      "anatomy",
-      "extension",
-      "spinal cord"
+      "part",
+      "anatomy"
     ],
-    "id": "309a87c8-e9f2-4e85-9458-518ec18acc29",
+    "id": "43b0e003-c040-4aaa-a9ea-fc9d2d57ae29",
     "text": "Regulatory functions of the medulla nuclei include control of blood pressure and breathing. Other nuclei are involved in balance, taste, hearing, and control of muscles of the face and neck."
   },
   {
-    "organ": "Brainstem",
-    "topic": "Pons",
+    "organ": "Pons",
+    "topic": "Anatomy",
     "tags": [
-      "anatomy",
-      "nervous_system"
+      "nuclei",
+      "cerebellum",
+      "transmission",
+      "breathing",
+      "sleep",
+      "taste"
     ],
-    "id": "f8db53b9-b99e-4612-975c-a8fffa1968cc",
+    "id": "d3467005-29c5-4696-b894-e7b99d1b9e46",
     "text": "The next structure rostral to the medulla is the pons, which lies on the ventral anterior side of the brainstem. Nuclei in the pons include pontine nuclei which work with the cerebellum and transmit information between the cerebellum and the cerebral cortex. In the dorsal posterior pons lie nuclei that are involved in the functions of breathing, sleep, and taste."
   },
   {
     "organ": "Pons",
-    "topic": "Nuclei",
+    "topic": "Function",
     "tags": [
-      "anatomy",
-      "nervous_system"
+      "information transmission",
+      "motor system linkage",
+      "cerebral cortex"
     ],
-    "id": "4a5cf5d9-7c9e-4549-8bd7-39c7d9eb7eba",
+    "id": "29ae7e2e-54b0-4145-a570-ab3cb6908556",
     "text": "The midbrain, or mesencephalon, is situated above and rostral to the pons. It includes nuclei linking distinct parts of the motor system, including the cerebellum, the basal ganglia and both cerebral hemispheres, among others. Additionally, parts of the visual and auditory systems are located in the midbrain, including control of automatic eye movements."
   },
   {
@@ -519,7 +527,7 @@
       "anatomy",
       "control"
     ],
-    "id": "12fe919e-d30d-4584-96df-35726a6fe8d6",
+    "id": "50312031-bbba-4059-beb7-7744ae8df5e6",
     "text": "The brainstem at large provides entry and exit to the brain for a number of pathways for motor and autonomic control of the face and neck through cranial nerves, Autonomic control of the organs is mediated by the tenth cranial nerve. A large portion of the brainstem is involved in such autonomic control of the body. Such functions may engage the heart, blood vessels, and pupils, among others."
   },
   {
@@ -527,46 +535,51 @@
     "topic": "Autonomic control",
     "tags": [
       "function",
-      "regulation"
+      "body systems"
     ],
-    "id": "8894aab5-3c64-480b-a945-4559a85f7ad1",
+    "id": "1406d4e8-7ffb-4efb-a4ad-82f5882669db",
     "text": "The brainstem also holds the reticular formation, a group of nuclei involved in both arousal and alertness."
   },
   {
     "organ": "Cerebellum",
     "topic": "Anatomy & Function",
     "tags": [
-      "structure",
-      "brain"
+      "location",
+      "composition"
     ],
-    "id": "42aac55f-82b8-4160-a178-6b0034508255",
+    "id": "9ea8790a-be1a-4cef-ac03-158fe881ed5c",
     "text": "The cerebellum lies behind the pons. The cerebellum is composed of several dividing fissures and lobes. Its function includes the control of posture and the coordination of movements of parts of the body, including the eyes and head, as well as the limbs. Further, it is involved in motion that has been learned and perfected through practice, and it will adapt to new learned movements. Despite its previous classification as a motor structure, the cerebellum also displays connections to areas of the cerebral cortex involved in language and cognition. These connections have been shown by the use of medical imaging techniques, such as functional MRI and Positron emission tomography."
   },
   {
     "organ": "Cerebellum",
-    "topic": "Location",
+    "topic": "Function",
     "tags": [
-      "position"
+      "posture control",
+      "movement coordination",
+      "eyes and head",
+      "limbs",
+      "learned motion",
+      "adaptation"
     ],
-    "id": "a2fec7b4-e11d-4bee-9d54-d9e174114bb8",
+    "id": "a58c6fa4-0b8a-4b06-9884-9f0a6b7d339a",
     "text": "The body of the cerebellum holds more neurons than any other structure of the brain, including that of the larger cerebrum, but is also more extensively understood than other structures of the brain, as it includes fewer types of different neurons. It handles and processes sensory stimuli, motor information, as well as balance information from the vestibular organ."
   },
   {
     "organ": "Diencephalon",
-    "topic": "Description",
+    "topic": "Overview",
     "tags": [
       "anatomy"
     ],
-    "id": "34d292e4-daf0-47a6-983c-4e43e5168252",
+    "id": "221dcc52-9358-4a45-b847-8eebd180540c",
     "text": "Main articles: Diencephalon, Thalamus, and Hypothalamus"
   },
   {
     "organ": "Diencephalon",
     "topic": "Components",
     "tags": [
-      "structure"
+      "anatomy"
     ],
-    "id": "c53df3bc-46c0-4c71-9491-37e418a8a672",
+    "id": "b986e9a0-8403-4fb4-9543-2b7b46daa08f",
     "text": "The two structures of the diencephalon worth noting are the thalamus and the hypothalamus. The thalamus acts as a linkage between incoming pathways from the peripheral nervous system as well as the optical nerve (though it does not receive input from the olfactory nerve) to the cerebral hemispheres. Previously it was considered only a \"relay station\", but it is engaged in the sorting of information that will reach cerebral hemispheres (neocortex)."
   },
   {
@@ -576,37 +589,35 @@
       "anatomy",
       "neuroscience"
     ],
-    "id": "b415274a-1663-43ee-864f-e730a693c991",
-    "text": "Apart from its function of sorting information from the periphery, the thalamus also connects the cerebellum and basal ganglia with the cerebrum. In common with the aforementioned reticular system the thalamus is involved in wakefulness and consciousness, such as though the SCN."
+    "id": "ec64b6d8-e562-4d8c-8a41-6c9aa448bfbe",
+    "text": "Apart from its function of sorting information from the periphery, the thalamus also connects the cerebellum and basal ganglia with the cerebrum. In common with the aforementioned reticular system the thalamus is involved in wakefulness and consciousness."
   },
   {
     "organ": "Thalamus",
     "topic": "Involvement in wakefulness and consciousness",
     "tags": [
       "neuroscience",
-      "consciousness"
+      "physiology"
     ],
-    "id": "36b11adf-fd3e-4555-8ec3-f6e8027396f1",
+    "id": "f6426536-c621-41af-8a58-e0e825a96a5c",
     "text": "The hypothalamus engages in functions of a number of primitive emotions or feelings such as hunger, thirst and maternal bonding. This is regulated partly through control of secretion of hormones from the pituitary gland. Additionally the hypothalamus plays a role in motivation and many other behaviors of the individual."
   },
   {
     "organ": "Cerebrum",
-    "topic": "Description",
+    "topic": "Overview",
     "tags": [
-      "anatomy",
-      "brain"
+      "description"
     ],
-    "id": "fafc29c8-0486-47ba-a89e-c53fe8753303",
+    "id": "5bc2cfa9-bacd-4e23-9ffc-606b46e5d20b",
     "text": "Main articles: Cerebrum, Cerebral cortex, Basal ganglia, Amygdala, and Hippocampus"
   },
   {
     "organ": "Cerebral hemispheres",
     "topic": "Description",
     "tags": [
-      "anatomy",
-      "brain"
+      "anatomy"
     ],
-    "id": "faaf9a2a-874f-4635-883b-d88c29dde46c",
+    "id": "e6f680b8-22dc-4ec2-a1d7-ccddbe1f1a48",
     "text": "The cerebrum of cerebral hemispheres make up the largest visual portion of the human brain. Various structures combine to form the cerebral hemispheres, among others: the cortex, basal ganglia, amygdala and hippocampus. The hemispheres together control a large portion of the functions of the human brain such as emotion, memory, perception and motor functions. Apart from this the cerebral hemispheres stand for the cognitive capabilities of the brain."
   },
   {
@@ -615,7 +626,7 @@
     "tags": [
       "structure"
     ],
-    "id": "42c7d48b-7e5b-43a1-849a-b6eff12e8eb5",
+    "id": "0bdcfe0d-8524-49d4-9349-ad9b99959eec",
     "text": "Connecting each of the hemispheres is the corpus callosum as well as several additional commissures. One of the most important parts of the cerebral hemispheres is the cortex, made up of gray matter covering the surface of the brain. Functionally, the cerebral cortex is involved in planning and carrying out of everyday tasks."
   },
   {
@@ -624,38 +635,38 @@
     "tags": [
       "connection"
     ],
-    "id": "ee2a8c08-e0c0-40fa-9a45-69fdafa617ca",
+    "id": "f2af803c-ac83-4c58-92f2-edee85e102db",
     "text": "The hippocampus is involved in storage of memories, the amygdala plays a role in perception and communication of emotion, while the basal ganglia play a major role in the coordination of voluntary movement."
   },
   {
-    "organ": "Nervous System",
-    "topic": "Structures",
+    "organ": "nervous system",
+    "topic": "structure",
     "tags": [
-      "anatomy",
-      "nerves"
+      "anatomy"
     ],
-    "id": "cb17babb-00be-4d18-ac1f-65bd8b440977",
+    "id": "73aa5375-9e88-4b39-ae85-a231cf059b14",
     "text": "A map over the different structures of the nervous systems in the body, showing the CNS, PNS, autonomic nervous system, and enteric nervous system."
   },
   {
     "organ": "PNS",
-    "topic": "Components",
+    "topic": "components",
     "tags": [
+      "composition",
       "neurons",
       "axons",
       "Schwann cells"
     ],
-    "id": "6a2c3892-4eb4-4a85-a5af-19e148d9ac28",
+    "id": "44f8d800-69b8-4e06-b168-ae26eaeaa69a",
     "text": "The PNS consists of neurons, axons, and Schwann cells. Oligodendrocytes and Schwann cells have similar functions in the CNS and PNS, respectively. Both act to add myelin sheaths to the axons, which acts as a form of insulation allowing for better and faster proliferation of electrical signals along the nerves. Axons in the CNS are often very short, barely a few millimeters, and do not need the same degree of isolation as peripheral nerves. Some peripheral nerves can be over 1 meter in length, such as the nerves to the big toe. To ensure signals move at sufficient speed, myelination is needed."
   },
   {
     "organ": "Nervous System",
-    "topic": "Neuron Myelination Difference",
+    "topic": "Neuronal Myelination",
     "tags": [
       "Comparison",
-      "Anatomy"
+      "Cell Biology"
     ],
-    "id": "152ba201-8f36-4661-b42d-f6f92d9e6ac7",
+    "id": "d6124a66-700c-461e-8913-2b7d1b5bc764",
     "text": "The way in which the Schwann cells and oligodendrocytes myelinate nerves differ. A Schwann cell usually myelinates a single axon, completely surrounding it. Sometimes, they may myelinate many axons, especially when in areas of short axons. Oligodendrocytes usually myelinate several axons. They do this by sending out thin projections of their cell membrane, which envelop and enclose the axon."
   }
 ]

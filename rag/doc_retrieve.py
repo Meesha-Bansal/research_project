@@ -185,7 +185,7 @@ OUTPUT FORMAT RULES:
 -Do not add extra definitions unless explicitly asked.
 - If question is definition → give 2-3 line precise definition
 - If question is process → explain step-by-step
-- If comparison → give table format
+- If comparison or difference → give table format
 -Answer ONLY what is asked.
 -Do not explain the full process unless explicitly requested.
 -If the question asks for a specific concept (e.g., polarisation), restrict the answer to that concept only.

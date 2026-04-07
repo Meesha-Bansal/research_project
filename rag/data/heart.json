@@ -502,5 +502,34 @@
               "topic": "t wave",
               "text": "T wave represents ventricular repolarization.",
               "tags": ["definition"]
-            }
+            },
+            {
+                  "id": "heart_evolution_1",
+                  "organ": "heart",
+                  "topic": "fishes_heart",
+                  "text": "Fishes have a 2-chambered heart with one atrium and one ventricle. The heart pumps deoxygenated blood to the gills for oxygenation and then to the body (single circulation).",
+                  "tags": ["structure", "circulation", "evolution","vertebrates"]
+              },
+              {
+                  "id": "heart_evolution_2",
+                  "organ": "heart",
+                  "topic": "amphibians_heart",
+                  "text": "Amphibians have a 3-chambered heart with two atria and one ventricle. Oxygenated and deoxygenated blood mix in the ventricle, leading to incomplete double circulation.",
+                  "tags": ["structure", "circulation", "evolution","vertebrates"]
+              },
+              {
+                  "id": "heart_evolution_3",
+                  "organ": "heart",
+                  "topic": "reptiles_heart",
+                  "text": "Reptiles (except crocodiles) have a 3-chambered heart with an incomplete septum, causing partial mixing of oxygenated and deoxygenated blood (incomplete double circulation).",
+                  "tags": ["structure", "circulation", "evolution","vertebrates"]
+              },
+              {
+                  "id": "heart_evolution_4",
+                  "organ": "heart",
+                  "topic": "crocodiles_birds_mammals_heart",
+                  "text": "Crocodiles, birds, and mammals have a 4-chambered heart with two atria and two ventricles. Oxygenated and deoxygenated blood are completely separated, resulting in efficient double circulation.",
+                  "tags": ["structure", "circulation", "evolution","vertebrates"]
+              }
+          
 ]

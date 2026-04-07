@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+models/
+ollama_models/
+db/
+*.pyc
+.env

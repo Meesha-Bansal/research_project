@@ -1,4 +1,8 @@
 import os
+
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+os.environ["HF_DATASETS_OFFLINE"] = "1"
+os.environ["HF_HUB_OFFLINE"] = "1"
 import re
 import logging
 import subprocess
@@ -7,21 +11,26 @@ from ingestion_pipeline import load_vector_store
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer, util
 
-# -------------------------------
+
 # CLEAN LOGGING (REMOVE NOISE)
-# -------------------------------
+
 from transformers import logging as hf_logging
 hf_logging.set_verbosity_error()
 logging.getLogger("sentence_transformers").setLevel(logging.ERROR)
 
 load_dotenv()
 
-# Load embedding model ONCE
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+# Load embedding model
+embedding_model = SentenceTransformer(
+    "sentence-transformers/all-MiniLM-L6-v2",
+    cache_folder="./models"
+)
 
-# -------------------------------
+from sentence_transformers import SentenceTransformer
+model = SentenceTransformer("all-MiniLM-L6-v2")
+model.save("./models/sentence-transformers/all-MiniLM-L6-v2")
 # QUERY ANALYSIS
-# -------------------------------
+
 def is_comparison_query(query):
     keywords = ["vs", "difference", "compare", "distinguish"]
     return any(k in query.lower() for k in keywords)
@@ -39,9 +48,8 @@ def split_comparison_query(query):
     return [p.strip() for p in parts if p.strip()]
 
 
-# -------------------------------
 # QUERY EXPANSION (OPTIONAL)
-# -------------------------------
+
 def expand_query_ollama(query):
     try:
         prompt = f"""Generate 3 short alternative search queries:
@@ -63,9 +71,9 @@ Only return queries."""
         return [query]
 
 
-# -------------------------------
+
 # HYBRID SEARCH (IMPROVED)
-# -------------------------------
+
 def hybrid_search(vector_store, query, k=5):
     vector_docs = vector_store.max_marginal_relevance_search(
         query, k=k, fetch_k=15  # ↑ increase diversity
@@ -84,9 +92,9 @@ def hybrid_search(vector_store, query, k=5):
     return vector_docs, keyword_docs
 
 
-# -------------------------------
+
 # STRONG DEDUPLICATION
-# -------------------------------
+
 def deduplicate_semantic(texts, threshold=0.85):
     unique = []
 
@@ -153,25 +161,64 @@ def format_with_ollama(query, contexts):
     context_text = "\n\n".join(contexts)
 
     prompt = f"""
-You are an NCERT Class 11 Biology assistant.
+You are an NCERT Class 11 Biology expert assistant.
 
-Answer STRICTLY from context.
+Your task is to generate a HIGH-QUALITY, STRUCTURED answer using ONLY the provided context.
 
-RULES:
-- No repetition
-- No duplicate tables
-- One final clean answer only
-- If comparison → ONE table only
+------------------------
+RULES (STRICT)
+------------------------
+1. Use ONLY the given context. Do NOT use external knowledge.
+2. Do NOT hallucinate or add new facts.
+3. You MAY combine information from multiple context chunks.
+4. You MAY rephrase for clarity, but do not change meaning.
+5. If sufficient information is NOT available, say:
+   "This information is not available in the provided content."
+
+------------------------
+RESPONSE FORMAT RULES
+------------------------
+- Detect the query type and respond accordingly:
+
+1. If DEFINITION:
+   → Give 2-4 line precise explanation
+
+2. If PROCESS / MECHANISM:
+   → Give STEP-WISE explanation (numbered steps)
+
+3. If COMPARISON (e.g., vs, difference):
+   → MUST return a TABLE format
+
+4. If EXPLANATION:
+   → Use bullet points + short paragraphs
+
+------------------------
+QUALITY RULES
+------------------------
+- Remove duplicate information
+- Merge similar points
 - Keep answer concise and exam-ready
-
+- Use clear headings where helpful
+- Maintain logical flow (especially for biological processes)
+- If any part of the answer is not directly supported by context, DO NOT include it.
+- Do NOT introduce new terms not present in context.
+- Include ONLY information directly relevant to answering the query.
+- Do NOT add general facts about related topics unless explicitly required.
+- If extra information is present in context but not relevant, IGNORE it.
+- Prefer NCERT-level explanations; avoid advanced or extra details.
+- Do NOT include specific structures (e.g., SCN, basal ganglia) unless explicitly present in the context.
+------------------------
 Query:
 {query}
 
+------------------------
 Context:
 {context_text}
 
-Answer:
+------------------------
+Final Answer:
 """
+
 
     result = subprocess.run(
         ["ollama", "run", "mistral"],
@@ -185,7 +232,7 @@ Answer:
     if result.stdout:
         return clean_response(result.stdout)
     else:
-        return "⚠️ No response from Ollama."
+        return f"No response from Ollama.\nSTDERR: {result.stderr}\nReturn code: {result.returncode}"
 
 
 # -------------------------------
@@ -207,7 +254,7 @@ def query_vector_store(query, k=5, persist_directory="db/chroma_db"):
         all_texts.extend([doc.page_content for doc in vector_docs])
         all_texts.extend(keyword_docs)
 
-    # 🔥 KEY FIXES
+    #  KEY FIXES
     all_texts = deduplicate_semantic(all_texts)   # better dedup
     final_texts = rerank(query, all_texts, top_k=4)  # reduce clutter
 
@@ -218,7 +265,7 @@ def query_vector_store(query, k=5, persist_directory="db/chroma_db"):
 # CLI LOOP
 # -------------------------------
 def main():
-    print("🚀 Clean RAG System Ready")
+    print("Clean RAG System Ready")
 
     while True:
         query = input("\nEnter your query (or 'exit'): ")

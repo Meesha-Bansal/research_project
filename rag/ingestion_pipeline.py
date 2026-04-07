@@ -4,6 +4,9 @@ from dotenv import load_dotenv
 from langchain_text_splitters import CharacterTextSplitter
 
 load_dotenv()
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+os.environ["HF_DATASETS_OFFLINE"] = "1"
+os.environ["HF_HUB_OFFLINE"] = "1"
 
 def load_data():
     loader_neural = JSONLoader(
@@ -120,13 +123,11 @@ from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 
 def load_vector_store(persist_directory="db/chroma_db"):
-    """
-    Load an existing Chroma vector store from disk.
-
-    Note: we still need an embeddings function to embed the *query*, but we do
-    not re-create/re-ingest your stored vectors here.
-    """
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    embeddings = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2",
+        model_kwargs={"device": "cpu"},
+        cache_folder="./models"  # load from local folder
+    )
     vector_store = Chroma(
         persist_directory=persist_directory,
         embedding_function=embeddings,
@@ -145,8 +146,11 @@ def create_vector_store(chunks, persist_directory="db/chroma_db"):
         Chroma: The vector store instance.
     """
     # Use all-MiniLM-L6-v2 model from sentence-transformers
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-
+    embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2",
+    model_kwargs={"device": "cpu"},
+    cache_folder="./models"  # load from local folder
+    )
     texts = [chunk["text"] for chunk in chunks]
     metadatas = [{k: v for k, v in chunk.items() if k != "text"} for chunk in chunks]
 
