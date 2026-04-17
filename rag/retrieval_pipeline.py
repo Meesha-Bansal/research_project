@@ -190,15 +190,46 @@ def get_last_assistant_answer(history):
 
 
 def rewrite_follow_up_query(query, history):
+    lower = query.lower().strip()
+    last_student = get_last_student_query(history or [])
+
+    exam_triggers = [
+        "important topics",
+        "important concepts",
+        "unit test",
+        "exam",
+        "test prep",
+        "syllabus",
+        "key topics",
+        "key concepts",
+        "need to know",
+        "must know",
+        "important points",
+    ]
+
+    if last_student and any(trigger in lower for trigger in exam_triggers):
+        if "previous" in lower or "last" in lower or "the previous" in lower or "this" in lower:
+            return f"List the important concepts and topics students should study for unit tests and exams based on the previous question: {last_student}."
+        return f"List the important concepts and topics students should study for unit tests and exams on the topic: {last_student or query}."
+
     if not history:
         return query
 
-    lower = query.lower().strip()
-    last_student = get_last_student_query(history)
-    if not last_student:
-        return query
-
-    edit_triggers = ["make it concise", "make it short", "shorten it", "shorten", "brief", "summarize", "summarise", "condense", "rephrase", "rewrite", "reword", "exam-specific", "exam specific"]
+    edit_triggers = [
+        "make it concise",
+        "make it short",
+        "shorten it",
+        "shorten",
+        "brief",
+        "summarize",
+        "summarise",
+        "condense",
+        "rephrase",
+        "rewrite",
+        "reword",
+        "exam-specific",
+        "exam specific",
+    ]
     if any(trigger in lower for trigger in edit_triggers) and len(lower.split()) <= 8:
         if "exam" in lower:
             return f"Rewrite the previous answer to '{last_student}' in an exam-specific and concise way."
@@ -230,6 +261,7 @@ Use ONLY the provided context, and use the previous conversation to answer follo
 
 {history_block}{last_block}
 If the current question is a follow-up instruction such as "make it concise", "make it exam-specific", "shorten it", "rephrase", or "summarize", rewrite the previous assistant answer accordingly and do not ask the student to clarify.
+If the current question asks for important topics, key concepts, unit test preparation, or exam review, produce a concise bullet list of the most important concepts and topics supported by the provided context.
 If the current question is a follow-up question about the same topic, infer the subject from the previous student question and answer.
 
 Your task is to generate a HIGH-QUALITY, STRUCTURED answer using ONLY the provided context.
