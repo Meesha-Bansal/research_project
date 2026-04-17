@@ -57,7 +57,7 @@ def expand_query_ollama(query):
 Only return queries."""
 
         result = subprocess.run(
-            ["ollama", "run", "mistral"],
+            ["ollama", "run", "llama3:instruct"],
             input=prompt,
             text=True,
             capture_output=True,
@@ -155,13 +155,82 @@ def clean_response(text):
 
 
 # -------------------------------
+# CONVERSATIONAL HISTORY
+# -------------------------------
+MAX_HISTORY_TURNS = 6
+MAX_HISTORY_CHARS = 1800
+
+
+def build_history_snippet(history, max_turns=MAX_HISTORY_TURNS, max_chars=MAX_HISTORY_CHARS):
+    if not history:
+        return ""
+
+    selected = history[-max_turns:]
+    lines = [f"{role}: {text.strip()}" for role, text in selected]
+    history_text = "\n".join(lines)
+
+    if len(history_text) > max_chars:
+        history_text = "...\n" + history_text[-max_chars:]
+
+    return history_text
+
+
+def get_last_student_query(history):
+    for role, text in reversed(history):
+        if role == "Student":
+            return text.strip()
+    return None
+
+
+def get_last_assistant_answer(history):
+    for role, text in reversed(history):
+        if role == "Assistant":
+            return text.strip()
+    return None
+
+
+def rewrite_follow_up_query(query, history):
+    if not history:
+        return query
+
+    lower = query.lower().strip()
+    last_student = get_last_student_query(history)
+    if not last_student:
+        return query
+
+    edit_triggers = ["make it concise", "make it short", "shorten it", "shorten", "brief", "summarize", "summarise", "condense", "rephrase", "rewrite", "reword", "exam-specific", "exam specific"]
+    if any(trigger in lower for trigger in edit_triggers) and len(lower.split()) <= 8:
+        if "exam" in lower:
+            return f"Rewrite the previous answer to '{last_student}' in an exam-specific and concise way."
+        if "concise" in lower or "short" in lower or "brief" in lower or "summarize" in lower or "condense" in lower:
+            return f"Rewrite the previous answer to '{last_student}' concisely."
+        if "rephrase" in lower or "rewrite" in lower or "reword" in lower:
+            return f"Rephrase the previous answer to '{last_student}' clearly and concisely."
+
+    return query
+
+
+# -------------------------------
 # LLM FORMATTING (STRICT)
 # -------------------------------
-def format_with_ollama(query, contexts):
+def format_with_ollama(query, contexts, history=None):
     context_text = "\n\n".join(contexts)
+    history_text = build_history_snippet(history or [])
+    last_student = get_last_student_query(history or [])
+    last_assistant = get_last_assistant_answer(history or [])
+    history_block = f"Conversation history:\n{history_text}\n\n" if history_text else ""
+    last_block = ""
+    if last_student and last_assistant:
+        last_block = f"Last student question: {last_student}\nLast assistant answer: {last_assistant}\n\n"
 
     prompt = f"""
 You are an NCERT Class 11 Biology expert assistant.
+This is a conversation between a student and the assistant.
+Use ONLY the provided context, and use the previous conversation to answer follow-up questions correctly.
+
+{history_block}{last_block}
+If the current question is a follow-up instruction such as "make it concise", "make it exam-specific", "shorten it", "rephrase", or "summarize", rewrite the previous assistant answer accordingly and do not ask the student to clarify.
+If the current question is a follow-up question about the same topic, infer the subject from the previous student question and answer.
 
 Your task is to generate a HIGH-QUALITY, STRUCTURED answer using ONLY the provided context.
 
@@ -174,6 +243,7 @@ RULES (STRICT)
 4. You MAY rephrase for clarity, but do not change meaning.
 5. If sufficient information is NOT available, say:
    "This information is not available in the provided content."
+6. If this is a follow-up question, use the conversation history and the retrieved context together.
 
 ------------------------
 RESPONSE FORMAT RULES
@@ -202,13 +272,11 @@ QUALITY RULES
 - Maintain logical flow (especially for biological processes)
 - If any part of the answer is not directly supported by context, DO NOT include it.
 - Do NOT introduce new terms not present in context.
-- Include ONLY information directly relevant to answering the query.
-- Do NOT add general facts about related topics unless explicitly required.
 - If extra information is present in context but not relevant, IGNORE it.
 - Prefer NCERT-level explanations; avoid advanced or extra details.
 - Do NOT include specific structures (e.g., SCN, basal ganglia) unless explicitly present in the context.
 ------------------------
-Query:
+Current question:
 {query}
 
 ------------------------
@@ -221,7 +289,7 @@ Final Answer:
 
 
     result = subprocess.run(
-        ["ollama", "run", "mistral"],
+        ["ollama", "run", "llama3:instruct"],
         input=prompt,
         capture_output=True,
         text=True,
@@ -238,13 +306,14 @@ Final Answer:
 # -------------------------------
 # MAIN PIPELINE
 # -------------------------------
-def query_vector_store(query, k=5, persist_directory="db/chroma_db"):
+def query_vector_store(query, history=None, k=5, persist_directory="db/chroma_db"):
     vector_store = load_vector_store(persist_directory)
+    search_query = rewrite_follow_up_query(query, history or [])
 
-    expanded_queries = expand_query_ollama(query)
+    expanded_queries = expand_query_ollama(search_query)
 
-    if is_comparison_query(query):
-        expanded_queries.extend(split_comparison_query(query))
+    if is_comparison_query(search_query):
+        expanded_queries.extend(split_comparison_query(search_query))
 
     all_texts = []
 
@@ -256,24 +325,35 @@ def query_vector_store(query, k=5, persist_directory="db/chroma_db"):
 
     #  KEY FIXES
     all_texts = deduplicate_semantic(all_texts)   # better dedup
-    final_texts = rerank(query, all_texts, top_k=4)  # reduce clutter
+    final_texts = rerank(search_query, all_texts, top_k=4)  # reduce clutter
 
-    return format_with_ollama(query, final_texts)
+    return format_with_ollama(query, final_texts, history=history)
 
 
 # -------------------------------
 # CLI LOOP
 # -------------------------------
 def main():
-    print("Clean RAG System Ready")
+    print("Conversational RAG System Ready")
+    history = []
 
     while True:
-        query = input("\nEnter your query (or 'exit'): ")
+        query = input("\nEnter your query (or 'exit', 'reset'): ")
 
-        if query.lower() in ["exit", "quit"]:
+        if not query.strip():
+            continue
+
+        command = query.lower().strip()
+        if command in ["exit", "quit"]:
             break
+        if command == "reset":
+            history.clear()
+            print("Conversation history cleared.")
+            continue
 
-        result = query_vector_store(query)
+        result = query_vector_store(query, history=history)
+        history.append(("Student", query))
+        history.append(("Assistant", result))
 
         print("\n🧠 Answer:\n")
         print(result)
