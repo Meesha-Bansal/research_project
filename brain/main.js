@@ -105,9 +105,9 @@ const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
 
 const highlightMaterial = new THREE.MeshStandardMaterial({
-  color: 0xffd84d,
-  emissive: 0xffc200,
-  emissiveIntensity: 0.9,
+  color: 0xff8f3f,
+  emissive: 0xff6a00,
+  emissiveIntensity: 0.7,
   roughness: 0.25,
   metalness: 0.0,
 });
@@ -223,6 +223,10 @@ function getLanguageConfig(language = currentLanguage) {
 }
 
 function panelText(label, state) {
+  const normalized = String(state || "").trim().toLowerCase();
+  if (normalized === PANEL_PANEL_TEXT || normalized.startsWith(`${PANEL_MODEL_TEXT}:`)) {
+    return label;
+  }
   return `${label} (${state})`;
 }
 
@@ -673,7 +677,7 @@ function onPointerDown(ev) {
 
   const hit = hits[0].object;
   const root = canonicalComponentRootFromHit(hit);
-  lastClickEl.textContent = root ? panelText(root.name, `${PANEL_MODEL_TEXT}: ${hit.name || hit.type}`) : `${hit.name || hit.type}`;
+  lastClickEl.textContent = root ? root.name : `${hit.name || hit.type}`;
 
   if (!root) return;
 
