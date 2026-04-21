@@ -94,10 +94,10 @@ const LABEL_CONTENT_BRAIN = {
 
   corpus_callosum: {
     category: "Connecting Structure",
-    description: "Bundle of nerve fibres connecting two cerebral hemispheres.",
-    question: "What type of fibres are present in corpus callosum?",
-    options: ["Commissural fibres", "Association fibres"],
-    correctAnswer: "Commissural fibres"
+    description: "A large bundle of myelinated nerve fibres that connects the two cerebral hemispheres.",
+    question: "What is the primary role of the corpus callosum?",
+    options: ["Connect two cerebral hemispheres", "Relay olfactory signals"],
+    correctAnswer: "Connect two cerebral hemispheres"
   },
 
   thalamus: {
@@ -127,9 +127,9 @@ const LABEL_CONTENT_BRAIN = {
   pons: {
     category: "Brainstem",
     description: "Acts as bridge between different parts of brain.",
-    question: "Which function is regulated by pons?",
-    options: ["Breathing rhythm", "Memory storage"],
-    correctAnswer: "Breathing rhythm"
+    question: "Pons is a part of which brain region?",
+    options: ["Hindbrain", "Forebrain"],
+    correctAnswer: "Hindbrain"
   },
 
   cerebellum: {
