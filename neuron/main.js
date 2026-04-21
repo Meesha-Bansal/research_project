@@ -267,9 +267,9 @@ const LABEL_CONTENT = {
       label: "Myelin sheath",
       category: "Insulation Layer",
       description: "Speeds up nerve impulse transmission.",
-      question: "Which process is enhanced?",
-      options: ["Saltatory conduction", "Continuous conduction"],
-      correctAnswer: "Saltatory conduction"
+      question: "The Myelin sheath is derived from the",
+      options: ["Schwann cells", "Nerve cells"],
+      correctAnswer: "Schwann cells"
     },
 
     node_of_ranvier: {
@@ -370,10 +370,10 @@ const LABEL_CONTENT = {
     myelin_sheath: {
       label: "मायेलिन आवरण",
       category: "इन्सुलेशन परत",
-      description: "यह संकेत संचरण को तेज करता है।",
-      question: "मायेलिन आवरण किस प्रक्रिया को बढ़ाता है?",
-      options: ["साल्टेटरी कंडक्शन", "सतत कंडक्शन"],
-      correctAnswer: "साल्टेटरी कंडक्शन"
+      description: "यह तंत्रिका संकेतों के संचरण को तेज करता है।",
+      question: "मायेलिन आवरण किससे बनता है?",
+      options: ["श्वान कोशिकाएँ", "तंत्रिका कोशिकाएँ"],
+      correctAnswer: "श्वान कोशिकाएँ"
     },
 
     node_of_ranvier: {
@@ -476,10 +476,10 @@ const LABEL_CONTENT = {
   myelin_sheath: {
     label: "ਮਾਇਲਿਨ ਪਰਤ",
     category: "ਇਨਸੂਲੇਸ਼ਨ ਪਰਤ",
-    description: "ਇਹ ਸੰਕੇਤ ਦੀ ਗਤੀ ਨੂੰ ਤੇਜ਼ ਕਰਦੀ ਹੈ।",
-    question: "ਮਾਇਲਿਨ ਪਰਤ ਕਿਹੜੀ ਪ੍ਰਕਿਰਿਆ ਨੂੰ ਵਧਾਉਂਦੀ ਹੈ?",
-    options: ["ਸਾਲਟੇਟਰੀ ਕੰਡਕਸ਼ਨ", "ਕੰਟਿਨਿਊਅਸ ਕੰਡਕਸ਼ਨ"],
-    correctAnswer: "ਸਾਲਟੇਟਰੀ ਕੰਡਕਸ਼ਨ"
+    description: "ਇਹ ਤੰਤਰਿਕ ਸੰਕੇਤਾਂ ਦੇ ਸੰਚਾਰ ਨੂੰ ਤੇਜ਼ ਕਰਦੀ ਹੈ।",
+    question: "ਮਾਇਲਿਨ ਪਰਤ ਕਿਸ ਤੋਂ ਬਣਦੀ ਹੈ?",
+    options: ["ਸ਼ਵਾਨ ਕੋਸ਼ਿਕਾਵਾਂ", "ਤੰਤਰਿਕ ਕੋਸ਼ਿਕਾਵਾਂ"],
+    correctAnswer: "ਸ਼ਵਾਨ ਕੋਸ਼ਿਕਾਵਾਂ"
   },
 
   node_of_ranvier: {
