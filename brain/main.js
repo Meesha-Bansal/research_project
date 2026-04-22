@@ -4,6 +4,7 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { TransformControls } from "three/addons/controls/TransformControls.js";
 import { CSS2DObject, CSS2DRenderer } from "three/addons/renderers/CSS2DRenderer.js";
 
+
 const LABELS = [
   "Cerebrum",
   "CorpusCallosum",
@@ -421,6 +422,7 @@ const LOCALIZED_CONTENT_LABEL_KEYS = {
   pa: LABEL_MAP_PUNJABI_BRAIN,
 };
 
+
 const PANEL_ON_TEXT = "on";
 const PANEL_OFF_TEXT = "off";
 const PANEL_MISSING_TEXT = "not found in GLB";
@@ -636,6 +638,10 @@ let brainCenterWorld = new THREE.Vector3();
 let lastSelected = null; // Object3D currently attached to TransformControls
 let loadRequestId = 0;
 let activePlacardLabel = null;
+const labelHitboxes = [];
+let activeLabelBox = null;
+const activeLabelUI = new Map(); // label -> CSS2DObject
+
 
 const componentState = new Map();
 // root.uuid -> { exploded:boolean, origPos:Vector3, origQuat:Quaternion, origScale:Vector3, origMatrix:Matrix4, origMAU:boolean, meshMats: Map(mesh.uuid, originalMaterial|originalMaterial[]) }
@@ -728,6 +734,160 @@ function openPlacardOverlay(label) {
 function closePlacardOverlay() {
   placardOverlayEl.classList.add("hidden");
   activePlacardLabel = null;
+}
+
+function getProjectedScreenBox(
+  roots,
+  {
+    width = canvas.clientWidth,
+    height = canvas.clientHeight,
+    offsetX = 0,
+    offsetY = 0,
+  } = {}
+) {
+  const rootList = Array.isArray(roots) ? roots : [roots];
+  const worldPoint = new THREE.Vector3();
+  const projected = new THREE.Vector3();
+  let minX = Number.POSITIVE_INFINITY;
+  let minY = Number.POSITIVE_INFINITY;
+  let maxX = Number.NEGATIVE_INFINITY;
+  let maxY = Number.NEGATIVE_INFINITY;
+  let hasVisiblePoint = false;
+
+  function addProjectedPoint(point) {
+    projected.copy(point).project(camera);
+    if (projected.z < -1 || projected.z > 1) return;
+
+    hasVisiblePoint = true;
+    const screenX = ((projected.x + 1) * 0.5) * width + offsetX;
+    const screenY = ((-projected.y + 1) * 0.5) * height + offsetY;
+    minX = Math.min(minX, screenX);
+    minY = Math.min(minY, screenY);
+    maxX = Math.max(maxX, screenX);
+    maxY = Math.max(maxY, screenY);
+  }
+
+  rootList.forEach((root) => {
+    root.updateWorldMatrix(true, true);
+    root.traverse((node) => {
+      const positionAttr = node.geometry?.getAttribute?.("position");
+      if (!positionAttr || positionAttr.count === 0) return;
+      const step = Math.max(1, Math.ceil(positionAttr.count / 100));
+      for (let index = 0; index < positionAttr.count; index += step) {
+        worldPoint.fromBufferAttribute(positionAttr, index).applyMatrix4(node.matrixWorld);
+        addProjectedPoint(worldPoint);
+      }
+    });
+  });
+
+  if (!hasVisiblePoint) {
+    const fallbackBox = new THREE.Box3();
+    rootList.forEach((root) => fallbackBox.expandByObject(root));
+    if (fallbackBox.isEmpty()) return null;
+
+    const corners = [
+      new THREE.Vector3(fallbackBox.min.x, fallbackBox.min.y, fallbackBox.min.z),
+      new THREE.Vector3(fallbackBox.min.x, fallbackBox.min.y, fallbackBox.max.z),
+      new THREE.Vector3(fallbackBox.min.x, fallbackBox.max.y, fallbackBox.min.z),
+      new THREE.Vector3(fallbackBox.min.x, fallbackBox.max.y, fallbackBox.max.z),
+      new THREE.Vector3(fallbackBox.max.x, fallbackBox.min.y, fallbackBox.min.z),
+      new THREE.Vector3(fallbackBox.max.x, fallbackBox.min.y, fallbackBox.max.z),
+      new THREE.Vector3(fallbackBox.max.x, fallbackBox.max.y, fallbackBox.min.z),
+      new THREE.Vector3(fallbackBox.max.x, fallbackBox.max.y, fallbackBox.max.z),
+    ];
+
+    corners.forEach(addProjectedPoint);
+    if (!hasVisiblePoint) return null;
+  }
+
+  return {
+    centerX: (minX + maxX) / 2,
+    centerY: (minY + maxY) / 2,
+    minX,
+    minY,
+    maxX,
+    maxY,
+    width: Math.max(1, maxX - minX),
+    height: Math.max(1, maxY - minY),
+  };
+}
+function rebuildHotspotLayer() {
+  if (!hotspotLayerEl) return;
+  hotspotLayerEl.innerHTML = "";
+  hotspotButtons = [];
+
+  for (const label of labels) {
+    const roots = label.hotspotRoots?.length ? label.hotspotRoots : [];
+    if (roots.length === 0) continue;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "label-hotspot";
+    button.dataset.labelKey = label.key;
+    button.setAttribute("aria-label", `Select ${getLabelName(label.key)}`);
+    button.addEventListener("click", (event) => {
+      event.stopPropagation();
+      if (selected.has(label.key)) {
+        deselectLabel(label.key);
+        closePlacardOverlay();
+      } else {
+        selectLabel(label.key);
+        openPlacardOverlay(label.key);
+      }
+    });
+    hotspotLayerEl.appendChild(button);
+    hotspotButtons.push({ button, roots, labelKey: label.key });
+  }
+  updateHotspots();
+}
+
+function updateHotspots() {
+  if (!hotspotLayerEl) return;
+  const layerRect = hotspotLayerEl.getBoundingClientRect();
+  const canvasRect = canvas.getBoundingClientRect();
+  const canvasWidth = canvasRect.width || canvas.clientWidth;
+  const canvasHeight = canvasRect.height || canvas.clientHeight;
+  const offsetX = canvasRect.left - layerRect.left;
+  const offsetY = canvasRect.top - layerRect.top;
+
+  hotspotButtons.forEach((entry) => {
+    const screenBox = getProjectedScreenBox(entry.roots, {
+      width: canvasWidth,
+      height: canvasHeight,
+      offsetX,
+      offsetY,
+    });
+    if (!screenBox) {
+      entry.button.style.display = "none";
+      return;
+    }
+    entry.button.style.display = "block";
+
+    const labelText = getLabelName(entry.labelKey);
+    const estimatedTextWidth = labelText.length * 10 + 28;
+    const projectedWidth = Math.max(estimatedTextWidth, screenBox.width + 24);
+    const projectedHeight = Math.max(34, screenBox.height + 16);
+    const clampedCenterX = THREE.MathUtils.clamp(
+      screenBox.centerX,
+      projectedWidth / 2,
+      Math.max(projectedWidth / 2, layerRect.width - projectedWidth / 2)
+    );
+    const clampedCenterY = THREE.MathUtils.clamp(
+      screenBox.centerY,
+      projectedHeight / 2,
+      Math.max(projectedHeight / 2, layerRect.height - projectedHeight / 2)
+    );
+
+    entry.button.style.left = `${clampedCenterX}px`;
+    entry.button.style.top = `${clampedCenterY}px`;
+    entry.button.style.width = `${projectedWidth}px`;
+    entry.button.style.height = `${projectedHeight}px`;
+    entry.button.classList.toggle("is-active", selected.has(entry.labelKey));
+  });
+}
+
+function isTextLabelRoot(name) {
+  const n = String(name || "").toLowerCase();
+  return n.includes("text") || n.includes("label");
 }
 
 function selectedLabelForRoot(root) {
@@ -1062,7 +1222,17 @@ function isGlbMarkerName(name) {
 function collectMeshes(root) {
   const meshes = [];
   root.traverse((o) => {
-    if (o.isMesh && !isGlbMarkerName(o.name)) meshes.push(o);
+    if (o.isMesh) meshes.push(o);
+  });
+  return meshes;
+}
+
+function collectLabelMeshes(root) {
+  const meshes = [];
+  root.traverse((o) => {
+    if (o.isMesh && isEmbeddedLabelTextName(o.name)) {
+      meshes.push(o);
+    }
   });
   return meshes;
 }
@@ -1133,31 +1303,126 @@ function hasSelectedRootForLabel(label, excludeUuid = null) {
   }
   return false;
 }
+// Dedicated absolutely-positioned overlay layer for label hitbox divs.
+// Lives inside .viewer so it lines up perfectly with the canvas.
+const hitboxLayerEl = (() => {
+  const el = document.createElement("div");
+  el.style.cssText = "position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:10;";
+  viewerEl.appendChild(el);
+  return el;
+})();
 
-function setLabelBadge(root, label, on) {
-  if (!label || !isNcertLabel(label)) return;
+// label -> { div, marker }  — rebuilt fresh for every model load.
+const labelHitboxMeta = new Map();
 
-  const existing = labelBadgeByLabel.get(label);
-  if (!on) {
-    if (existing && !hasSelectedRootForLabel(label, root.uuid)) {
-      if (existing.userData.marker) existing.userData.marker.visible = true;
-      existing.parent?.remove(existing);
-      labelBadgeByLabel.delete(label);
+function createLabelHitboxes() {
+  if (!gltfRoot) return;
+
+  LABELS.forEach(label => {
+    const marker = findLabelMarkerForLabel(label);
+    if (!marker) return;
+
+    const div = document.createElement("div");
+    div.className = "label-highlight";
+    // Absolutely positioned inside hitboxLayerEl — position & size set each frame.
+    div.style.position = "absolute";
+    div.style.opacity  = "0";             // invisible until clicked
+    div.style.pointerEvents = "auto";
+    div.style.cursor   = "pointer";
+    div.style.width    = "0";
+    div.style.height   = "0";
+
+    div.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isActive = div.dataset.active === "1";
+      div.dataset.active = isActive ? "0" : "1";
+      div.style.opacity  = isActive ? "0" : "1";
+      toggleLabelTargets(label);
+    });
+
+    hitboxLayerEl.appendChild(div);
+    labelHitboxMeta.set(label, { div, marker });
+  });
+}
+
+/**
+ * Called every animation frame.
+ * Projects each marker mesh's screen-space bounding box, finds its centre,
+ * then positions the div on that centre using translate(-50%,-50%) —
+ * exactly matching the reference getProjectedScreenBox / updateHotspots pattern.
+ */
+function updateLabelHitboxSizes() {
+  if (!gltfRoot) return;
+
+  const canvasRect = canvas.getBoundingClientRect();
+  const layerRect  = hitboxLayerEl.getBoundingClientRect();
+  const offX = canvasRect.left - layerRect.left;
+  const offY = canvasRect.top  - layerRect.top;
+  const cw   = canvasRect.width  || canvas.clientWidth;
+  const ch   = canvasRect.height || canvas.clientHeight;
+
+  const worldPt   = new THREE.Vector3();
+  const projected = new THREE.Vector3();
+
+  for (const [, { div, marker }] of labelHitboxMeta) {
+    const posAttr = marker.geometry?.getAttribute?.("position");
+    if (!posAttr || posAttr.count === 0) { div.style.display = "none"; continue; }
+
+    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+    let visible = false;
+
+    marker.updateWorldMatrix(true, false);
+    const step = Math.max(1, Math.ceil(posAttr.count / 80));
+
+    for (let i = 0; i < posAttr.count; i += step) {
+      worldPt.fromBufferAttribute(posAttr, i).applyMatrix4(marker.matrixWorld);
+      projected.copy(worldPt).project(camera);
+      if (projected.z < -1 || projected.z > 1) continue;
+      visible = true;
+      // NDC → layer-relative pixels
+      const sx = ((projected.x + 1) * 0.5) * cw + offX;
+      const sy = ((-projected.y + 1) * 0.5) * ch + offY;
+      if (sx < minX) minX = sx;
+      if (sy < minY) minY = sy;
+      if (sx > maxX) maxX = sx;
+      if (sy > maxY) maxY = sy;
     }
-    return;
+
+    if (!visible || maxX < minX) { div.style.display = "none"; continue; }
+
+    div.style.display = "";
+    const pad = 10;
+    const w = Math.max(10, maxX - minX + pad * 2);
+    const h = Math.max(8,  maxY - minY + pad * 2);
+    // Place the div centred on the bbox centre — same as the reference pattern
+    // that uses clampedCenterX/Y + translate(-50%,-50%)
+    const cx = (minX + maxX) / 2;
+    const cy = (minY + maxY) / 2;
+    div.style.left      = `${cx}px`;
+    div.style.top       = `${cy}px`;
+    div.style.width     = `${w}px`;
+    div.style.height    = `${h}px`;
+    div.style.transform = "translate(-50%, -50%)";
   }
+}
 
-  if (existing) return;
+/** Resets all label hitbox divs to their inactive (opacity 0) state. */
+function resetLabelHitboxes() {
+  for (const [, { div }] of labelHitboxMeta) {
+    div.dataset.active = "0";
+    div.style.opacity  = "0";
+  }
+}
+function createHighlightLabel(label) {
+  const div = document.createElement("div");
+  div.className = "label-highlight";
+  div.textContent = labelTextForLanguage(label);
 
-  const marker = findLabelMarkerForLabel(label);
-  if (!marker) return;
-
-  const badge = makeActiveLabelBadge(label);
-  badge.position.copy(marker.position);
-  badge.userData.marker = marker;
-  marker.visible = false;
-  marker.parent?.add(badge);
-  labelBadgeByLabel.set(label, badge);
+  return new CSS2DObject(div);
+}
+function setLabelBadge(root, label, on) {
+  //  DO NOTHING (disable CSS label system)
+  return;
 }
 
 function setHighlighted(root, on, labelForColor = null) {
@@ -1174,9 +1439,18 @@ function setHighlighted(root, on, labelForColor = null) {
   const mat = isNcertLabel(labelForColor)
     ? highlightMaterialForLabel(labelForColor)
     : nonNcertHighlightMaterial;
+
+  // Highlight component  
   const meshes = collectMeshes(root);
   for (const mesh of meshes) {
     if (on) setMeshHighlight(mesh, root.uuid, mat);
+    else setMeshHighlight(mesh, root.uuid, null);
+  }
+
+  // Highlight label separately (stronger glow)
+  const labelMeshes = collectLabelMeshes(root);
+  for (const mesh of labelMeshes) {
+    if (on) setMeshHighlight(mesh, root.uuid, highlightMaterialForLabel(label));
     else setMeshHighlight(mesh, root.uuid, null);
   }
   setLabelBadge(root, labelForColor, on);
@@ -1375,6 +1649,13 @@ function removeCurrentModel() {
     scene.remove(gltfRoot);
     gltfRoot = null;
   }
+  labelHitboxes.length = 0;
+  // Remove all hitbox divs from the DOM and clear the map so the next model
+  // starts completely fresh — no carried-over active/highlighted state.
+  for (const [, { div }] of labelHitboxMeta) {
+    div.remove();
+  }
+  labelHitboxMeta.clear();
   resetModelState();
   brainCenterWorld.set(0, 0, 0);
 }
@@ -1433,7 +1714,10 @@ function refreshLabelStatuses() {
     row.classList.toggle("active", onCount > 0);
   }
 }
-
+function highlightLabel(label) {
+  // Visual toggle is handled directly by the CSS2D div's click listener in createLabelHitboxes.
+  // This function is kept as a no-op so existing call sites don't break.
+}
 function toggleLabelTargets(label) {
   const targets = targetsForLabel(label);
   if (!targets.length) {
@@ -1461,44 +1745,66 @@ function resize() {
 }
 
 window.addEventListener("resize", resize);
-
 function onPointerDown(ev) {
   if (!gltfRoot) return;
   if (transform.dragging) return;
-  // TransformControls runs before this handler; if user clicked a gizmo axis, avoid toggling selection.
   if (transform.enabled && transform.axis) return;
 
+  // ✅ Compute mouse position
   const rect = canvas.getBoundingClientRect();
   mouse.x = ((ev.clientX - rect.left) / rect.width) * 2 - 1;
   mouse.y = -(((ev.clientY - rect.top) / rect.height) * 2 - 1);
+
+  // ✅ Raycast
   raycaster.setFromCamera(mouse, camera);
 
-  const hits = raycaster.intersectObject(gltfRoot, true);
-  if (!hits.length) return;
+  // ✅ 1. Label hitboxes are now CSS2D DOM elements and handle their own click events.
+  //       Skip the old 3D raycaster hitbox check entirely.
 
-  const hit = hits[0];
+  // ✅ 2. Check model ONLY
+  const modelHits = raycaster.intersectObject(gltfRoot, true);
+
+  if (!modelHits.length) return;
+
+  const hit = modelHits[0];
+
+  // ✅ Existing marker logic
   const markerLabel = labelForMarkerHit(hit);
   if (markerLabel) {
     toggleLabelTargets(markerLabel);
     return;
   }
 
+  // ✅ Component selection logic
   const root = canonicalComponentRootFromHit(hit.object);
-  const resolvedLabel = root ? labelForComponentRoot(root) || labelAliasForName(hit.object.name) : null;
+  const resolvedLabel = root
+    ? labelForComponentRoot(root) || labelAliasForName(hit.object.name)
+    : null;
+
   const displayName = resolvedLabel
     ? labelTextForLanguage(resolvedLabel)
     : root
       ? displayLabelForName(root.name)
       : displayLabelForName(hit.object.name || hit.object.type);
+
   const hitName = displayLabelForName(hit.object.name || hit.object.type);
-  const clickState = isNcertLabel(resolvedLabel) ? `${PANEL_MODEL_TEXT}: ${hitName}` : PANEL_NOT_NCERT_TEXT;
-  lastClickEl.textContent = root ? panelText(displayName, clickState) : `${hit.object.name || hit.object.type}`;
+
+  const clickState = isNcertLabel(resolvedLabel)
+    ? `${PANEL_MODEL_TEXT}: ${hitName}`
+    : PANEL_NOT_NCERT_TEXT;
+
+  lastClickEl.textContent = root
+    ? panelText(displayName, clickState)
+    : `${hit.object.name || hit.object.type}`;
 
   if (!root) return;
 
-  // Toggle selection on single click; allows multi-select.
-  if (selectedRoots.has(root.uuid)) deselectComponent(root, { label: resolvedLabel });
-  else selectComponent(root, { label: resolvedLabel });
+  if (selectedRoots.has(root.uuid)) {
+    deselectComponent(root, { label: resolvedLabel });
+  } else {
+    selectComponent(root, { label: resolvedLabel });
+  }
+
   refreshLabelStatuses();
   syncPlacardToSelection(resolvedLabel);
 }
@@ -1612,6 +1918,13 @@ function loadCurrentLanguageModel() {
       controls.target.copy(brainCenterWorld);
       controls.update();
 
+      createLabelHitboxes();
+      rebuildHotspotLayer();
+
+      // (optional but recommended)
+      updateHotspots();
+
+
       refreshLabelStatuses();
       lastClickEl.textContent = PLACEHOLDER_TEXT;
       setControlsDisabled(false);
@@ -1628,6 +1941,8 @@ function loadCurrentLanguageModel() {
 
 function switchLanguage(language) {
   if (!LANGUAGE_CONFIG[language] || language === currentLanguage) return;
+  // Reset all clicks, highlights and exploded parts before unloading the model.
+  resetAll();
   currentLanguage = language;
   applyLanguageUI();
   loadCurrentLanguageModel();
@@ -1644,9 +1959,16 @@ loadCurrentLanguageModel();
 
 function animate() {
   requestAnimationFrame(animate);
+
   controls.update();
+
+  // Resize label hitbox divs to match projected marker bounds (zoom-aware)
+  updateLabelHitboxSizes();
+
   renderer.render(scene, camera);
   labelRenderer.render(scene, camera);
+
+  const worldPos = new THREE.Vector3();
 }
 
 resize();
