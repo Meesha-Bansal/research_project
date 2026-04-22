@@ -202,14 +202,14 @@ const LABEL_CONTENT_HINDI_BRAIN = {
     category: "मस्तिष्क तना",
     description: "नेत्र और सिर के प्रतिवर्तों को नियंत्रित करता है।",
     question: "यह किसका भाग है?",
-    options: ["ब्रेनस्टेम", "फोरब्रेन"],
-    correctAnswer: "ब्रेनस्टेम"
+    options: ["हिंदब्रेन", "फोरब्रेन"],
+    correctAnswer: "हिंदब्रेन"
   },
 
   पोंस: {
     category: "मस्तिष्क तना",
     description: "मस्तिष्क के भागों को जोड़ता है।",
-    question: "पोंस किसे नियंत्रित करता है?",
+    question: "पोंस मस्तिष्क के किस भाग का हिस्सा है?",
     options: ["श्वसन", "स्मृति"],
     correctAnswer: "श्वसन"
   },
@@ -291,9 +291,9 @@ const LABEL_CONTENT_PUNJABI_BRAIN = {
   ਪੋਨਸ: {
     category: "ਬ੍ਰੇਨਸਟੇਮ",
     description: "ਦਿਮਾਗ ਦੇ ਭਾਗਾਂ ਵਿਚਕਾਰ ਪੁਲ ਵਾਂਗ ਕੰਮ ਕਰਦਾ ਹੈ।",
-    question: "ਪੋਨਸ ਕੀ ਨਿਯੰਤਰਿਤ ਕਰਦਾ ਹੈ?",
-    options: ["ਸਾਹ ਲੈਣਾ", "ਯਾਦ"],
-    correctAnswer: "ਸਾਹ ਲੈਣਾ"
+    question: "ਪੋਨਸ ਦਿਮਾਗ ਦੇ ਕਿਹੜੇ ਭਾਗ ਦਾ ਹਿੱਸਾ ਹੈ?",
+    options: ["ਹਾਈਂਡਬ੍ਰੇਨ", "ਫੋਰਬ੍ਰੇਨ"],
+    correctAnswer:"ਹਾਈਂਡਬ੍ਰੇਨ"
   },
 
   ਸੇਰੇਬੈਲਮ: {
@@ -1003,13 +1003,34 @@ function collectLabelTargets(root, label) {
   return targets;
 }
 
+// function targetsForLabel(label) {
+//   if (!gltfRoot) return [];
+//   if (label === "Cerebrum") return cerebrumTargets(gltfRoot);
+//   const primaryTargets = collectPrimaryTargets(gltfRoot, label);
+//   if (primaryTargets.length) return primaryTargets;
+//   const targets = collectLabelTargets(gltfRoot, label);
+//   return targets.length ? targets : [];
+// }
 function targetsForLabel(label) {
   if (!gltfRoot) return [];
   if (label === "Cerebrum") return cerebrumTargets(gltfRoot);
+
   const primaryTargets = collectPrimaryTargets(gltfRoot, label);
-  if (primaryTargets.length) return primaryTargets;
+
+  if (primaryTargets.length) {
+    return primaryTargets.map(obj => {
+      // 🔥 Force mesh-based root if current is bad
+      const meshes = collectMeshes(obj);
+      return meshes.length ? meshes[0] : obj;
+    });
+  }
+
   const targets = collectLabelTargets(gltfRoot, label);
-  return targets.length ? targets : [];
+
+  return targets.map(obj => {
+    const meshes = collectMeshes(obj);
+    return meshes.length ? meshes[0] : obj;
+  });
 }
 
 function isEmbeddedLabelTextName(name) {
@@ -1219,11 +1240,19 @@ function moveOutward(root, factor) {
     state.origMAU = root.matrixAutoUpdate;
     ensureEditableTransform(root, state);
 
+    const box = new THREE.Box3().setFromObject(root);
     const rootWorldPos = new THREE.Vector3();
-    root.getWorldPosition(rootWorldPos);
-
+    box.getCenter(rootWorldPos);
     const dirWorld = rootWorldPos.clone().sub(brainCenterWorld);
-    if (dirWorld.lengthSq() < 1e-10) dirWorld.set(0, 0, 1);
+
+    if (dirWorld.lengthSq() < 1e-10) {
+      dirWorld.copy(rootWorldPos).normalize(); // fallback
+    }
+
+    if (dirWorld.dot(rootWorldPos) < 0) {
+      dirWorld.negate(); // ensure outward
+    }
+
     dirWorld.normalize();
 
     const dim = maxDimensionWorld(root);
