@@ -1,0 +1,1 @@
+in the root folder, only index.html is of use, other files are redundant and placed wrongly.
