@@ -28,7 +28,35 @@
     </header>
 
     <main>
-      <canvas id="c"></canvas>
+      <section class="viewer">
+        <canvas id="c"></canvas>
+        <div id="hotspotLayer"></div>
+        <div class="placard-overlay hidden" id="placardOverlay" role="dialog" aria-label="Brain info card">
+          <button class="placard-close" id="placardCloseBtn" aria-label="Close card">&times;</button>
+          <div class="placard-card" aria-live="polite">
+            <div class="placard-hero">
+              <div class="placard-badge" id="placardBadge">Brain Parts</div>
+              <div class="placard-topic" id="placardTopic">Interactive learning</div>
+            </div>
+            <div class="placard-headline-wrapper">
+              <h2 class="placard-title" id="placardTitle">Select a label to explore</h2>
+            </div>
+            <div class="placard-body">
+              <p class="placard-copy" id="placardDescription">
+                Click a brain label to reveal its role, description and a quick quiz.
+              </p>
+            </div>
+            <div class="placard-quiz">
+              <div class="placard-quiz-title" id="placardQuizTitle">Quick Quiz</div>
+              <p class="placard-question" id="placardQuestion">Tap a label to load a quiz.</p>
+              <div class="placard-options" id="placardOptions"></div>
+              <div class="placard-feedback" id="placardFeedback">
+                Choose the best answer to see instant feedback.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <aside class="panel">
         <div class="panelTitle">Labels</div>
         <div id="labels" class="labels"></div>
