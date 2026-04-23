@@ -548,7 +548,7 @@ renderer.outputColorSpace = THREE.SRGBColorSpace;
 
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
-controls.enablePan = false;
+controls.enablePan = true;
 controls.enableZoom = true;
 controls.zoomSpeed = 1.2;
 controls.minDistance = 0.01;
