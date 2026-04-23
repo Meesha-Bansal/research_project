@@ -530,6 +530,144 @@
                   "topic": "crocodiles_birds_mammals_heart",
                   "text": "Crocodiles, birds, and mammals have a 4-chambered heart with two atria and two ventricles. Oxygenated and deoxygenated blood are completely separated, resulting in efficient double circulation.",
                   "tags": ["structure", "circulation", "evolution","vertebrates"]
-              }
+              },
+              
+                {
+                  "id": "circulation_q1_formed_elements",
+                  "organ": "blood",
+                  "topic": "formed elements",
+                  "question": "Name the components of the formed elements in the blood and mention one major function of each of them.",
+                  "text": "The formed elements of blood are: (1) Erythrocytes (Red Blood Cells / RBCs) — transport oxygen from the lungs to tissues and carbon dioxide from tissues to lungs via haemoglobin. (2) Leucocytes (White Blood Cells / WBCs), which include: Neutrophils — phagocytose bacteria and act as the first line of defence; Eosinophils — resist infections and are associated with allergic reactions; Basophils — release histamine and heparin, involved in inflammatory responses; Monocytes — differentiate into macrophages and engulf pathogens; Lymphocytes — produce antibodies (B-lymphocytes) and destroy infected cells (T-lymphocytes), providing immune response. (3) Thrombocytes (Platelets) — release thromboplastin and are essential for blood coagulation (clotting).",
+                  "tags": ["formed elements", "RBC", "WBC", "platelets", "function", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q2_plasma_proteins",
+                  "organ": "blood",
+                  "topic": "plasma proteins",
+                  "question": "What is the importance of plasma proteins?",
+                  "text": "Plasma proteins constitute about 6–8% of plasma and include fibrinogen, globulins, and albumins. Their importance: (1) Fibrinogen — essential for blood clotting/coagulation. (2) Globulins — primarily involved in defence mechanisms of the body (immunoglobulins act as antibodies). (3) Albumins — help maintain the osmotic balance (oncotic pressure) between blood and tissues, preventing excessive fluid loss from capillaries. Overall, plasma proteins also help in transport of substances, maintenance of blood viscosity, and buffering of blood pH.",
+                  "tags": ["plasma proteins", "fibrinogen", "globulin", "albumin", "osmotic balance", "coagulation", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q3_match_columns",
+                  "organ": "blood/heart",
+                  "topic": "match the column",
+                  "question": "Match Column I with Column II: (a) Eosinophils (b) RBC (c) AB Group (d) Platelets (e) Systole",
+                  "text": "Correct matches: (a) Eosinophils → (iii) Resist Infections — Eosinophils are involved in resisting infections and allergic responses. (b) RBC → (v) Gas transport — Red blood cells carry oxygen and carbon dioxide via haemoglobin. (c) AB Group → (ii) Universal Recipient — Persons with AB blood group have no antibodies against A or B antigens and can receive blood from any group. (d) Platelets → (i) Coagulation — Platelets (thrombocytes) release factors essential for blood clotting. (e) Systole → (iv) Contraction of Heart — Systole refers to the phase of ventricular contraction that pumps blood into the aorta and pulmonary artery.",
+                  "tags": ["eosinophils", "RBC", "AB group", "platelets", "systole", "match column", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q4_blood_connective_tissue",
+                  "organ": "blood",
+                  "topic": "blood as connective tissue",
+                  "question": "Why do we consider blood as a connective tissue?",
+                  "text": "Blood is considered a connective tissue because: (1) Origin — Like all connective tissues, blood originates from the mesoderm during embryonic development. (2) Extracellular matrix — Blood possesses a fluid extracellular matrix called plasma, in which the cellular components (formed elements) are suspended. This is analogous to the matrix found in other connective tissues. (3) Cellular components dispersed in matrix — The cells (RBCs, WBCs, platelets) are not in direct contact with each other, floating freely in plasma, just as cells in other connective tissues are embedded in their matrix. (4) Connecting and binding function — Blood connects and serves all body tissues by transporting oxygen, nutrients, hormones, and metabolic waste, which is the fundamental role of connective tissue — to connect and support body systems.",
+                  "tags": ["blood", "connective tissue", "plasma", "mesoderm", "extracellular matrix", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q5_lymph_vs_blood",
+                  "organ": "lymphatic system",
+                  "topic": "lymph and blood difference",
+                  "question": "What is the difference between lymph and blood?",
+                  "text": "Differences between Lymph and Blood: (1) Colour — Blood is red due to haemoglobin in RBCs; lymph is colourless/pale yellow. (2) Cellular composition — Blood contains RBCs, WBCs, and platelets; lymph contains only WBCs (mainly lymphocytes), no RBCs or platelets. (3) Proteins — Blood plasma has more proteins (fibrinogen, globulins, albumins); lymph has fewer proteins and no fibrinogen. (4) Oxygen content — Blood (arterial) is rich in oxygen; lymph has lower oxygen content. (5) Direction of flow — Blood flows in a closed circuit through arteries, capillaries, and veins; lymph flows in one direction only, from tissues toward the heart via lymphatic vessels. (6) Pressure — Blood flows under higher pressure due to cardiac pumping; lymph flows under lower pressure due to muscle contractions and valves.",
+                  "tags": ["lymph", "blood", "difference", "WBC", "RBC", "plasma", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q6_double_circulation",
+                  "organ": "heart",
+                  "topic": "double circulation",
+                  "question": "What is meant by double circulation? What is its significance?",
+                  "text": "Double circulation refers to the passage of blood through the heart twice in one complete circuit of the body. It consists of two components: (1) Pulmonary circulation — Deoxygenated blood from the right ventricle is pumped to the lungs via the pulmonary artery, where it is oxygenated and returns to the left atrium via the pulmonary veins. (2) Systemic circulation — Oxygenated blood from the left ventricle is pumped to all body tissues via the aorta; deoxygenated blood returns to the right atrium via the venae cavae. Significance: (1) It ensures complete separation of oxygenated and deoxygenated blood, preventing mixing. (2) It allows higher blood pressure to be maintained in the systemic circuit, ensuring efficient delivery of oxygen and nutrients to all tissues. (3) It supports the high metabolic demands of warm-blooded (homeothermic) animals like birds and mammals.",
+                  "tags": ["double circulation", "pulmonary circulation", "systemic circulation", "significance", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q7a_blood_vs_lymph",
+                  "organ": "blood/lymph",
+                  "topic": "differences - blood and lymph",
+                  "question": "Write the differences between Blood and Lymph.",
+                  "text": "Blood vs Lymph: (1) Blood is red (contains haemoglobin); lymph is colourless. (2) Blood contains RBCs, WBCs, and platelets; lymph contains only lymphocytes (a type of WBC) — no RBCs or platelets. (3) Blood plasma is rich in proteins including fibrinogen; lymph fluid has fewer proteins and lacks fibrinogen, so it clots slowly. (4) Blood carries oxygen, nutrients, hormones, and waste; lymph mainly returns excess interstitial fluid and proteins back to blood, and transports fats absorbed from the intestine via lacteals. (5) Blood flows in a closed circular path; lymph flows in one direction toward the heart. (6) Blood is pumped by the heart under high pressure; lymph moves via skeletal muscle contractions and one-way valves under low pressure.",
+                  "tags": ["blood", "lymph", "difference", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q7b_open_vs_closed",
+                  "organ": "circulatory system",
+                  "topic": "open and closed circulation",
+                  "question": "Write the differences between Open and Closed system of circulation.",
+                  "text": "Open vs Closed Circulatory System: (1) In open circulation, blood is pumped into open spaces (haemocoel) and bathes the organs directly; in closed circulation, blood flows through a closed network of blood vessels at all times. (2) Open circulation has lower blood pressure and slower flow; closed circulation maintains higher blood pressure and faster, more regulated flow. (3) Open circulation is seen in arthropods and molluscs; closed circulation is seen in annelids, echinoderms, and all vertebrates including humans. (4) In open systems, blood and interstitial fluid mix (called haemolymph); in closed systems, blood and interstitial fluid remain separate. (5) Closed circulation allows more precise regulation of blood distribution to specific organs.",
+                  "tags": ["open circulation", "closed circulation", "haemocoel", "difference", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q7c_systole_vs_diastole",
+                  "organ": "heart",
+                  "topic": "systole and diastole",
+                  "question": "Write the differences between Systole and Diastole.",
+                  "text": "Systole vs Diastole: (1) Systole is the phase of contraction of the heart muscle (ventricles); diastole is the phase of relaxation. (2) During systole, blood is pumped out of the ventricles into the aorta (left) and pulmonary artery (right); during diastole, ventricles relax and refill with blood from the atria. (3) Systole lasts approximately 0.3 seconds; diastole lasts approximately 0.5 seconds in a normal cardiac cycle of 0.8 seconds. (4) Blood pressure is higher during systole (systolic pressure ~120 mmHg); lower during diastole (diastolic pressure ~80 mmHg). (5) The 'lub' heart sound is produced at the beginning of systole due to closure of AV valves; the 'dub' sound occurs at the end of systole due to closure of semilunar valves.",
+                  "tags": ["systole", "diastole", "difference", "blood pressure", "cardiac cycle", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q7d_pwave_vs_twave",
+                  "organ": "heart",
+                  "topic": "ECG waves",
+                  "question": "Write the differences between P-wave and T-wave.",
+                  "text": "P-wave vs T-wave in ECG: (1) P-wave represents the electrical excitation (depolarisation) of the atria, leading to atrial contraction; T-wave represents the return of the ventricles from excited to normal state (repolarisation of ventricles). (2) P-wave appears at the beginning of the cardiac cycle before the QRS complex; T-wave appears after the QRS complex toward the end of the cycle. (3) P-wave is a small, rounded, upward deflection; T-wave is a broader, dome-shaped upward deflection. (4) Abnormality in P-wave indicates atrial dysfunction; abnormality in T-wave indicates ventricular repolarisation issues or myocardial infarction.",
+                  "tags": ["P-wave", "T-wave", "ECG", "depolarisation", "repolarisation", "difference", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q8_evolutionary_heart",
+                  "organ": "heart",
+                  "topic": "evolution of heart in vertebrates",
+                  "question": "Describe the evolutionary change in the pattern of heart among the vertebrates.",
+                  "text": "Evolution of heart in vertebrates: (1) Fishes — Two-chambered heart (one atrium, one ventricle). Only deoxygenated blood flows through the heart. Single circulation. (2) Amphibians (e.g., frogs) — Three-chambered heart (two atria, one ventricle). Both oxygenated and deoxygenated blood enters the single ventricle, leading to partial mixing. Incomplete double circulation. (3) Reptiles (except crocodiles) — Three-chambered heart with a partially divided ventricle (incomplete interventricular septum), reducing but not eliminating mixing of blood. (4) Crocodiles, Birds, and Mammals — Four-chambered heart (two atria, two ventricles). Complete separation of oxygenated and deoxygenated blood. Complete double circulation. This evolutionary progression reflects increasing metabolic demands, with four-chambered hearts supporting the high oxygen requirements of warm-blooded (homeothermic) animals.",
+                  "tags": ["evolution", "heart", "vertebrates", "fish", "amphibians", "reptiles", "mammals", "four-chambered", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q9_myogenic_heart",
+                  "organ": "heart",
+                  "topic": "myogenic heart",
+                  "question": "Why do we call our heart myogenic?",
+                  "text": "The heart is called myogenic because the impulse for cardiac contraction originates within the cardiac muscle itself, specifically from a specialised patch of modified heart muscle called the Sino-Atrial Node (SAN) located in the right atrium. The term 'myogenic' means 'originating from muscle' (myo = muscle, genic = origin). Unlike skeletal muscles which require external nerve stimulation to contract, the cardiac muscle can generate its own electrical impulses spontaneously and rhythmically. This intrinsic ability means that even if all nerve connections to the heart are severed, the heart continues to beat. This property is fundamental to the heart's role as a continuous, autonomous pump.",
+                  "tags": ["myogenic", "SA node", "pacemaker", "cardiac muscle", "intrinsic rhythm", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q10_san_pacemaker",
+                  "organ": "heart",
+                  "topic": "sino-atrial node pacemaker",
+                  "question": "Sino-atrial node is called the pacemaker of our heart. Why?",
+                  "text": "The Sino-Atrial Node (SAN) is called the pacemaker of the heart because it generates the electrical impulse that initiates each heartbeat and sets the rhythm and rate of the entire heart. Located in the upper right corner of the right atrium, the SAN spontaneously fires electrical signals at a regular frequency (approximately 70–75 times per minute at rest). This impulse spreads across both atria causing them to contract, then reaches the Atrio-Ventricular Node (AVN), and subsequently travels through the Bundle of His and Purkinje fibres to cause ventricular contraction. Since the SAN determines the pace and rhythm of all cardiac activity, it is appropriately called the pacemaker. Damage to the SAN can disrupt the heart's rhythm (arrhythmia), requiring an artificial pacemaker.",
+                  "tags": ["SAN", "pacemaker", "sino-atrial node", "cardiac impulse", "heart rate", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q11_avn_avb_significance",
+                  "organ": "heart",
+                  "topic": "AVN and AV bundle significance",
+                  "question": "What is the significance of atrio-ventricular node and atrio-ventricular bundle in the functioning of heart?",
+                  "text": "Significance of AVN (Atrio-Ventricular Node): (1) The AVN receives the electrical impulse from the SAN after atrial depolarisation and acts as the only electrical bridge between the atria and ventricles, since the fibrous skeleton of the heart otherwise electrically insulates them. (2) The AVN introduces a critical delay (~0.1 second) before transmitting the impulse to the ventricles. This delay ensures that the atria complete their contraction and empty blood into the ventricles before ventricular contraction begins. Significance of AV Bundle (Bundle of His) and Purkinje Fibres: (1) The AV bundle carries the impulse from the AVN into the interventricular septum, where it divides into left and right bundle branches. (2) These branches further divide into Purkinje fibres that spread the impulse rapidly and simultaneously throughout the ventricular myocardium, ensuring coordinated, efficient ventricular contraction from apex upward, effectively ejecting blood into the aorta and pulmonary artery.",
+                  "tags": ["AVN", "AV bundle", "Bundle of His", "Purkinje fibres", "cardiac conduction", "significance", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q12_cardiac_cycle_output",
+                  "organ": "heart",
+                  "topic": "cardiac cycle and cardiac output",
+                  "question": "Define a cardiac cycle and the cardiac output.",
+                  "text": "Cardiac Cycle: The cardiac cycle refers to the sequence of events that occur during one complete heartbeat, encompassing the contraction and relaxation of the atria and ventricles. It consists of two phases: (1) Systole — the phase of ventricular contraction during which blood is pumped from the right ventricle into the pulmonary artery and from the left ventricle into the aorta. (2) Diastole — the phase of ventricular relaxation during which the ventricles refill with blood from the atria. One complete cardiac cycle lasts approximately 0.8 seconds (at 75 beats/min): atrial systole ~0.1s, ventricular systole ~0.3s, joint diastole ~0.4s. Cardiac Output: Cardiac output is defined as the volume of blood pumped by each ventricle per minute. It is calculated as: Cardiac Output (CO) = Stroke Volume (SV) × Heart Rate (HR). A normal adult at rest has a stroke volume of approximately 70 mL and a heart rate of 72 beats/min, giving a cardiac output of about 5 litres per minute. When cardiac output is normalised to body surface area, it is called the Cardiac Index.",
+                  "tags": ["cardiac cycle", "cardiac output", "systole", "diastole", "stroke volume", "heart rate", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q13_heart_sounds",
+                  "organ": "heart",
+                  "topic": "heart sounds",
+                  "question": "Explain heart sounds.",
+                  "text": "The heart produces two main sounds during each cardiac cycle, audible through a stethoscope: (1) First Heart Sound — 'Lub': This is a longer, louder sound produced by the closure of the Tricuspid valve (between right atrium and right ventricle) and the Mitral/Bicuspid valve (between left atrium and left ventricle) at the beginning of ventricular systole. It marks the start of ventricular contraction. (2) Second Heart Sound — 'Dub': This is a shorter, sharper sound produced by the closure of the Semilunar valves — the Pulmonary valve and the Aortic valve — at the end of ventricular systole (beginning of diastole). It marks the end of ventricular contraction. Together the sounds are described as 'Lub-Dub'. Any abnormal sounds (murmurs) between or during these sounds may indicate valvular defects or other cardiac abnormalities.",
+                  "tags": ["heart sounds", "lub dub", "mitral valve", "tricuspid valve", "semilunar valve", "systole", "class11", "NCERT"]
+                },
+                {
+                  "id": "circulation_q14_ecg",
+                  "organ": "heart",
+                  "topic": "ECG segments",
+                  "question": "Draw a standard ECG and explain the different segments in it.",
+                  "text": "A standard Electrocardiogram (ECG) records the electrical activity of the heart over time. The key waves and segments are: (1) P-wave: Small upward deflection representing depolarisation (electrical excitation) of the atria, leading to atrial contraction. (2) QRS Complex: A sharp, large deflection representing depolarisation of the ventricles (ventricular excitation leading to ventricular contraction). The Q-wave is a small downward deflection, R-wave is a tall upward peak, and S-wave is a small downward deflection. (3) T-wave: A broad, dome-shaped upward deflection representing repolarisation (recovery) of the ventricles, returning them to the resting state. Segments: (a) P-R Interval: Time from beginning of P-wave to beginning of QRS; represents conduction time from SAN through AVN. (b) S-T Segment: Period between end of S-wave and beginning of T-wave; represents the plateau phase of ventricular action potential (ventricles remain contracted). (c) Q-T Interval: Entire duration of ventricular electrical activity (depolarisation + repolarisation). A normal ECG allows diagnosis of arrhythmias, myocardial infarction, hypertrophy, and conduction defects.",
+                  "tags": ["ECG", "electrocardiogram", "P-wave", "QRS complex", "T-wave", "depolarisation", "repolarisation", "segments", "class11", "NCERT"]
+                }
+              
           
 ]
