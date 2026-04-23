@@ -77,7 +77,7 @@ const PLACARD_UI = {
     },
     feedback: {
       correct: "Correct! Great work - this is the right answer.",
-      incorrect: "Not quite - try the other choice.",
+      incorrect: "Wrong! - try the other choice.",
     },
   },
   hi: {
@@ -97,7 +97,7 @@ const PLACARD_UI = {
     },
     feedback: {
       correct: "\u0938\u0939\u0940! \u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u093e - \u092f\u0939 \u0938\u0939\u0940 \u0909\u0924\u094d\u0924\u0930 \u0939\u0948\u0964",
-      incorrect: "\u0905\u092d\u0940 \u0928\u0939\u0940\u0902 - \u0926\u0942\u0938\u0930\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0906\u091c\u093c\u092e\u093e\u090f\u0902\u0964",
+      incorrect: "\u0917\u0932\u0924! - \u0926\u0942\u0938\u0930\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0906\u091c\u093c\u092e\u093e\u090f\u0902\u0964",
     },
   },
   pa: {
@@ -117,7 +117,7 @@ const PLACARD_UI = {
     },
     feedback: {
       correct: "\u0a38\u0a39\u0a40! \u0a2c\u0a39\u0a41\u0a24 \u0a35\u0a27\u0a40\u0a06 - \u0a0f\u0a39 \u0a38\u0a39\u0a40 \u0a1c\u0a35\u0a3e\u0a2c \u0a39\u0a48\u0964",
-      incorrect: "\u0a39\u0a3e\u0a32\u0a47 \u0a28\u0a39\u0a40\u0a02 - \u0a26\u0a42\u0a1c\u0a3e \u0a35\u0a3f\u0a15\u0a32\u0a2a \u0a05\u0a1c\u0a3c\u0a2e\u0a3e\u0a13\u0964",
+      incorrect: "\u0a17\u0a32\u0a24! - \u0a26\u0a42\u0a1c\u0a3e \u0a35\u0a3f\u0a15\u0a32\u0a2a \u0a05\u0a1c\u0a3c\u0a2e\u0a3e\u0a13\u0964",
     },
   },
 };
@@ -267,9 +267,9 @@ const LABEL_CONTENT = {
       label: "Myelin sheath",
       category: "Insulation Layer",
       description: "Speeds up nerve impulse transmission.",
-      question: "The Myelin sheath is derived from the",
-      options: ["Schwann cells", "Nerve cells"],
-      correctAnswer: "Schwann cells"
+      question: "Which process is enhanced?",
+      options: ["Saltatory conduction", "Continuous conduction"],
+      correctAnswer: "Saltatory conduction"
     },
 
     node_of_ranvier: {
@@ -370,10 +370,10 @@ const LABEL_CONTENT = {
     myelin_sheath: {
       label: "मायेलिन आवरण",
       category: "इन्सुलेशन परत",
-      description: "यह तंत्रिका संकेतों के संचरण को तेज करता है।",
-      question: "मायेलिन आवरण किससे बनता है?",
-      options: ["श्वान कोशिकाएँ", "तंत्रिका कोशिकाएँ"],
-      correctAnswer: "श्वान कोशिकाएँ"
+      description: "यह संकेत संचरण को तेज करता है।",
+      question: "मायेलिन आवरण किस प्रक्रिया को बढ़ाता है?",
+      options: ["साल्टेटरी कंडक्शन", "सतत कंडक्शन"],
+      correctAnswer: "साल्टेटरी कंडक्शन"
     },
 
     node_of_ranvier: {
@@ -476,10 +476,10 @@ const LABEL_CONTENT = {
   myelin_sheath: {
     label: "ਮਾਇਲਿਨ ਪਰਤ",
     category: "ਇਨਸੂਲੇਸ਼ਨ ਪਰਤ",
-    description: "ਇਹ ਤੰਤਰਿਕ ਸੰਕੇਤਾਂ ਦੇ ਸੰਚਾਰ ਨੂੰ ਤੇਜ਼ ਕਰਦੀ ਹੈ।",
-    question: "ਮਾਇਲਿਨ ਪਰਤ ਕਿਸ ਤੋਂ ਬਣਦੀ ਹੈ?",
-    options: ["ਸ਼ਵਾਨ ਕੋਸ਼ਿਕਾਵਾਂ", "ਤੰਤਰਿਕ ਕੋਸ਼ਿਕਾਵਾਂ"],
-    correctAnswer: "ਸ਼ਵਾਨ ਕੋਸ਼ਿਕਾਵਾਂ"
+    description: "ਇਹ ਸੰਕੇਤ ਦੀ ਗਤੀ ਨੂੰ ਤੇਜ਼ ਕਰਦੀ ਹੈ।",
+    question: "ਮਾਇਲਿਨ ਪਰਤ ਕਿਹੜੀ ਪ੍ਰਕਿਰਿਆ ਨੂੰ ਵਧਾਉਂਦੀ ਹੈ?",
+    options: ["ਸਾਲਟੇਟਰੀ ਕੰਡਕਸ਼ਨ", "ਕੰਟਿਨਿਊਅਸ ਕੰਡਕਸ਼ਨ"],
+    correctAnswer: "ਸਾਲਟੇਟਰੀ ਕੰਡਕਸ਼ਨ"
   },
 
   node_of_ranvier: {
@@ -625,6 +625,12 @@ function setPlacardFeedback(message, status) {
   placardFeedbackEl.classList.toggle("incorrect", status === "incorrect");
 }
 
+function resetPlacardOptionStates() {
+  placardOptionsEl.querySelectorAll(".placard-option").forEach((optionEl) => {
+    optionEl.classList.remove("is-selected", "is-correct", "is-incorrect", "is-dimmed");
+  });
+}
+
 function updatePlacard(labelKey = null) {
   activePlacardKey = labelKey;
   const ui = getPlacardUi();
@@ -651,6 +657,7 @@ function updatePlacard(labelKey = null) {
         `<div class="placard-option"><button type="button" data-answer="${option}">${option}</button></div>`
     )
     .join("");
+  resetPlacardOptionStates();
   setPlacardFeedback(ui.defaultFeedback, null);
 }
 
@@ -671,6 +678,20 @@ function handlePlacardChoice(event) {
   const ui = getPlacardUi();
   const answer = button.dataset.answer;
   const isCorrect = answer === content.correctAnswer;
+  const selectedOptionEl = button.closest(".placard-option");
+
+  resetPlacardOptionStates();
+  placardOptionsEl.querySelectorAll(".placard-option").forEach((optionEl) => {
+    const optionButton = optionEl.querySelector("button[data-answer]");
+    if (!optionButton) return;
+    const isCorrectOption = optionButton.dataset.answer === content.correctAnswer;
+
+    if (optionEl === selectedOptionEl) optionEl.classList.add("is-selected");
+    if (isCorrectOption) optionEl.classList.add("is-correct");
+    if (!isCorrect && optionEl === selectedOptionEl) optionEl.classList.add("is-incorrect");
+    if (!isCorrect && optionEl !== selectedOptionEl && !isCorrectOption) optionEl.classList.add("is-dimmed");
+  });
+
   setPlacardFeedback(isCorrect ? ui.feedback.correct : ui.feedback.incorrect, isCorrect ? "correct" : "incorrect");
   return;
 /*
@@ -708,14 +729,19 @@ function isTextLabelRoot(name) {
   return normalized !== normalizeName(name) && normalizeName(name).endsWith("1");
 }
 
+function isTextLabelMesh(obj) {
+  const name = String(obj?.name || "");
+  return isTextLabelRoot(name) || /(?:label|text)/i.test(name);
+}
+
 function highlightMaterialForColor(colorHex) {
   if (highlightMaterialsByHex.has(colorHex)) return highlightMaterialsByHex.get(colorHex);
   const mat = new THREE.MeshStandardMaterial({
     color: colorHex,
     emissive: colorHex,
-    emissiveIntensity: 0.9,
-    roughness: 0.25,
-    metalness: 0.0,
+    emissiveIntensity: 2.1,
+    roughness: 0.08,
+    metalness: 0.12,
   });
   highlightMaterialsByHex.set(colorHex, mat);
   return mat;
@@ -789,7 +815,10 @@ function removeCurrentModel() {
 function collectMeshes(root) {
   const out = [];
   root.traverse((obj) => {
-    if (obj.isMesh && !isGlbMarkerName(obj.name)) out.push(obj);
+    if (!obj.isMesh) return;
+    if (isGlbMarkerName(obj.name)) return;
+    if (isTextLabelMesh(obj)) return;
+    out.push(obj);
   });
   return out;
 }
@@ -841,7 +870,13 @@ function rebuildPanel() {
         lastClickEl.textContent = formatLastClick(label.key, getLanguageConfig().missingState);
         return;
       }
-      toggleLabel(label.key);
+      if (selected.has(label.key)) {
+        deselectLabel(label.key);
+        closePlacardOverlay();
+      } else {
+        selectLabel(label.key);
+        openPlacardOverlay(label.key);
+      }
     });
   }
   rebuildHotspotLayer();
@@ -923,8 +958,13 @@ function onPointerDown(ev) {
     return;
   }
 
-  closePlacardOverlay();
-  toggleLabel(labelKey);
+  if (selected.has(labelKey)) {
+    deselectLabel(labelKey);
+    closePlacardOverlay();
+  } else {
+    selectLabel(labelKey);
+    openPlacardOverlay(labelKey);
+  }
 }
 
 function resize() {
