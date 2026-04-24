@@ -1754,6 +1754,7 @@ function toggleLabelTargets(label) {
     else selectComponent(obj, { label });
   }
   refreshLabelStatuses();
+  syncLabelHitboxesToSelection();
   syncPlacardToSelection(label);
 }
 
