@@ -43,7 +43,7 @@ const LANGUAGE_CONFIG = {
     htmlLang: "pa",
     modelUrl: "./neuron2.glb",
     buttonLabel: "ਪੰਜਾਬੀ",
-    title: "ਨਿਊਰੋਨ ਦੀ ਬਣਤਰ",
+    title: "ਨਿਊਰਾਨ ਦੀ ਬਣਤਰ",
     hint: "ਹਾਈਲਾਈਟ ਬਦਲਣ ਲਈ ਮਾਡਲ ਦੇ ਹਿੱਸੇ ਜਾਂ ਲੇਬਲ ਉੱਤੇ ਕਲਿਕ ਕਰੋ। ਘੁਮਾਉਣ ਲਈ ਡ੍ਰੈਗ ਕਰੋ। ਜ਼ੂਮ ਕਰਨ ਲਈ ਸਕ੍ਰੋਲ ਕਰੋ।",
     viewerTitle: "3D ਮਾਡਲ",
     labelsTitle: "ਲੇਬਲ",
@@ -143,12 +143,12 @@ const LABEL_DEFS = [
   },
   {
     key: "nissl",
-    names: { en: "Nissl's granules", hi: "निस्ल कणिकाएं", pa: "ਨਿਸਲ ਦਾਣੇ" },
+    names: { en: "Nissl's granules", hi: "निसेल ग्रेन्यूल", pa: "ਨਿਸਿਲ ਗ੍ਰੈਨਿਊਲ" },
     aliases: ["Nissl's granules", "Nissl's granlues", "Nissls granules"],
   },
   {
     key: "cell_body",
-    names: { en: "Cell body", hi: "कोशिका देह", pa: "ਕੋਸ਼ਿਕਾ ਦੇਹ" },
+    names: { en: "Cell body", hi: "कोशिकाकाय", pa: "ਸੈੱਲ ਸਰੀਰ" },
     aliases: ["Cell body", "cellbody"],
   },
   {
@@ -158,32 +158,32 @@ const LABEL_DEFS = [
   },
   {
     key: "schwan",
-    names: { en: "Schwan cell", hi: "श्वान कोशिका", pa: "ਸ਼ਵਾਨ ਕੋਸ਼ਿਕਾ" },
+    names: { en: "Schwan cell", hi: "श्वान कोशिका", pa: "ਸ਼ਵਾਨ ਸੈੱਲ" },
     aliases: ["Schwan cell", "Schwan Cell", "Schwann cell", "Schwann Cell"],
   },
   {
     key: "axon",
-    names: { en: "Axon", hi: "ऐक्सॉन", pa: "ਐਕਸਾਨ" },
+    names: { en: "Axon", hi: "तंत्रिकाक्ष", pa: "ਐਕਸਾਨ" },
     aliases: ["Axon"],
   },
   {
     key: "myelin",
-    names: { en: "Myelin sheath", hi: "मायलिन आवरण", pa: "ਮਾਇਲਿਨ ਪਰਤ" },
+    names: { en: "Myelin sheath", hi: "मायलिन आवरण", pa: "ਮਾਈਲਿਨ ਪਰਤ" },
     aliases: ["Myelin sheath", "myelin sheath", "Myelin Sheath"],
   },
   {
     key: "node_ranvier",
-    names: { en: "Node of Ranvier", hi: "रैनवीयर का नोड", pa: "ਰੈਨਵੀਅਰ ਦਾ ਨੋਡ" },
+    names: { en: "Node of Ranvier", hi: "रेन्वीयर का नोड", pa: "ਰੈਨਵੀਅਰ ਗੰਢ" },
     aliases: ["Node of Ranvier", "Node of Ranveir", "Node of ranveir"],
   },
   {
     key: "axon_terminal",
-    names: { en: "Axon terminal", hi: "ऐक्सॉन टर्मिनल", pa: "ਐਕਸਾਨ ਟਰਮੀਨਲ" },
+    names: { en: "Axon terminal", hi: "तंत्रिकाक्ष सिरा", pa: "ਐਕਸਾਨ ਸਿਰਾ" },
     aliases: ["Axon terminal", "Axin terminal", "Axon Terminal"],
   },
   {
     key: "synaptic_knob",
-    names: { en: "Synaptic knob", hi: "सिनेप्टिक नॉब", pa: "ਸਿਨੈਪਟਿਕ ਨੱਬ" },
+    names: { en: "Synaptic knob", hi: "सिनेप्टिक पुटिकाएं", pa: "ਸਾਈਨੈਪਟਿਕ ਗੰਢ" },
     aliases: ["Synaptic knob", "SynapticKnob", "Synaptic Knob"],
   },
 ];
@@ -196,7 +196,7 @@ const LABEL_COLORS = {
   schwan: 0x56ccf2,
   axon: 0xeb5757,
   myelin: 0xf2c94c,
-  node_ranvier: 0x6fcf97,
+  node_ranvier: 0x351c75,
   axon_terminal: 0x9b51e0,
   synaptic_knob: 0xff5fd1,
 };
@@ -267,9 +267,9 @@ const LABEL_CONTENT = {
       label: "Myelin sheath",
       category: "Insulation Layer",
       description: "Speeds up nerve impulse transmission.",
-      question: "Which process is enhanced?",
-      options: ["Saltatory conduction", "Continuous conduction"],
-      correctAnswer: "Saltatory conduction"
+      question: "The Myelin sheath is derived from the",
+      options: ["Schwann cells", "Nerve cells"],
+      correctAnswer:"Schwann cells"
     },
 
     node_of_ranvier: {
@@ -368,19 +368,20 @@ const LABEL_CONTENT = {
     },
 
     myelin_sheath: {
-      label: "मायेलिन आवरण",
+      label: "मायलिन आवरण",
       category: "इन्सुलेशन परत",
       description: "यह संकेत संचरण को तेज करता है।",
-      question: "मायेलिन आवरण किस प्रक्रिया को बढ़ाता है?",
-      options: ["साल्टेटरी कंडक्शन", "सतत कंडक्शन"],
-      correctAnswer: "साल्टेटरी कंडक्शन"
+      question: "मायलिन आवरण किससे बनता है?",
+      options: ["श्वान कोशिकाएँ", "तंत्रिका कोशिकाएँ"],
+      correctAnswer:"श्वान कोशिकाएँ"
     },
 
+
     node_of_ranvier: {
-      label: "रैनवीयर के नोड",
+      label: "रेन्वीयर के नोड",
       category: "गैप क्षेत्र",
       description: "यह मायेलिन के बीच का अंतर होता है।",
-      question: "रैनवीयर नोड का क्या कार्य है?",
+      question: "रेन्वीयर नोड का क्या कार्य है?",
       options: [
         "संकेत को कूदने में मदद करना",
         "न्यूरोट्रांसमीटर संग्रह करना"
@@ -444,10 +445,10 @@ const LABEL_CONTENT = {
   },
 
   nissl_granules: {
-    label: "ਨਿਸਲ ਗ੍ਰੈਨਿਊਲ",
+    label: "ਨਿਸਿਲ ਗ੍ਰੈਨਿਊਲ",
     category: "ਪ੍ਰੋਟੀਨ ਸੰਸ਼ਲੇਸ਼ਣ",
-    description: "ਨਿਸਲ ਗ੍ਰੈਨਿਊਲ ਪ੍ਰੋਟੀਨ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦੇ ਹਨ।",
-    question: "ਨਿਸਲ ਗ੍ਰੈਨਿਊਲ ਕਿੱਥੇ ਨਹੀਂ ਮਿਲਦੇ?",
+    description: "ਨਿਸਿਲ ਗ੍ਰੈਨਿਊਲ ਪ੍ਰੋਟੀਨ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦੇ ਹਨ।",
+    question: "ਨਿਸਿਲ ਗ੍ਰੈਨਿਊਲ ਕਿੱਥੇ ਨਹੀਂ ਮਿਲਦੇ?",
     options: ["ਐਕਸਾਨ", "ਸੈੱਲ ਸਰੀਰ"],
     correctAnswer: "ਐਕਸਾਨ"
   },
@@ -455,7 +456,7 @@ const LABEL_CONTENT = {
   schwann_cell: {
     label: "ਸ਼ਵਾਨ ਸੈੱਲ",
     category: "ਸਹਾਇਕ ਕੋਸ਼ਿਕਾ",
-    description: "ਇਹ ਐਕਸਾਨ ਦੇ ਆਲੇ ਦੁਆਲੇ ਮਾਇਲਿਨ ਪਰਤ ਬਣਾਉਂਦਾ ਹੈ।",
+    description: "ਇਹ ਐਕਸਾਨ ਦੇ ਆਲੇ ਦੁਆਲੇ ਮਾਈਲਿਨ ਪਰਤ ਬਣਾਉਂਦਾ ਹੈ।",
     question: "ਸ਼ਵਾਨ ਸੈੱਲ ਕਿੱਥੇ ਪਾਏ ਜਾਂਦੇ ਹਨ?",
     options: [
       "ਪਰਿਫਰੀ ਨਰਵਸ ਸਿਸਟਮ",
@@ -474,19 +475,19 @@ const LABEL_CONTENT = {
   },
 
   myelin_sheath: {
-    label: "ਮਾਇਲਿਨ ਪਰਤ",
+    label: "ਮਾਈਲਿਨ ਪਰਤ",
     category: "ਇਨਸੂਲੇਸ਼ਨ ਪਰਤ",
     description: "ਇਹ ਸੰਕੇਤ ਦੀ ਗਤੀ ਨੂੰ ਤੇਜ਼ ਕਰਦੀ ਹੈ।",
-    question: "ਮਾਇਲਿਨ ਪਰਤ ਕਿਹੜੀ ਪ੍ਰਕਿਰਿਆ ਨੂੰ ਵਧਾਉਂਦੀ ਹੈ?",
-    options: ["ਸਾਲਟੇਟਰੀ ਕੰਡਕਸ਼ਨ", "ਕੰਟਿਨਿਊਅਸ ਕੰਡਕਸ਼ਨ"],
-    correctAnswer: "ਸਾਲਟੇਟਰੀ ਕੰਡਕਸ਼ਨ"
+    question: "ਮਾਈਲਿਨ ਪਰਤ ਕਿਸ ਤੋਂ ਬਣਦੀ ਹੈ?",
+    options: ["ਸ਼ਵਾਨ ਕੋਸ਼ਿਕਾਵਾਂ", "ਤੰਤਰਿਕ ਕੋਸ਼ਿਕਾਵਾਂ"],
+    correctAnswer: "ਸ਼ਵਾਨ ਕੋਸ਼ਿਕਾਵਾਂ"
   },
 
   node_of_ranvier: {
-    label: "ਰੈਨਵੀਅਰ ਨੋਡ",
+    label: "ਰੈਨਵੀਅਰ ਗੰਢ",
     category: "ਖਾਲੀ ਸਥਾਨ",
-    description: "ਇਹ ਮਾਇਲਿਨ ਪਰਤ ਦੇ ਵਿਚਕਾਰ ਦੇ ਖਾਲੀ ਹਿੱਸੇ ਹੁੰਦੇ ਹਨ।",
-    question: "ਰੈਨਵੀਅਰ ਨੋਡ ਦਾ ਕੀ ਕੰਮ ਹੈ?",
+    description: "ਇਹ ਮਾਈਲਿਨ ਪਰਤ ਦੇ ਵਿਚਕਾਰ ਦੇ ਖਾਲੀ ਹਿੱਸੇ ਹੁੰਦੇ ਹਨ।",
+    question: "ਰੈਨਵੀਅਰ ਗੰਢ ਦਾ ਕੀ ਕੰਮ ਹੈ?",
     options: [
       "ਸੰਕੇਤ ਨੂੰ ਕੂਦਣ ਵਿੱਚ ਮਦਦ ਕਰਨਾ",
       "ਨਿਊਰੋਟਰਾਂਸਮੀਟਰ ਸਟੋਰ ਕਰਨਾ"
@@ -499,12 +500,12 @@ const LABEL_CONTENT = {
     category: "ਸੰਕੇਤ ਆਉਟਪੁੱਟ",
     description: "ਇਹ ਅਗਲੇ ਨਿਊਰਾਨ ਨੂੰ ਸੰਕੇਤ ਭੇਜਦਾ ਹੈ।",
     question: "ਦੋ ਨਿਊਰਾਨਾਂ ਦੇ ਵਿਚਕਾਰ ਜੋੜ ਕੀ ਕਹਿੰਦੇ ਹਨ?",
-    options: ["ਸਿਨੈਪਸ", "ਐਕਸਾਨ"],
-    correctAnswer: "ਸਿਨੈਪਸ"
+    options: ["ਸਾਈਨੇਪਸ", "ਐਕਸਾਨ"],
+    correctAnswer: "ਸਾਈਨੇਪਸ"
   },
 
   synaptic_knob: {
-    label: "ਸਿਨੈਪਟਿਕ ਨੋਬ",
+    label: "ਸਾਈਨੈਪਟਿਕ  ਗੰਢ",
     category: "ਸੰਚਾਰ ਬਿੰਦੂ",
     description: "ਇਹ ਸਿਨੈਪਸ ਵਿੱਚ ਸੰਕੇਤਾਂ ਦਾ ਸੰਚਾਰ ਕਰਦਾ ਹੈ।",
     question: "ਨਿਊਰੋਟਰਾਂਸਮੀਟਰ ਕਦੋਂ ਰਿਲੀਜ਼ ਹੁੰਦੇ ਹਨ?",
