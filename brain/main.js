@@ -29,50 +29,50 @@ const LABEL_TEXT = {
     CerebralAqueduct: "Cerebral Aqueduct",
   },
   hi: {
-    Cerebrum: "\u0938\u0947\u0930\u0940\u092c\u094d\u0930\u092e",
-    CorpusCallosum: "\u0915\u0949\u0930\u094d\u092a\u0938 \u0915\u0948\u0932\u094b\u091c\u093c\u092e",
-    Thalamus: "\u0925\u0948\u0932\u0947\u092e\u0938",
-    Hypothalamus: "\u0939\u093e\u0907\u092a\u094b\u0925\u0948\u0932\u0947\u092e\u0938",
-    Pons: "\u092a\u0949\u0928\u094d\u0938",
-    Midbrain: "\u092e\u093f\u0921\u092c\u094d\u0930\u0947\u0928",
-    Medulla: "\u092e\u0947\u0921\u0941\u0932\u093e",
-    Cerebellum: "\u0938\u0947\u0930\u0940\u092c\u0947\u0932\u092e",
-    CerebralAqueduct: "\u0938\u0947\u0930\u0947\u092c\u094d\u0930\u0932 \u090f\u0915\u094d\u0935\u093e\u0921\u0915\u094d\u091f",
+    Cerebrum: "प्रमस्तिष्क",
+    CorpusCallosum: "कार्पस केलोसम",
+    Thalamus: "थेलेमस",
+    Hypothalamus: "हाइपोथेलेमस",
+    Pons: "पोंस",
+    Midbrain: "मध्य मस्तिष्क",
+    Medulla: "मेड्यूला",
+    Cerebellum: "अनुमस्तिष्क",
+    CerebralAqueduct: "प्रमस्तिष्क तरल नलिका",
   },
   pa: {
-    Cerebrum: "\u0a38\u0a47\u0a30\u0a40\u0a2c\u0a4d\u0a30\u0a2e",
-    CorpusCallosum: "\u0a15\u0a4c\u0a30\u0a2a\u0a38 \u0a15\u0a48\u0a32\u0a4b\u0a1c\u0a3c\u0a2e",
-    Thalamus: "\u0a25\u0a48\u0a32\u0a47\u0a2e\u0a38",
-    Hypothalamus: "\u0a39\u0a3e\u0a08\u0a2a\u0a4b\u0a25\u0a48\u0a32\u0a47\u0a2e\u0a38",
-    Pons: "\u0a2a\u0a4b\u0a02\u0a38",
-    Midbrain: "\u0a2e\u0a3f\u0a21\u0a2c\u0a4d\u0a30\u0a47\u0a28",
-    Medulla: "\u0a2e\u0a47\u0a21\u0a41\u0a32\u0a3e",
-    Cerebellum: "\u0a38\u0a47\u0a30\u0a40\u0a2c\u0a47\u0a32\u0a2e",
-    CerebralAqueduct: "\u0a38\u0a47\u0a30\u0a47\u0a2c\u0a4d\u0a30\u0a32 \u0a10\u0a15\u0a35\u0a3e\u0a21\u0a15\u0a1f",
+    Cerebrum: "ਸੈਰੀਬਰਮ",
+    CorpusCallosum: "ਕੌਰਪਸ ਕੈਲੋਸਮ",
+    Thalamus: "ਥੈਲਾਮਸ",
+    Hypothalamus: "ਹਾਇਪੋਥੈਲਾਮਸ",
+    Pons: "ਪੌਂਸ",
+    Midbrain: "ਵਿਚਕਾਰਲਾ ਦਿਮਾਗ",
+    Medulla: "ਮੇੈਡੁੂਲਾ",
+    Cerebellum: "ਸੇਰੀਬੈਲਮ",
+    CerebralAqueduct: "ਸੇਰੀਬਰਲ ਐਕਵੀਡਕਟ",
   },
 };
 const LABEL_MAP_HINDI_BRAIN = {
   cerebrum: "प्रमस्तिष्क",
   cerebral_hemisphere: "सेरेब्रल_हेमिस्फीयर",
   corpus_callosum: "कॉर्पस_कैलोसुम",
-  thalamus: "थैलेमस",
-  hypothalamus: "हाइपोथैलेमस",
+  thalamus: "थेलेमस",
+  hypothalamus: "हाइपोथेलेमस",
   midbrain: "मध्य_मस्तिष्क",
   pons: "पोंस",
   cerebellum: "अनुमस्तिष्क",
-  medulla: "मेडुला",
+  medulla: "मेड्यूला",
   cerebral_aqueduct: "प्रमस्तिष्क_नलिका"
 };
 const LABEL_MAP_PUNJABI_BRAIN = {
-  cerebrum: "ਸੇਰੇਬ੍ਰਮ",
+  cerebrum: "ਸੈਰੀਬਰਮ",
   cerebral_hemisphere: "ਸੇਰੇਬਰਲ ਹੇਮਿਸਫੇਅਰ",
   corpus_callosum: "ਕੋਰਪਸ ਕੈਲੋਸਮ",
   thalamus: "ਥੈਲਾਮਸ",
   hypothalamus: "ਹਾਇਪੋਥੈਲਾਮਸ",
   midbrain: "ਮਿਡਬ੍ਰੇਨ",
-  pons: "ਪੋਨਸ",
+  pons: "ਪੌਂਸ",
   cerebellum: "ਸੇਰੇਬੈਲਮ",
-  medulla: "ਮੇਡੁਲਾ",
+  medulla: "ਮੇੈਡੁੂਲਾ",
   cerebral_aqueduct: "ਸੇਰੇਬਰਲ ਐਕਵੇਡਕਟ"
 };
 const LABEL_CONTENT_BRAIN = {
@@ -96,9 +96,9 @@ const LABEL_CONTENT_BRAIN = {
   corpus_callosum: {
     category: "Connecting Structure",
     description: "A large bundle of myelinated nerve fibres that connects the two cerebral hemispheres.",
-    question: "What is the primary role of the corpus callosum?",
-    options: ["Connect two cerebral hemispheres", "Relay olfactory signals"],
-    correctAnswer: "Connect two cerebral hemispheres"
+    question: "Damage to the corpus callosum would primarily affect:",
+    options: ["Coordination between two hemispheres","Balance and posture"],
+    correctAnswer: "Coordination between two hemispheres"
   },
 
   thalamus: {
@@ -178,20 +178,20 @@ const LABEL_CONTENT_HINDI_BRAIN = {
   कॉर्पस_कैलोसुम: {
     category: "संयोजी संरचना",
     description: "दोनों गोलार्द्धों को जोड़ने वाली तंत्रिका तंतुओं की पट्टी।",
-    question: "यह किस प्रकार के तंतु होते हैं?",
-    options: ["कमिस्यूरल", "एसोसिएशन"],
-    correctAnswer: "कमिस्यूरल"
+    question: "कॉर्पस कॉलोसम के क्षतिग्रस्त होने पर मुख्य रूप से क्या प्रभावित होगा?",
+    options: ["दोनों गोलार्द्धों के बीच समन्वय","संतुलन और शरीर की मुद्रा"],
+    correctAnswer: "दोनों गोलार्द्धों के बीच समन्वय"
   },
 
-  थैलेमस: {
+  थेलेमस: {
     category: "रिले केंद्र",
     description: "संवेदी आवेगों को प्रमस्तिष्क तक भेजता है।",
-    question: "कौन-सा संकेत थैलेमस से नहीं गुजरता?",
+    question: "कौन-सा संकेत थेलेमस से नहीं गुजरता?",
     options: ["घ्राण", "दृश्य"],
     correctAnswer: "घ्राण"
   },
 
-  हाइपोथैलेमस: {
+  हाइपोथेलेमस: {
     category: "नियामक केंद्र",
     description: "तापमान, भूख आदि का नियंत्रण करता है।",
     question: "यह किस ग्रंथि को नियंत्रित करता है?",
@@ -223,7 +223,7 @@ const LABEL_CONTENT_HINDI_BRAIN = {
     correctAnswer: "समन्वय"
   },
 
-  मेडुला: {
+  मेड्यूला: {
     category: "महत्वपूर्ण केंद्र",
     description: "हृदय गति और श्वसन को नियंत्रित करता है।",
     question: "कौन-सी क्रिया नियंत्रित होती है?",
@@ -241,7 +241,7 @@ const LABEL_CONTENT_HINDI_BRAIN = {
 };
 const LABEL_CONTENT_PUNJABI_BRAIN = {
 
-  ਸੇਰੇਬ੍ਰਮ: {
+  ਸੈਰੀਬਰਮ: {
     category: "ਅੱਗਲਾ ਦਿਮਾਗ",
     description: "ਦਿਮਾਗ ਦਾ ਸਭ ਤੋਂ ਵੱਡਾ ਹਿੱਸਾ ਜੋ ਸੋਚ, ਯਾਦ ਅਤੇ ਇੱਛਾਕਾਰੀ ਕਿਰਿਆਵਾਂ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਦਾ ਹੈ।",
     question: "ਦ੍ਰਿਸ਼ਟੀ ਲਈ ਕਿਹੜਾ ਲੋਬ ਜ਼ਿੰਮੇਵਾਰ ਹੈ?",
@@ -260,9 +260,9 @@ const LABEL_CONTENT_PUNJABI_BRAIN = {
   "ਕੋਰਪਸ ਕੈਲੋਸਮ": {
     category: "ਜੋੜਨ ਵਾਲੀ ਸੰਰਚਨਾ",
     description: "ਦੋਵੇਂ ਹਿੱਸਿਆਂ ਨੂੰ ਜੋੜਦਾ ਹੈ।",
-    question: "ਇਸ ਵਿੱਚ ਕਿਹੜੇ ਫਾਈਬਰ ਹੁੰਦੇ ਹਨ?",
-    options: ["ਕਮਿਸ਼ੁਰਲ", "ਐਸੋਸੀਏਸ਼ਨ"],
-    correctAnswer: "ਕਮਿਸ਼ੁਰਲ"
+    question: "ਕਾਰਪਸ ਕੈਲੋਸਮ ਨੂੰ ਨੁਕਸਾਨ ਪਹੁੰਚਣ ਨਾਲ ਮੁੱਖ ਤੌਰ ਤੇ ਕੀ ਪ੍ਰਭਾਵਿਤ ਹੋਵੇਗਾ?",
+    options: ["ਦੋਵੇਂ ਗੋਲਾਰਧਾਂ ਵਿਚਕਾਰ ਸਮਨਵਯ", "ਸੰਤੁਲਨ ਅਤੇ ਸਰੀਰ ਦੀ ਅਵਸਥਾ"],
+    correctAnswer:"ਦੋਵੇਂ ਗੋਲਾਰਧਾਂ ਵਿਚਕਾਰ ਸਮਨਵਯ"
   },
 
   ਥੈਲਾਮਸ: {
@@ -289,10 +289,10 @@ const LABEL_CONTENT_PUNJABI_BRAIN = {
     correctAnswer: "ਬ੍ਰੇਨਸਟੇਮ"
   },
 
-  ਪੋਨਸ: {
+  ਪੌਂਸ: {
     category: "ਬ੍ਰੇਨਸਟੇਮ",
     description: "ਦਿਮਾਗ ਦੇ ਭਾਗਾਂ ਵਿਚਕਾਰ ਪੁਲ ਵਾਂਗ ਕੰਮ ਕਰਦਾ ਹੈ।",
-    question: "ਪੋਨਸ ਦਿਮਾਗ ਦੇ ਕਿਹੜੇ ਭਾਗ ਦਾ ਹਿੱਸਾ ਹੈ?",
+    question: "ਪੌਂਸ ਦਿਮਾਗ ਦੇ ਕਿਹੜੇ ਭਾਗ ਦਾ ਹਿੱਸਾ ਹੈ?",
     options: ["ਹਾਈਂਡਬ੍ਰੇਨ", "ਫੋਰਬ੍ਰੇਨ"],
     correctAnswer:"ਹਾਈਂਡਬ੍ਰੇਨ"
   },
@@ -305,7 +305,7 @@ const LABEL_CONTENT_PUNJABI_BRAIN = {
     correctAnswer: "ਕੋਆਰਡੀਨੇਸ਼ਨ"
   },
 
-  ਮੇਡੁਲਾ: {
+  ਮੇੈਡੁੂਲਾ: {
     category: "ਮਹੱਤਵਪੂਰਨ ਕੇਂਦਰ",
     description: "ਹਿਰਦੇ ਦੀ ਧੜਕਨ ਅਤੇ ਸਾਹ ਲੈਣ ਨੂੰ ਕੰਟਰੋਲ ਕਰਦਾ ਹੈ।",
     question: "ਕਿਹੜੀ ਕਿਰਿਆ ਕੰਟਰੋਲ ਹੁੰਦੀ ਹੈ?",
@@ -337,18 +337,18 @@ const LANGUAGE_CONFIG = {
     htmlLang: "hi",
     modelUrl: new URL("./Brain1.glb", import.meta.url).href,
     buttonLabel: "हिंदी",
-    title: "मानव मस्तिष्क का सैजिटल सेक्शन",
+    title: "मानव मस्तिष्क का सेजीटल काट",
     hint: "हाइलाइट और अलग करने के लिए किसी लेबल या भाग पर क्लिक करें।",
     resetButton: "रीसेट करें",
     explodeLabel: "अलग करें",
     loadingText: "हिंदी मॉडल लोड हो रहा है...",
-    loadFailed: "हिंदी मॉडल लोड नहीं हुआ",
+    loadFailed: "हिंदी मॉडल लोड नहीं हुआ",  
   },
   pa: {
     htmlLang: "pa",
     modelUrl: new URL("./Brain2.glb", import.meta.url).href,
     buttonLabel: "ਪੰਜਾਬੀ",
-    title: "ਮਨੁੱਖੀ ਦਿਮਾਗ ਦਾ ਸੈਜਿਟਲ ਸੈਕਸ਼ਨ",
+    title: "ਮਨੁੱਖੀ ਦਿਮਾਗ ਦਾ ਕਾਟ ਚਿੱਤਰ",
     hint: "ਹਾਈਲਾਈਟ ਅਤੇ ਵੱਖ ਕਰਨ ਲਈ ਕਿਸੇ ਲੇਬਲ ਜਾਂ ਹਿੱਸੇ ਉੱਤੇ ਕਲਿਕ ਕਰੋ।",
     resetButton: "ਰੀਸੈਟ ਕਰੋ",
     explodeLabel: "ਵੱਖ ਕਰੋ",
@@ -368,7 +368,7 @@ const PLACARD_UI = {
     quizTitle: "Quick Quiz",
     feedback: {
       correct: "Correct! Great work - this is the right answer.",
-      incorrect: "Not quite - try the other choice.",
+      incorrect: "Not yet - try the other choice.",
     },
   },
   hi: {
@@ -430,7 +430,7 @@ const PANEL_RESET_TEXT = "reset";
 const PANEL_PANEL_TEXT = "panel";
 const PANEL_MODEL_TEXT = "model";
 const PANEL_NOT_NCERT_TEXT = "not part of NCERT syllabus";
-const PLACEHOLDER_TEXT = "—";
+const PLACEHOLDER_TEXT = "_";
 
 const canvas = document.querySelector("#c");
 const viewerEl = document.querySelector(".viewer");
@@ -509,15 +509,15 @@ const nonNcertHighlightMaterial = new THREE.MeshStandardMaterial({
 const HIGHLIGHT_COLORS = [
   0xff6b6b,
   0xffd84d,
-  0x4dd0ff,
-  0x6bff95,
+  0x38761d,
+  0x4faff7,
   0xb56bff,
   0xff8fd8,
   0x7cfc00,
   0xffa24d,
   0x4d7dff,
+ 
 ];
-
 const highlightMaterials = new Map(); // label -> MeshStandardMaterial
 function highlightMaterialForLabel(label) {
   if (highlightMaterials.has(label)) return highlightMaterials.get(label);
@@ -1364,7 +1364,7 @@ function updateLabelHitboxSizes() {
   const worldPt   = new THREE.Vector3();
   const projected = new THREE.Vector3();
 
-  for (const [, { div, marker }] of labelHitboxMeta) {
+  for (const [label, { div, marker }] of labelHitboxMeta) {
     const posAttr = marker.geometry?.getAttribute?.("position");
     if (!posAttr || posAttr.count === 0) { div.style.display = "none"; continue; }
 
@@ -1372,14 +1372,14 @@ function updateLabelHitboxSizes() {
     let visible = false;
 
     marker.updateWorldMatrix(true, false);
-    const step = Math.max(1, Math.ceil(posAttr.count / 80));
-
-    for (let i = 0; i < posAttr.count; i += step) {
+    // Iterate every vertex (no step-skip) so sparse single-glyph meshes
+    // like the "H" anchor in the English Hypothalamus label produce a correct
+    // bounding box instead of an undersized one.
+    for (let i = 0; i < posAttr.count; i++) {
       worldPt.fromBufferAttribute(posAttr, i).applyMatrix4(marker.matrixWorld);
       projected.copy(worldPt).project(camera);
       if (projected.z < -1 || projected.z > 1) continue;
       visible = true;
-      // NDC → layer-relative pixels
       const sx = ((projected.x + 1) * 0.5) * cw + offX;
       const sy = ((-projected.y + 1) * 0.5) * ch + offY;
       if (sx < minX) minX = sx;
@@ -1392,10 +1392,18 @@ function updateLabelHitboxSizes() {
 
     div.style.display = "";
     const pad = 10;
-    const w = Math.max(10, maxX - minX + pad * 2);
-    const h = Math.max(8,  maxY - minY + pad * 2);
-    // Place the div centred on the bbox centre — same as the reference pattern
-    // that uses clampedCenterX/Y + translate(-50%,-50%)
+    const measuredW = maxX - minX;
+    const measuredH = maxY - minY;
+
+    // Enforce a minimum size derived from the visible label text so the
+    // hitbox always fully encloses the rendered word at any zoom level.
+    const labelText = labelTextForLanguage(label);
+    const minTextW  = labelText.length * 8 + 24;  // ~8 px per char + padding
+    const minTextH  = 20;
+
+    const w = Math.max(minTextW, measuredW + pad * 2);
+    const h = Math.max(minTextH, measuredH + pad * 2);
+
     const cx = (minX + maxX) / 2;
     const cy = (minY + maxY) / 2;
     div.style.left      = `${cx}px`;
@@ -1411,6 +1419,20 @@ function resetLabelHitboxes() {
   for (const [, { div }] of labelHitboxMeta) {
     div.dataset.active = "0";
     div.style.opacity  = "0";
+  }
+}
+
+/**
+ * Syncs every label hitbox div's active/opacity state to match
+ * the current selectedRoots set.  Call this after any model-mesh
+ * click so the 2-D overlay stays consistent with the 3-D selection.
+ */
+function syncLabelHitboxesToSelection() {
+  for (const [label, { div }] of labelHitboxMeta) {
+    const targets = gltfRoot ? targetsForLabel(label) : [];
+    const isSelected = targets.some(o => componentState.get(o.uuid)?.exploded);
+    div.dataset.active = isSelected ? "1" : "0";
+    div.style.opacity  = isSelected ? "1" : "0";
   }
 }
 function createHighlightLabel(label) {
@@ -1517,14 +1539,13 @@ function moveOutward(root, factor) {
     const box = new THREE.Box3().setFromObject(root);
     const rootWorldPos = new THREE.Vector3();
     box.getCenter(rootWorldPos);
+    // Direction = from brain centre toward component — always outward by definition.
     const dirWorld = rootWorldPos.clone().sub(brainCenterWorld);
 
     if (dirWorld.lengthSq() < 1e-10) {
-      dirWorld.copy(rootWorldPos).normalize(); // fallback
-    }
-
-    if (dirWorld.dot(rootWorldPos) < 0) {
-      dirWorld.negate(); // ensure outward
+      // Component sits exactly at brain centre — fall back to its absolute position.
+      dirWorld.copy(rootWorldPos);
+      if (dirWorld.lengthSq() < 1e-10) dirWorld.set(0, 1, 0); // last-resort up
     }
 
     dirWorld.normalize();
@@ -1626,6 +1647,7 @@ function resetAll() {
   transform.enabled = false;
   lastSelected = null;
   closePlacardOverlay();
+  resetLabelHitboxes();
 }
 
 function resetModelState() {
@@ -1700,7 +1722,7 @@ function refreshLabelStatuses() {
 
     const targets = gltfRoot ? targetsForLabel(label) : [];
     if (!targets.length) {
-      pillEl.textContent = PLACEHOLDER_TEXT;
+      pillEl.textContent = PANEL_OFF_TEXT;
       row.classList.remove("active");
       continue;
     }
@@ -1772,6 +1794,7 @@ function onPointerDown(ev) {
   const markerLabel = labelForMarkerHit(hit);
   if (markerLabel) {
     toggleLabelTargets(markerLabel);
+    syncLabelHitboxesToSelection();
     return;
   }
 
@@ -1806,6 +1829,7 @@ function onPointerDown(ev) {
   }
 
   refreshLabelStatuses();
+  syncLabelHitboxesToSelection();
   syncPlacardToSelection(resolvedLabel);
 }
 
@@ -1933,7 +1957,7 @@ function loadCurrentLanguageModel() {
     (err) => {
       if (requestId !== loadRequestId) return;
       console.error(err);
-      lastClickEl.textContent = config.loadFailed;
+      lastClickEl.textContent = PLACEHOLDER_TEXT;
       setControlsDisabled(false);
     }
   );
