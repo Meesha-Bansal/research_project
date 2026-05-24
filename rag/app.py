@@ -10,6 +10,7 @@ app = Flask(__name__, static_folder=BASE_DIR)
 CORS(app)
 
 # Try importing the RAG pipeline
+#test
 try:
     from retrieval_pipeline import query_vector_store
     print("Successfully imported retrieval_pipeline")
